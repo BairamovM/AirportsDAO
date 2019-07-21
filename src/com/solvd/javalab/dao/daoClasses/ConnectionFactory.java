@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class ConnectionFactory {
 
-    public static final String URL = "jdbc:mysql://localhost:3306/";
+    public static final String URL = "jdbc:mysql://localhost:3306/"; // ?useSSL=false
     public static final String USER = "Neuromancer";
     public static final String PASS = "Neuromancer";
 

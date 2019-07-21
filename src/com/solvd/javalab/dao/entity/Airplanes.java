@@ -19,7 +19,7 @@ public class Airplanes {
             if (id <= 0) {
                 logEntity.error("Value id error = " + id);
                 throw new EntityException("Value id error = " + id);
-            } else if (id >0) {
+            } else if (id >= 1) {
                 this.id = id;
             }
         } catch (EntityException e) {
@@ -49,7 +49,7 @@ public class Airplanes {
         return type;
     }
 
-    public void setnumberSeets(Long numberSeets) {
+    public void setNumberSeets(Long numberSeets) {
 
         try {
             if (numberSeets <= 0) {
@@ -67,7 +67,7 @@ public class Airplanes {
         return numberSeets;
     }
 
-    public void setrangeFlight(Long rangeFlight) {
+    public void setRangeFlight(Long rangeFlight) {
 
         try {
             if (rangeFlight <= 0) {
@@ -85,7 +85,7 @@ public class Airplanes {
         return rangeFlight;
     }
 
-    public void setcarryingCapacity(Long carryingCapacity) {
+    public void setCarryingCapacity(Long carryingCapacity) {
 
         try {
             if (carryingCapacity <= 0) {

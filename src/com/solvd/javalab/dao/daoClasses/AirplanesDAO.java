@@ -31,9 +31,9 @@ public class AirplanesDAO implements DAO <Airplanes>{
                 Airplanes airplane = new Airplanes();
                 airplane.setId(rs.getLong("id"));
                 airplane.setType(rs.getString("type"));
-                airplane.setnumberSeets(rs.getLong("numberSeets"));
-                airplane.setrangeFlight(rs.getLong("rangeFlight"));
-                airplane.setcarryingCapacity(rs.getLong("carryingCapacity"));
+                airplane.setNumberSeets(rs.getLong("numberSeets"));
+                airplane.setRangeFlight(rs.getLong("rangeFlight"));
+                airplane.setCarryingCapacity(rs.getLong("carryingCapacity"));
                 airplane.setTeams_id(rs.getLong("Teams_id"));
                 return airplane;
             }
@@ -64,9 +64,9 @@ public class AirplanesDAO implements DAO <Airplanes>{
                 Airplanes airplane = new Airplanes();
                 airplane.setId(rs.getLong("id"));
                 airplane.setType(rs.getString("type"));
-                airplane.setnumberSeets(rs.getLong("numberSeets"));
-                airplane.setrangeFlight(rs.getLong("rangeFlight"));
-                airplane.setcarryingCapacity(rs.getLong("carryingCapacity"));
+                airplane.setNumberSeets(rs.getLong("numberSeets"));
+                airplane.setRangeFlight(rs.getLong("rangeFlight"));
+                airplane.setCarryingCapacity(rs.getLong("carryingCapacity"));
                 airplane.setTeams_id(rs.getLong("Teams_id"));
                 airplanes.add(airplane);
 
