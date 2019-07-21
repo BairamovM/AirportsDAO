@@ -1,4 +1,4 @@
-package com.solvd.javalab.ConnectionPool;
+package com.solvd.javalab.connectionPool;
 
 import java.sql.Connection;
 import java.sql.SQLException;

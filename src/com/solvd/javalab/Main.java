@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-import com.solvd.javalab.ConnectionPool.ConnectionPool;
+import com.solvd.javalab.connectionPool.ConnectionPool;
 
 public class Main {
 
