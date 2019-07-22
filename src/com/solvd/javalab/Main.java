@@ -19,7 +19,7 @@ public class Main {
 
     log.info("First log message");
 
-        //create pool connection
+        //create pool connection  ?useSSL=false
         ConnectionPool connectionPool = new ConnectionPool(
                 "com.mysql.jdbc.Driver",
                 "jdbc:mysql://localhost:3306/?useSSL=false", "Neuromancer", "Neuromancer",9
