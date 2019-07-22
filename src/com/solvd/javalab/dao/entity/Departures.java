@@ -2,15 +2,12 @@ package com.solvd.javalab.dao.entity;
 
 import org.apache.log4j.Logger;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 public class Departures {
 
     private static final Logger logEntity = Logger.getLogger(Departures.class);
 
     private Long id;
-    private Calendar departureDate;
+    private String departureDate;
     private Long Airplanes_id;
     private Long AllFlights_id;
 
@@ -32,22 +29,21 @@ public class Departures {
         }
     }
 
-    public Calendar getDepartureDate() {
+    public String getDepartureDate() {
         return departureDate;
     }
 
-    public void setDepartureDate(Calendar departureDate) {
+    public void setDepartureDate(String departureDate) {
 
         try {
-            Calendar dateDefault = new GregorianCalendar(1990, Calendar.JANUARY, 1);
-            if (departureDate.before(dateDefault)) {
-                logEntity.error("Value departureDate error = " + departureDate);
-                throw new EntityException("Value departureDate error = " + departureDate);
-            } else if (departureDate.after(dateDefault)) {
+            if (departureDate == null) {
+                logEntity.error("Value departureDate NULL error = " + departureDate);
+                throw new EntityException("Value departureDate NULL error = " + departureDate);
+            } else if (departureDate != null) {
                 this.departureDate = departureDate;
             }
         } catch (EntityException e) {
-            logEntity.error("Value departureDate error = " + departureDate);
+            logEntity.error("Value nameCountry NULL error = " + departureDate);
         }
     }
 
