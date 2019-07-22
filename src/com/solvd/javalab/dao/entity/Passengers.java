@@ -12,7 +12,7 @@ public class Passengers {
     private Long id;
     private String firstName;
     private String lastName;
-    private Calendar dateBirth;
+    private String dateBirth;
     private String gender;
     private Double passportSerialNumber;
     private Long Nationalities_id;
@@ -71,22 +71,21 @@ public class Passengers {
         }
     }
 
-    public Calendar getDateBirth() {
+    public String getDateBirth() {
         return dateBirth;
     }
 
-    public void setDateBirth(Calendar dateBirth) {
+    public void setDateBirth(String dateBirth) {
 
         try {
-            Calendar dateDefault = new GregorianCalendar(1900, Calendar.JANUARY, 1);
-            if (dateBirth.before(dateDefault)) {
-                logEntity.error("Value dateBirth error = " + dateBirth);
-                throw new EntityException("Value dateBirth error = " + dateBirth);
-            } else if (dateBirth.after(dateDefault)) {
+            if (dateBirth == null) {
+                logEntity.error("Value dateBirth NULL error = " + dateBirth);
+                throw new EntityException("Value dateBirth NULL error = " + dateBirth);
+            } else if (dateBirth != null) {
                 this.dateBirth = dateBirth;
             }
         } catch (EntityException e) {
-            logEntity.error("Value dateBirth error = " + dateBirth);
+            logEntity.error("Value nameCountry NULL error = " + dateBirth);
         }
     }
 
