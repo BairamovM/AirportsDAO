@@ -18,20 +18,6 @@ public class PassengersDAO implements IPassengers,IPassengerTransaction {
 
     private static final Logger logDAO = Logger.getLogger(PassengersDAO.class);
 
-
-    private Connection getConPassengers;
-    private Connection getConSeatsFlight;
-
-    private static PassengersDAO instance = null;
-    public synchronized static PassengersDAO getInstance() {
-        if (instance == null) {
-            instance = new PassengersDAO();
-            instance.getConPassengers();
-            instance.getConSeatsFlight();
-        }
-        return instance;
-    }
-
     public static final String getId = "SELECT * FROM Passengers WHERE id = ?";
     public static final String getAll = "SELECT * FROM Passengers";
     public static final String save = "INSERT INTO Passengers VALUES (?,?,?,?)";
@@ -297,30 +283,30 @@ public class PassengersDAO implements IPassengers,IPassengerTransaction {
     @Override
     public void bookPlace(Passengers passengers, SeatsFlight seatsFlight) {
 
-        private Connection getConPassengers (){
 
-            logDAO.trace("Update Data in passengers");
-            Connection connection = null;
-            PreparedStatement prStatement = null;
+
+            logDAO.trace("Update Data in passengers and seatsFlight");
+            Connection connectionpass = null;
+            PreparedStatement prStatementpass = null;
 
             try {
                 logDAO.trace("Open Connection");
-                connection = ConnectionFactory.getConnection();
+                connectionpass = ConnectionFactory.getConnection();
                 try {
                     logDAO.trace("Create PreparedStatement");
-                    prStatement = connection.prepareStatement(save);
+                    prStatementpass = connectionpass.prepareStatement(save);
 
-                    prStatement.setString(1, passengers.getFirstName());
-                    prStatement.setString(2, passengers.getLastName());
-                    prStatement.setString(3, passengers.getDateBirth());
-                    prStatement.setString(4, passengers.getGender());
-                    prStatement.setDouble(5, passengers.getPassportSerialNumber());
-                    prStatement.setLong(6, passengers.getNationalities_id());
+                    prStatementpass.setString(1, passengers.getFirstName());
+                    prStatementpass.setString(2, passengers.getLastName());
+                    prStatementpass.setString(3, passengers.getDateBirth());
+                    prStatementpass.setString(4, passengers.getGender());
+                    prStatementpass.setDouble(5, passengers.getPassportSerialNumber());
+                    prStatementpass.setLong(6, passengers.getNationalities_id());
 
-                    prStatement.executeUpdate();
+                    prStatementpass.executeUpdate();
                 } finally {
                     try {
-                        prStatement.close();
+                        prStatementpass.close();
                         logDAO.trace("PreparedStatement closed");
                     } catch (SQLException e) {
                         logDAO.warn("Can't close PreparedStatement", e);
@@ -330,37 +316,37 @@ public class PassengersDAO implements IPassengers,IPassengerTransaction {
                 logDAO.trace("Can't Updata Data in passengers", e);
             } finally {
                 try {
-                    connection.close();
+                    connectionpass.close();
                     logDAO.trace("Connection closed");
                 } catch (SQLException e) {
                     logDAO.warn("Can't close Connection", e);
                 }
             }
 
-        }
 
-        private Connection getConSeatsFlight () {
+
+
             logDAO.trace("Update Data in seatsFlight");
-            Connection connection = null;
-            PreparedStatement prStatement = null;
+            Connection connectionseats = null;
+            PreparedStatement prStatementseats = null;
 
             try {
                 logDAO.trace("Open Connection");
-                connection = ConnectionFactory.getConnection();
+                connectionseats = ConnectionFactory.getConnection();
                 try {
                     logDAO.trace("Create PreparedStatement");
-                    prStatement = connection.prepareStatement(save);
+                    prStatementseats = connectionseats.prepareStatement(save);
 
-                    prStatement.setLong(1, seatsFlight.getNumberSeet());
-                    prStatement.setLong(2, seatsFlight.getTicketPrice());
-                    prStatement.setLong(3, seatsFlight.getAirplanes_id());
-                    prStatement.setLong(4, seatsFlight.getPassengers_id());
-                    prStatement.setLong(5, seatsFlight.getClassSeets_id());
+                    prStatementseats.setLong(1, seatsFlight.getNumberSeet());
+                    prStatementseats.setLong(2, seatsFlight.getTicketPrice());
+                    prStatementseats.setLong(3, seatsFlight.getAirplanes_id());
+                    prStatementseats.setLong(4, seatsFlight.getPassengers_id());
+                    prStatementseats.setLong(5, seatsFlight.getClassSeets_id());
 
-                    prStatement.executeUpdate();
+                    prStatementseats.executeUpdate();
                 } finally {
                     try {
-                        prStatement.close();
+                        prStatementseats.close();
                         logDAO.trace("PreparedStatement closed");
                     } catch (SQLException e) {
                         logDAO.warn("Can't close PreparedStatement", e);
@@ -370,13 +356,13 @@ public class PassengersDAO implements IPassengers,IPassengerTransaction {
                 logDAO.trace("Can't Updata Data in seatsFlight", e);
             } finally {
                 try {
-                    connection.close();
+                    connectionseats.close();
                     logDAO.trace("Connection closed");
                 } catch (SQLException e) {
                     logDAO.warn("Can't close Connection", e);
                 }
             }
-        }
+
 
 
 
