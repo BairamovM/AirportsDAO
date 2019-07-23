@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.ClassSeets;
+import com.solvd.javalab.dao.interfaces.IClassSeets;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class ClassSeetsDAO implements DAO <ClassSeets> {
+public class ClassSeetsDAO implements IClassSeets {
 
     private static final Logger logDAO = Logger.getLogger(ClassSeetsDAO.class);
 

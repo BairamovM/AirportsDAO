@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.Airports;
+import com.solvd.javalab.dao.interfaces.IAirports;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class AirportsDAO implements DAO <Airports> {
+public class AirportsDAO implements IAirports {
 
     private static final Logger logDAO = Logger.getLogger(AirportsDAO.class);
 

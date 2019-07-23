@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.Passengers;
+import com.solvd.javalab.dao.interfaces.IPassengers;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class PassengersDAO implements DAO <Passengers> {
+public class PassengersDAO implements IPassengers {
 
     private static final Logger logDAO = Logger.getLogger(PassengersDAO.class);
 

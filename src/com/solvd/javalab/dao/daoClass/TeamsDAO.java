@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.Teams;
+import com.solvd.javalab.dao.interfaces.ITeams;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class TeamsDAO implements DAO <Teams> {
+public class TeamsDAO implements ITeams {
 
     private static final Logger logDAO = Logger.getLogger(TeamsDAO.class);
 

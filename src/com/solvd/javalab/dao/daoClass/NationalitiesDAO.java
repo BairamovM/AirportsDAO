@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.Nationalities;
+import com.solvd.javalab.dao.interfaces.INationalities;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class NationalitiesDAO implements DAO <Nationalities> {
+public class NationalitiesDAO implements INationalities {
 
     private static final Logger logDAO = Logger.getLogger(NationalitiesDAO.class);
 

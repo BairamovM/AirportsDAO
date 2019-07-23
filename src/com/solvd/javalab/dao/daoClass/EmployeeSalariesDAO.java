@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.EmployeeSalaries;
+import com.solvd.javalab.dao.interfaces.IEmployeeSalaries;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class EmployeeSalariesDAO implements DAO <EmployeeSalaries> {
+public class EmployeeSalariesDAO implements IEmployeeSalaries {
 
     private static final Logger logDAO = Logger.getLogger(EmployeeSalariesDAO.class);
 

@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.ChiefPilots;
+import com.solvd.javalab.dao.interfaces.IChiefPilots;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class ChiefPilotsDAO implements DAO <ChiefPilots> {
+public class ChiefPilotsDAO implements IChiefPilots {
 
     private static final Logger logDAO = Logger.getLogger(ChiefPilotsDAO.class);
 

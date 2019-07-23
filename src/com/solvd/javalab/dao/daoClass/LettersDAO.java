@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.Letters;
+import com.solvd.javalab.dao.interfaces.ILetters;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class LettersDAO implements DAO <Letters> {
+public class LettersDAO implements ILetters {
 
     private static final Logger logDAO = Logger.getLogger(LettersDAO.class);
 

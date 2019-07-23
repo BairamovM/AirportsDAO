@@ -1,6 +1,7 @@
 package com.solvd.javalab.dao.daoClass;
 
 import com.solvd.javalab.dao.entity.Luggage;
+import com.solvd.javalab.dao.interfaces.ILuggage;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class LuggageDAO implements DAO <Luggage> {
+public class LuggageDAO implements ILuggage {
 
     private static final Logger logDAO = Logger.getLogger(LuggageDAO.class);
 
