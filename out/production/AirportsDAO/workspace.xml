@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/ConnectionPool/ConnectionPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/AirplanesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/AirportClassesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/AirportDepartmentsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/AirportEmployeesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/AirportsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/AllFlightsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/ChiefPilotsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/CitiesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/ClassSeetsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/ConnectionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/CountriesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/DAOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/DeparturesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/EmployeePositionsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/EmployeeSalariesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/LettersDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/LuggageDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/NationalitiesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/PassengersDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/SeatsFlightDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/SecondPilotsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/StewardessesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/daoClass/TeamsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Airplanes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/AirportClasses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/AirportDepartments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/AirportEmployees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Airports.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/AllFlights.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/ChiefPilots.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Cities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/ClassSeets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Countries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Departures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/EmployeePositions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/EmployeeSalaries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/EntityException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Letters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Luggage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Nationalities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Passengers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/SeatsFlight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/SecondPilots.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Stewardesses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/entity/Teams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IAirplanes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IAirportClasses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IAirportDepartments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IAirportEmployees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IAirports.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IAllFlights.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IChiefPilots.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/ICities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IClassSeets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/ICountries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IDepartures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IEmployeePositions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IEmployeeSalaries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/ILetters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/ILuggage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/INationalities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IPassengers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/ISeatsFlight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/ISecondPilots.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/IStewardesses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/interfaces/ITeams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/javalab/dao/transaction/IPassengerTransaction.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="AirportsDAO" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="658" />
+    <option name="y" value="27" />
+    <option name="width" value="1141" />
+    <option name="height" value="666" />
+  </component>
+  <component name="ProjectId" id="1OUrisX7EVxtYYICu4yrh6ZqYCU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/logFiles/logg_File.log" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/log4j-1.2.17.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.airports.Main" />
+      <module name="AirportsDAO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.airports.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.airport.Main" />
+      <module name="AirportsDAO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.airport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.javalab.Main" />
+      <module name="AirportsDAO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.javalab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="" />
+      <created>1563620984209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563620984209</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added AllFlights, logic to setFunctions with log">
+      <created>1563775480901</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1563775480901</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added ChiefPilots, logic to setFunctions with log">
+      <created>1563776157920</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1563776157920</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added Cities, logic to setFunctions with log">
+      <created>1563776488795</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1563776488795</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added ClassSeets, logic to setFunctions with log">
+      <created>1563776781721</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1563776781721</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added Countries, logic to setFunctions with log">
+      <created>1563777092958</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1563777092958</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added Departures, logic to setFunctions with log">
+      <created>1563778363524</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1563778363524</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added EmployeePositions, logic to setFunctions with log">
+      <created>1563778606010</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1563778606010</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added EmployeeSalaries, logic to setFunctions with log">
+      <created>1563778894946</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1563778894946</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added Letters, logic to setFunctions with log">
+      <created>1563780156470</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1563780156470</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added Luggage, logic to setFunctions with log">
+      <created>1563780616363</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1563780616363</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added Nationalities, logic to setFunctions with log">
+      <created>1563780840269</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1563780840269</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added Passengers, logic to setFunctions with log">
+      <created>1563781551195</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1563781551195</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added SeatsFlight, logic to setFunctions with log">
+      <created>1563782153120</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1563782153120</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added SecondPilots, logic to setFunctions with log">
+      <created>1563782385903</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1563782385903</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added Stewardesses, logic to setFunctions with log">
+      <created>1563782534976</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1563782534977</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added Teams, logic to setFunctions with log">
+      <created>1563782923059</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1563782923059</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added DAOException">
+      <created>1563787458201</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1563787458201</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added package transaction, change daoClass name">
+      <created>1563790275018</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1563790275018</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added package transaction, change daoClass name">
+      <created>1563790423818</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1563790423818</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added logDAO to ConnectionFactory">
+      <created>1563790907178</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1563790907178</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Rewrite method getByID in AirplanesDAO">
+      <created>1563795912717</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1563795912717</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Rewrite all methods in AirplanesDAO">
+      <created>1563800151233</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1563800151233</updated>
+    </task>
+    <task id="LOCAL-00033" summary="commit">
+      <created>1563801413153</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1563801413153</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added AirportClassesDAO">
+      <created>1563804668010</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1563804668010</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added AirportDepartmentsDAO">
+      <created>1563805741610</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1563805741610</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Added AirportEmployeesDAO">
+      <created>1563807217338</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1563807217338</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added AirportsDAO">
+      <created>1563808021940</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1563808021940</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added AllFlightsDAO">
+      <created>1563809619266</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1563809619266</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added ChiefPilotsDAO">
+      <created>1563811492283</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1563811492283</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Added CitiesDAO">
+      <created>1563812632442</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1563812632442</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Added ClassSeetsDAO">
+      <created>1563813347830</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1563813347830</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Added CountriesDAO">
+      <created>1563814099620</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1563814099620</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Added DepartureDAO">
+      <created>1563816186783</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1563816186784</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Added EmployeePositionsDAO">
+      <created>1563816878697</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1563816878697</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Added EmployeeSalariesDAO">
+      <created>1563817377491</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1563817377491</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Added LettersDAO">
+      <created>1563819177430</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1563819177430</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Added LuggageDAO">
+      <created>1563819805372</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1563819805372</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Added NationalitiesDAO">
+      <created>1563820326292</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1563820326292</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Added PassengersDAO">
+      <created>1563825240484</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1563825240484</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Added SeatsFlightDAO">
+      <created>1563826101386</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1563826101387</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Added SecondPilotsDAO">
+      <created>1563827324639</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1563827324639</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added StewardessesDAO">
+      <created>1563827711077</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1563827711078</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Added TeamsDAO">
+      <created>1563828523111</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1563828523111</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Added PassengerTransaction">
+      <created>1563828888143</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1563828888143</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Added Interfaces">
+      <created>1563856361333</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1563856361333</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Added methods in Interfaces">
+      <created>1563857755089</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1563857755089</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Added Interfaces to DAOclasses">
+      <created>1563858442417</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1563858442417</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Added transaction">
+      <created>1563862986962</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1563862986962</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Added transaction">
+      <created>1563865489951</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1563865489951</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Added AirportClassesDAO" />
+    <MESSAGE value="Added AirportDepartmentsDAO" />
+    <MESSAGE value="Added AirportEmployeesDAO" />
+    <MESSAGE value="Added AirportsDAO" />
+    <MESSAGE value="Added AllFlightsDAO" />
+    <MESSAGE value="Added ChiefPilotsDAO" />
+    <MESSAGE value="Added CitiesDAO" />
+    <MESSAGE value="Added ClassSeetsDAO" />
+    <MESSAGE value="Added CountriesDAO" />
+    <MESSAGE value="Added DepartureDAO" />
+    <MESSAGE value="Added EmployeePositionsDAO" />
+    <MESSAGE value="Added EmployeeSalariesDAO" />
+    <MESSAGE value="Added LettersDAO" />
+    <MESSAGE value="Added LuggageDAO" />
+    <MESSAGE value="Added NationalitiesDAO" />
+    <MESSAGE value="Added PassengersDAO" />
+    <MESSAGE value="Added SeatsFlightDAO" />
+    <MESSAGE value="Added SecondPilotsDAO" />
+    <MESSAGE value="Added StewardessesDAO" />
+    <MESSAGE value="Added TeamsDAO" />
+    <MESSAGE value="Added PassengerTransaction" />
+    <MESSAGE value="Added Interfaces" />
+    <MESSAGE value="Added methods in Interfaces" />
+    <MESSAGE value="Added Interfaces to DAOclasses" />
+    <MESSAGE value="Added transaction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added transaction" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AirportsDAO</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
