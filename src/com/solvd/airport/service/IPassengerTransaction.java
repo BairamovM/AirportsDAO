@@ -1,10 +1,10 @@
 package com.solvd.airport.service;
 
-import com.solvd.airport.entity.Passengers;
-import com.solvd.airport.entity.SeatsFlight;
+import com.solvd.airport.entity.Passenger;
+import com.solvd.airport.entity.SeatFlight;
 
 public interface IPassengerTransaction {
 
-    void bookPlace(Passengers value1, SeatsFlight value2);
+    void bookPlace(Passenger value1, SeatFlight value2);
 
 }
