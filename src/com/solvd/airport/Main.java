@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-import com.solvd.airport.connectionPool.*;
+import com.solvd.airport.dao.connectionPool.ConnectionPool;
 
 public class Main {
 
