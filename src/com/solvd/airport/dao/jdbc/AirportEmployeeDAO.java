@@ -52,10 +52,10 @@ public class AirportEmployeeDAO implements IAirportEmployee {
                         airportEmployees.setGender(rSet.getString("gender"));
                         airportEmployees.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
                         airportEmployees.setPhoneNumber(rSet.getDouble("phoneNumber"));
-                        airportEmployees.setEmployeeSalaries_id(rSet.getLong("EmployeeSalaries_id"));
-                        airportEmployees.setEmployeePositions_id(rSet.getLong("EmployeePositions_id"));
-                        airportEmployees.setAirportDepartments_id(rSet.getLong("AirportDepartments_id"));
-                        airportEmployees.setNationalities_id(rSet.getLong("Nationalities_id"));
+                        //airportEmployees.setEmployeeSalary(rSet.getLong("EmployeeSalaries_id"));
+                        //airportEmployees.setEmployeePosition(rSet.getLong("EmployeePositions_id"));
+                        //airportEmployees.setAirportDepartment(rSet.getLong("AirportDepartments_id"));
+                        //airportEmployees.setNationality(rSet.getLong("Nationalities_id"));
                         return airportEmployees;
                     }
                 } finally {
@@ -122,10 +122,10 @@ public class AirportEmployeeDAO implements IAirportEmployee {
                         airportEmployees.setGender(rSet.getString("gender"));
                         airportEmployees.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
                         airportEmployees.setPhoneNumber(rSet.getDouble("phoneNumber"));
-                        airportEmployees.setEmployeeSalaries_id(rSet.getLong("EmployeeSalaries_id"));
-                        airportEmployees.setEmployeePositions_id(rSet.getLong("EmployeePositions_id"));
-                        airportEmployees.setAirportDepartments_id(rSet.getLong("AirportDepartments_id"));
-                        airportEmployees.setNationalities_id(rSet.getLong("Nationalities_id"));
+                        //airportEmployees.setEmployeeSalary(rSet.getLong("EmployeeSalaries_id"));
+                        //airportEmployees.setEmployeePosition(rSet.getLong("EmployeePositions_id"));
+                        //airportEmployees.setAirportDepartment(rSet.getLong("AirportDepartments_id"));
+                        //airportEmployees.setNationality(rSet.getLong("Nationalities_id"));
                         airportEmployee.add(airportEmployees);
 
                     }
@@ -179,10 +179,10 @@ public class AirportEmployeeDAO implements IAirportEmployee {
                 prStatement.setString(3, airportEmployees.getGender());
                 prStatement.setDouble(4, airportEmployees.getPassportSerialNumber());
                 prStatement.setDouble(5, airportEmployees.getPhoneNumber());
-                prStatement.setLong(6, airportEmployees.getEmployeeSalaries_id());
-                prStatement.setLong(7, airportEmployees.getEmployeePositions_id());
-                prStatement.setLong(8, airportEmployees.getAirportDepartments_id());
-                prStatement.setLong(9, airportEmployees.getNationalities_id());
+                //prStatement.setLong(6, airportEmployees.getEmployeeSalary());
+                //prStatement.setLong(7, airportEmployees.getEmployeePosition());
+                //prStatement.setLong(8, airportEmployees.getAirportDepartment());
+                //prStatement.setLong(9, airportEmployees.getNationality());
 
                 prStatement.executeUpdate();
             } finally {
@@ -260,10 +260,10 @@ public class AirportEmployeeDAO implements IAirportEmployee {
                 prStatement.setString(3, airportEmployees.getGender());
                 prStatement.setDouble(4, airportEmployees.getPassportSerialNumber());
                 prStatement.setDouble(5, airportEmployees.getPhoneNumber());
-                prStatement.setLong(6, airportEmployees.getEmployeeSalaries_id());
-                prStatement.setLong(7, airportEmployees.getEmployeePositions_id());
-                prStatement.setLong(8, airportEmployees.getAirportDepartments_id());
-                prStatement.setLong(9, airportEmployees.getNationalities_id());
+                //prStatement.setLong(6, airportEmployees.getEmployeeSalary());
+                //prStatement.setLong(7, airportEmployees.getEmployeePosition());
+                //prStatement.setLong(8, airportEmployees.getAirportDepartment());
+                //prStatement.setLong(9, airportEmployees.getNationality());
 
                 prStatement.executeUpdate();
             } finally {

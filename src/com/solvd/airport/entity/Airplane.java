@@ -11,7 +11,7 @@ public class Airplane {
     private Long numberSeets;
     private Long rangeFlight;
     private Long carryingCapacity;
-    private Long Teams_id;
+    private Team team;
 
     public void setId(long id) {
 
@@ -79,7 +79,7 @@ public class Airplane {
         } catch (EntityException e) {
             logEntity.error("Value rangeFlight error = " + rangeFlight);
         }
-     }
+    }
 
     public Long getRangeFlight() {
         return rangeFlight;
@@ -103,22 +103,13 @@ public class Airplane {
         return carryingCapacity;
     }
 
-    public void setTeams_id(Long Teams_id) {
+    public void setTeam(Team team) {
 
-        try {
-            if (Teams_id <= 0) {
-                logEntity.error("Value Teams_id error" + Teams_id);
-                throw new EntityException("Value Teams_id error" + Teams_id);
-            } else if (Teams_id >= 1) {
-                this.Teams_id = Teams_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value Teams_id error" + Teams_id);
-        }
+        this.team = team;
     }
 
-    public Long getTeams_id() {
-        return Teams_id;
+    public Team getTeam() {
+        return team;
     }
 
 }

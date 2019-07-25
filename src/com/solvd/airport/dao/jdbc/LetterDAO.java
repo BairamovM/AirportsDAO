@@ -51,7 +51,7 @@ public class LetterDAO implements ILetter {
                         letters.setSenderAddress(rSet.getString("senderAddress"));
                         letters.setReceiverAddress(rSet.getString("receiverAddress"));
                         letters.setWeight(rSet.getLong("weight"));
-                        letters.setDepartures_id(rSet.getLong("Departures_id"));
+                        //letters.setDeparture(rSet.getLong("Departures_id"));
                         return letters;
                     }
                 } finally {
@@ -118,7 +118,7 @@ public class LetterDAO implements ILetter {
                         letters.setSenderAddress(rSet.getString("senderAddress"));
                         letters.setReceiverAddress(rSet.getString("receiverAddress"));
                         letters.setWeight(rSet.getLong("weight"));
-                        letters.setDepartures_id(rSet.getLong("Departures_id"));
+                        //letters.setDeparture(rSet.getLong("Departures_id"));
                         letter.add(letters);
 
                     }
@@ -172,7 +172,7 @@ public class LetterDAO implements ILetter {
                 prStatement.setString(3, letters.getSenderAddress());
                 prStatement.setString(4, letters.getReceiverAddress());
                 prStatement.setLong(5, letters.getWeight());
-                prStatement.setLong(6, letters.getDepartures_id());
+                //prStatement.setLong(6, letters.getDeparture());
 
                 prStatement.executeUpdate();
             } finally {
@@ -250,7 +250,7 @@ public class LetterDAO implements ILetter {
                 prStatement.setString(3, letters.getSenderAddress());
                 prStatement.setString(4, letters.getReceiverAddress());
                 prStatement.setLong(5, letters.getWeight());
-                prStatement.setLong(6, letters.getDepartures_id());
+                //prStatement.setLong(6, letters.getDeparture());
 
                 prStatement.executeUpdate();
             } finally {

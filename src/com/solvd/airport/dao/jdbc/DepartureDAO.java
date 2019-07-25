@@ -47,8 +47,8 @@ public class DepartureDAO  implements IDeparture {
                         departures = new Departure();
                         departures.setId(rSet.getLong("id"));
                         departures.setDepartureDate(rSet.getString("departureDate"));
-                        departures.setAirplanes_id(rSet.getLong("Airplanes_id"));
-                        departures.setAllFlights_id(rSet.getLong("AllFlights_id"));
+                        //departures.setAirplane(rSet.getLong("Airplanes_id"));
+                        //departures.setAllFlight(rSet.getLong("AllFlights_id"));
                         return departures;
                     }
                 } finally {
@@ -111,8 +111,8 @@ public class DepartureDAO  implements IDeparture {
                         departures = new Departure();
                         departures.setId(rSet.getLong("id"));
                         departures.setDepartureDate(rSet.getString("departureDate"));
-                        departures.setAirplanes_id(rSet.getLong("Airplanes_id"));
-                        departures.setAllFlights_id(rSet.getLong("AllFlights_id"));
+                        //departures.setAirplane(rSet.getLong("Airplanes_id"));
+                        //departures.setAllFlight(rSet.getLong("AllFlights_id"));
                         departure.add(departures);
 
                     }
@@ -162,8 +162,8 @@ public class DepartureDAO  implements IDeparture {
                 prStatement = connection.prepareStatement(save);
 
                 prStatement.setString(1, departures.getDepartureDate());
-                prStatement.setLong(2, departures.getAirplanes_id());
-                prStatement.setLong(3, departures.getAllFlights_id());
+                //prStatement.setLong(2, departures.getAirplane());
+                //prStatement.setLong(3, departures.getAllFlight());
 
                 prStatement.executeUpdate();
             } finally {
@@ -237,8 +237,8 @@ public class DepartureDAO  implements IDeparture {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(update);
                 prStatement.setString(1, departures.getDepartureDate());
-                prStatement.setLong(2, departures.getAirplanes_id());
-                prStatement.setLong(3, departures.getAllFlights_id());
+                //prStatement.setLong(2, departures.getAirplane());
+                //prStatement.setLong(3, departures.getAllFlight());
 
                 prStatement.executeUpdate();
             } finally {

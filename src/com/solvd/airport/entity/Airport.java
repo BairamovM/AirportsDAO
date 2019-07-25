@@ -8,8 +8,8 @@ public class Airport {
 
     private Long id;
     private String nameAirport;
-    private Long AirportClasses_id;
-    private Long Countries_id;
+    private AirportClass airportClass;
+    private Country country;
 
     public Long getId() {
         return id;
@@ -47,39 +47,19 @@ public class Airport {
         }
     }
 
-    public Long getAirportClasses_id() {
-        return AirportClasses_id;
+    public AirportClass getAirportClass() {
+        return airportClass;
     }
 
-    public void setAirportClasses_id(Long airportClasses_id) {
-
-        try {
-            if (airportClasses_id <= 0) {
-                logEntity.error("Value airportClasses_id error = " + airportClasses_id);
-                throw new EntityException("Value airportClasses_id error = " + airportClasses_id);
-            } else if (airportClasses_id >= 1) {
-                this.AirportClasses_id = airportClasses_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value airportClasses_id error = " + airportClasses_id);
-        }
+    public void setAirportClass(AirportClass airportClass) {
+        this.airportClass = airportClass;
     }
 
-    public Long getCountries_id() {
-        return Countries_id;
+    public Country getCountry() {
+        return country;
     }
 
-    public void setCountries_id(Long countries_id) {
-
-        try {
-            if (countries_id <= 0) {
-                logEntity.error("Value countries_id error = " + countries_id);
-                throw new EntityException("Value countries_id error = " + countries_id);
-            } else if (countries_id >= 1) {
-                this.Countries_id = countries_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value countries_id error = " + countries_id);
-        }
+    public void setCountry(Country country) {
+        this.country = country;
     }
 }

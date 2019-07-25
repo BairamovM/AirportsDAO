@@ -12,7 +12,7 @@ public class Letter {
     private String senderAddress;
     private String receiverAddress;
     private Long weight;
-    private Long Departures_id;
+    private Departure departure;
 
     public Long getId() {
         return id;
@@ -122,21 +122,11 @@ public class Letter {
         }
     }
 
-    public Long getDepartures_id() {
-        return Departures_id;
+    public Departure getDeparture() {
+        return departure;
     }
 
-    public void setDepartures_id(Long departures_id) {
-
-        try {
-            if (departures_id <= 0) {
-                logEntity.error("Value departures_id error = " + departures_id);
-                throw new EntityException("Value departures_id error = " + departures_id);
-            } else if (departures_id >= 1) {
-                this.Departures_id = departures_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value departures_id error = " + departures_id);
-        }
+    public void setDeparture(Departure departure) {
+        this.departure = departure;
     }
 }

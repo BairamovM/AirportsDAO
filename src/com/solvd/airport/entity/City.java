@@ -8,7 +8,7 @@ public class City {
 
     private Long id;
     private String nameCity;
-    private Long Countries_id;
+    private Country country;
 
     public Long getId() {
         return id;
@@ -46,21 +46,11 @@ public class City {
         }
     }
 
-    public Long getCountries_id() {
-        return Countries_id;
+    public Country getCountry() {
+        return country;
     }
 
-    public void setCountries_id(Long countries_id) {
-
-        try {
-            if (countries_id <= 0) {
-                logEntity.error("Value countries_id error = " + countries_id);
-                throw new EntityException("Value countries_id error = " + countries_id);
-            } else if (countries_id >= 1) {
-                this.Countries_id = countries_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value countries_id error = " + countries_id);
-        }
+    public void setCountry(Country country) {
+        this.country = country;
     }
 }

@@ -9,7 +9,7 @@ public class Luggage {
     private Long id;
     private Long barcode;
     private Long weight;
-    private Long Passengers_id;
+    private Passenger passenger;
 
     public Long getId() {
         return id;
@@ -65,21 +65,11 @@ public class Luggage {
         }
     }
 
-    public Long getPassengers_id() {
-        return Passengers_id;
+    public Passenger getPassenger() {
+        return passenger;
     }
 
-    public void setPassengers_id(Long passengers_id) {
-
-        try {
-            if (passengers_id <= 0) {
-                logEntity.error("Value passengers_id error = " + passengers_id);
-                throw new EntityException("Value passengers_id error = " + passengers_id);
-            } else if (passengers_id >= 1) {
-                this.Passengers_id = passengers_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value passengers_id error = " + passengers_id);
-        }
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
     }
 }

@@ -9,9 +9,9 @@ public class SeatFlight {
     private Long id;
     private Long numberSeet;
     private Long ticketPrice;
-    private Long Airplanes_id;
-    private Long Passengers_id;
-    private Long ClassSeets_id;
+    private Airplane airplane;
+    private Passenger passenger;
+    private ClassSeet classSeet;
 
     public Long getId() {
         return id;
@@ -67,57 +67,27 @@ public class SeatFlight {
         }
     }
 
-    public Long getAirplanes_id() {
-        return Airplanes_id;
+    public Airplane getAirplane() {
+        return airplane;
     }
 
-    public void setAirplanes_id(Long airplanes_id) {
-
-        try {
-            if (airplanes_id <= 0) {
-                logEntity.error("Value airplanes_id error = " + airplanes_id);
-                throw new EntityException("Value airplanes_id error = " + airplanes_id);
-            } else if (airplanes_id >= 1) {
-                this.Airplanes_id = airplanes_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value airplanes_id error = " + airplanes_id);
-        }
+    public void setAirplane(Airplane airplane) {
+        this.airplane = airplane;
     }
 
-    public Long getPassengers_id() {
-        return Passengers_id;
+    public Passenger getPassenger() {
+        return passenger;
     }
 
-    public void setPassengers_id(Long passengers_id) {
-
-        try {
-            if (passengers_id <= 0) {
-                logEntity.error("Value passengers_id error = " + passengers_id);
-                throw new EntityException("Value passengers_id error = " + passengers_id);
-            } else if (passengers_id >= 1) {
-                this.Passengers_id = passengers_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value passengers_id error = " + passengers_id);
-        }
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
     }
 
-    public Long getClassSeets_id() {
-        return ClassSeets_id;
+    public ClassSeet getClassSeet() {
+        return classSeet;
     }
 
-    public void setClassSeets_id(Long classSeets_id) {
-
-        try {
-            if (classSeets_id <= 0) {
-                logEntity.error("Value classSeets_id error = " + classSeets_id);
-                throw new EntityException("Value classSeets_id error = " + classSeets_id);
-            } else if (classSeets_id >= 1) {
-                this.ClassSeets_id = classSeets_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value classSeets_id error = " + classSeets_id);
-        }
+    public void setClassSeet(ClassSeet classSeet) {
+        this.classSeet = classSeet;
     }
 }

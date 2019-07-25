@@ -46,7 +46,7 @@ public class AirportDepartmentDAO implements IAirportDepartment {
                         airportDepartments = new AirportDepartment();
                         airportDepartments.setId(rSet.getLong("id"));
                         airportDepartments.setNameDepartment(rSet.getString("nameDepartment"));
-                        airportDepartments.setAirports_id(rSet.getLong("airports_id"));
+                        //airportDepartments.setAirport(rSet.getLong("airports_id"));
                         return airportDepartments;
                     }
                 } finally {
@@ -109,7 +109,7 @@ public class AirportDepartmentDAO implements IAirportDepartment {
                         airportDepartments = new AirportDepartment();
                         airportDepartments.setId(rSet.getLong("id"));
                         airportDepartments.setNameDepartment(rSet.getString("nameDepartment"));
-                        airportDepartments.setAirports_id(rSet.getLong("Airports_id"));
+                        //airportDepartments.setAirport(rSet.getLong("Airports_id"));
                         airportDepartment.add(airportDepartments);
 
                     }
@@ -159,7 +159,7 @@ public class AirportDepartmentDAO implements IAirportDepartment {
                 prStatement = connection.prepareStatement(save);
 
                 prStatement.setString(1, airportDepartments.getNameDepartment());
-                prStatement.setLong(2, airportDepartments.getAirports_id());
+                //prStatement.setLong(2, airportDepartments.getAirport());
 
                 prStatement.executeUpdate();
             } finally {
@@ -233,7 +233,7 @@ public class AirportDepartmentDAO implements IAirportDepartment {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(update);
                 prStatement.setString(1, airportDepartments.getNameDepartment());
-                prStatement.setLong(2, airportDepartments.getAirports_id());
+                //prStatement.setLong(2, airportDepartments.getAirport());
 
                 prStatement.executeUpdate();
             } finally {

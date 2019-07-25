@@ -12,7 +12,7 @@ public class Passenger {
     private String dateBirth;
     private String gender;
     private Double passportSerialNumber;
-    private Long Nationalities_id;
+    private Nationality nationality;
 
     public Long getId() {
         return id;
@@ -122,21 +122,11 @@ public class Passenger {
         }
     }
 
-    public Long getNationalities_id() {
-        return Nationalities_id;
+    public Nationality getNationality() {
+        return nationality;
     }
 
-    public void setNationalities_id(Long nationalities_id) {
-
-        try {
-            if (nationalities_id <= 0) {
-                logEntity.error("Value nationalities_id error = " + nationalities_id);
-                throw new EntityException("Value nationalities_id error = " + nationalities_id);
-            } else if (nationalities_id >= 1) {
-                this.Nationalities_id = nationalities_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value nationalities_id error = " + nationalities_id);
-        }
+    public void setNationality(Nationality nationality) {
+        this.nationality = nationality;
     }
 }

@@ -12,10 +12,10 @@ public class AirportEmployee {
     private String gender;
     private Double passportSerialNumber;
     private Double phoneNumber;
-    private Long EmployeeSalaries_id;
-    private Long EmployeePositions_id;
-    private Long AirportDepartments_id;
-    private Long Nationalities_id;
+    private EmployeeSalary employeeSalary;
+    private EmployeePosition employeePosition;
+    private AirportDepartment airportDepartment;
+    private Nationality nationality;
 
     public Long getId() {
         return id;
@@ -125,75 +125,35 @@ public class AirportEmployee {
         }
     }
 
-    public Long getEmployeeSalaries_id() {
-        return EmployeeSalaries_id;
+    public EmployeeSalary getEmployeeSalary() {
+        return employeeSalary;
     }
 
-    public void setEmployeeSalaries_id(Long employeeSalaries_id) {
-
-        try {
-            if (employeeSalaries_id <= 0) {
-                logEntity.error("Value employeeSalaries_id error = " + employeeSalaries_id);
-                throw new EntityException("Value employeeSalaries_id error = " + employeeSalaries_id);
-            } else if (employeeSalaries_id >= 1) {
-                this.EmployeeSalaries_id = employeeSalaries_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value employeeSalaries_id error = " + employeeSalaries_id);
-        }
+    public void setEmployeeSalary(EmployeeSalary employeeSalary) {
+        this.employeeSalary = employeeSalary;
     }
 
-    public Long getEmployeePositions_id() {
-        return EmployeePositions_id;
+    public EmployeePosition getEmployeePosition() {
+        return employeePosition;
     }
 
-    public void setEmployeePositions_id(Long employeePositions_id) {
-
-        try {
-            if (employeePositions_id <= 0) {
-                logEntity.error("Value employeePositions_id error = " + employeePositions_id);
-                throw new EntityException("Value employeePositions_id error = " + employeePositions_id);
-            } else if (employeePositions_id >= 1) {
-                this.EmployeePositions_id = employeePositions_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value employeePositions_id error = " + employeePositions_id);
-        }
+    public void setEmployeePosition(EmployeePosition employeePosition) {
+        this.employeePosition = employeePosition;
     }
 
-    public Long getAirportDepartments_id() {
-        return AirportDepartments_id;
+    public AirportDepartment getAirportDepartment() {
+        return airportDepartment;
     }
 
-    public void setAirportDepartments_id(Long airportDepartments_id) {
-
-        try {
-            if (airportDepartments_id <= 0) {
-                logEntity.error("Value airportDepartments_id error = " + airportDepartments_id);
-                throw new EntityException("Value airportDepartments_id error = " + airportDepartments_id);
-            } else if (airportDepartments_id >= 1) {
-                this.AirportDepartments_id = airportDepartments_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value airportDepartments_id error = " + airportDepartments_id);
-        }
+    public void setAirportDepartment(AirportDepartment airportDepartment) {
+        this.airportDepartment = airportDepartment;
     }
 
-    public Long getNationalities_id() {
-        return Nationalities_id;
+    public Nationality getNationality() {
+        return nationality;
     }
 
-    public void setNationalities_id(Long nationalities_id) {
-
-        try {
-            if (nationalities_id <= 0) {
-                logEntity.error("Value nationalities_id error = " + nationalities_id);
-                throw new EntityException("Value nationalities_id error = " + nationalities_id);
-            } else if (nationalities_id >= 1) {
-                this.Nationalities_id = nationalities_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value nationalities_id error = " + nationalities_id);
-        }
+    public void setNationality(Nationality nationality) {
+        this.nationality = nationality;
     }
 }

@@ -50,7 +50,7 @@ public class ChiefPilotDAO implements IChiefPilot {
                         chiefPilots.setLastName(rSet.getString("lastName"));
                         chiefPilots.setExperience(rSet.getLong("experience"));
                         chiefPilots.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        chiefPilots.setNationalities_id(rSet.getLong("Nationalities_id"));
+                        //chiefPilots.setNationality(rSet.getLong("Nationalities_id"));
                         return chiefPilots;
                     }
                 } finally {
@@ -116,7 +116,7 @@ public class ChiefPilotDAO implements IChiefPilot {
                         chiefPilots.setLastName(rSet.getString("lastName"));
                         chiefPilots.setExperience(rSet.getLong("experience"));
                         chiefPilots.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        chiefPilots.setNationalities_id(rSet.getLong("Nationalities_id"));
+                        //chiefPilots.setNationality(rSet.getLong("Nationalities_id"));
                         chiefPilot.add(chiefPilots);
 
                     }
@@ -169,7 +169,7 @@ public class ChiefPilotDAO implements IChiefPilot {
                 prStatement.setString(2, chiefPilots.getLastName());
                 prStatement.setLong(3, chiefPilots.getExperience());
                 prStatement.setDouble(4, chiefPilots.getPassportSerialNumber());
-                prStatement.setLong(5, chiefPilots.getNationalities_id());
+                //prStatement.setLong(5, chiefPilots.getNationality());
 
                 prStatement.executeUpdate();
             } finally {
@@ -246,7 +246,7 @@ public class ChiefPilotDAO implements IChiefPilot {
                 prStatement.setString(2, chiefPilots.getLastName());
                 prStatement.setLong(3, chiefPilots.getExperience());
                 prStatement.setDouble(4, chiefPilots.getPassportSerialNumber());
-                prStatement.setLong(5, chiefPilots.getNationalities_id());
+                //prStatement.setLong(5, chiefPilots.getNationality());
 
                 prStatement.executeUpdate();
             } finally {

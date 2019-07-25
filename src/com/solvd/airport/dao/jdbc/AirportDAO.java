@@ -47,8 +47,8 @@ public class AirportDAO implements IAirport {
                         airports = new Airport();
                         airports.setId(rSet.getLong("id"));
                         airports.setNameAirport(rSet.getString("nameAirport"));
-                        airports.setAirportClasses_id(rSet.getLong("AirportClasses_id"));
-                        airports.setCountries_id(rSet.getLong("Countries_id"));
+                        //airports.setAirportClass(rSet.getLong("AirportClasses_id"));
+                        //airports.setCountry(rSet.getLong("Countries_id"));
                         return airports;
                     }
                 } finally {
@@ -111,8 +111,8 @@ public class AirportDAO implements IAirport {
                         airports = new Airport();
                         airports.setId(rSet.getLong("id"));
                         airports.setNameAirport(rSet.getString("nameAirport"));
-                        airports.setAirportClasses_id(rSet.getLong("AirportClasses_id"));
-                        airports.setCountries_id(rSet.getLong("Countries_id"));
+                        //airports.setAirportClass(rSet.getLong("AirportClasses_id"));
+                        //airports.setCountry(rSet.getLong("Countries_id"));
                         airport.add(airports);
 
                     }
@@ -162,8 +162,8 @@ public class AirportDAO implements IAirport {
                 prStatement = connection.prepareStatement(save);
 
                 prStatement.setString(1, airports.getNameAirport());
-                prStatement.setLong(2, airports.getAirportClasses_id());
-                prStatement.setLong(3, airports.getCountries_id());
+                //prStatement.setLong(2, airports.getAirportClass());
+                //prStatement.setLong(3, airports.getCountry());
 
                 prStatement.executeUpdate();
             } finally {
@@ -237,8 +237,8 @@ public class AirportDAO implements IAirport {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(update);
                 prStatement.setString(1, airports.getNameAirport());
-                prStatement.setLong(2, airports.getAirportClasses_id());
-                prStatement.setLong(3, airports.getCountries_id());
+                //prStatement.setTeam(2, airports.getAirportClass());
+                //prStatement.setTeam(3, airports.getCountry());
 
                 prStatement.executeUpdate();
             } finally {

@@ -8,7 +8,7 @@ public class AirportDepartment {
 
     private Long id;
     private String nameDepartment;
-    private Long Airports_id;
+    private Airport airport;
 
     public Long getId() {
         return id;
@@ -46,21 +46,11 @@ public class AirportDepartment {
         }
     }
 
-    public Long getAirports_id() {
-        return Airports_id;
+    public Airport getAirport() {
+        return airport;
     }
 
-    public void setAirports_id(Long airports_id) {
-
-        try {
-            if (airports_id <= 0) {
-                logEntity.error("Value airports_id error = " + airports_id);
-                throw new EntityException("Value airports_id error = " + airports_id);
-            } else if (airports_id >= 1) {
-                this.Airports_id = airports_id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value airports_id error = " + airports_id);
-        }
+    public void setAirport(Airport airport) {
+        this.airport = airport;
     }
 }

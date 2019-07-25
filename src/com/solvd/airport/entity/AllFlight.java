@@ -8,8 +8,8 @@ public class AllFlight {
 
     private Long id;
     private Double numberFlight;
-    private Long idDepartureAirport;
-    private Long idAirportArrival;
+    private Airport idDepartureAirport;
+    private Airport idAirportArrival;
     private Long flightTime;
 
     public Long getId() {
@@ -48,40 +48,20 @@ public class AllFlight {
         }
     }
 
-    public Long getIdDepartureAirport() {
+    public Airport getIdDepartureAirport() {
         return idDepartureAirport;
     }
 
-    public void setIdDepartureAirport(Long idDepartureAirport) {
-
-        try {
-            if (idDepartureAirport <= 0) {
-                logEntity.error("Value idDepartureAirport error = " + idDepartureAirport);
-                throw new EntityException("Value idDepartureAirport error = " + idDepartureAirport);
-            } else if (idDepartureAirport >= 1) {
-                this.idDepartureAirport = idDepartureAirport;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value idDepartureAirport error = " + idDepartureAirport);
-        }
+    public void setIdDepartureAirport(Airport idDepartureAirport) {
+        this.idDepartureAirport = idDepartureAirport;
     }
 
-    public Long getIdAirportArrival() {
+    public Airport getIdAirportArrival() {
         return idAirportArrival;
     }
 
-    public void setIdAirportArrival(Long idAirportArrival) {
-
-        try {
-            if (idAirportArrival <= 0) {
-                logEntity.error("Value idAirportArrival error = " + idAirportArrival);
-                throw new EntityException("Value idAirportArrival error = " + idAirportArrival);
-            } else if (idAirportArrival >= 1) {
-                this.idAirportArrival = idAirportArrival;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value idAirportArrival error = " + idAirportArrival);
-        }
+    public void setIdAirportArrival(Airport idAirportArrival) {
+        this.idAirportArrival = idAirportArrival;
     }
 
     public Long getFlightTime() {
