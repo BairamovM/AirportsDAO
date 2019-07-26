@@ -152,7 +152,7 @@ public class SeatFlightDAO implements ISeatFlight {
     }
 
     @Override
-    public void save(SeatFlight seatsFlight) {
+    public SeatFlight save(SeatFlight seatsFlight) {
 
         logDAO.trace("Update Data in seatsFlight");
         Connection connection = null;
@@ -191,6 +191,7 @@ public class SeatFlightDAO implements ISeatFlight {
             }
         }
 
+        return seatsFlight;
     }
 
     @Override

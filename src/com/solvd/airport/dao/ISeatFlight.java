@@ -9,7 +9,7 @@ public interface ISeatFlight extends DAO <SeatFlight> {
 
     List<SeatFlight> getAll();
 
-    void save(SeatFlight value);
+    SeatFlight save(SeatFlight value);
 
     void delete(Long id);
 
