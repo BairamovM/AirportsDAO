@@ -152,7 +152,7 @@ public class ChiefPilotDAO implements IChiefPilot {
     }
 
     @Override
-    public void save(ChiefPilot chiefPilots) {
+    public ChiefPilot save(ChiefPilot chiefPilots) {
 
         logDAO.trace("Update Data in chiefPilots");
         Connection connection = null;
@@ -191,6 +191,7 @@ public class ChiefPilotDAO implements IChiefPilot {
             }
         }
 
+        return chiefPilots;
     }
 
     @Override
