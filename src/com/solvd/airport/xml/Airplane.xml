@@ -2,7 +2,7 @@
 
 <airplaneTeams>
     <airplane>
-    <name>Airplane Type
+    <name> Airplane Type
     <privateVariables>
         <id id="1" />
         <type type="An-148" />
