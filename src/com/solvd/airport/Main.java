@@ -87,7 +87,6 @@ public class Main {
         for (int i = 0; i < nodeList.getLength(); i++) {
             if (nodeList.item(i) instanceof Element) {
 
-                log.info(nodeList.item(i).getTextContent());
                 log.info(((Element) nodeList.item(i)).getTagName());
 
                 if (((Element) nodeList.item(i)).hasAttribute("firstname"))
