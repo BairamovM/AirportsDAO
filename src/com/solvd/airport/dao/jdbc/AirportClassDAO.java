@@ -143,7 +143,7 @@ public class AirportClassDAO implements IAirportClass {
     }
 
     @Override
-    public void save(AirportClass airportClasses) {
+    public AirportClass save(AirportClass airportClasses) {
 
         logDAO.trace("Update Data in airportClasses");
         Connection connection = null;
@@ -178,6 +178,7 @@ public class AirportClassDAO implements IAirportClass {
             }
         }
 
+        return airportClasses;
     }
 
     @Override

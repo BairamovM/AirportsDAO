@@ -143,7 +143,7 @@ public class EmployeeSalaryDAO implements IEmployeeSalary {
     }
 
     @Override
-    public void save(EmployeeSalary employeeSalaries) {
+    public EmployeeSalary save(EmployeeSalary employeeSalaries) {
 
         logDAO.trace("Update Data in employeeSalaries");
         Connection connection = null;
@@ -178,6 +178,7 @@ public class EmployeeSalaryDAO implements IEmployeeSalary {
             }
         }
 
+        return employeeSalaries;
     }
 
     @Override

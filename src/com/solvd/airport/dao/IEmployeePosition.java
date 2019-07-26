@@ -9,7 +9,7 @@ public interface IEmployeePosition extends DAO <EmployeePosition> {
 
     List<EmployeePosition> getAll();
 
-    void save(EmployeePosition value);
+    EmployeePosition save(EmployeePosition value);
 
     void delete(Long id);
 

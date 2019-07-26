@@ -9,7 +9,7 @@ public interface ITeam extends DAO <Team> {
 
     List<Team> getAll();
 
-    void save(Team value);
+    Team save(Team value);
 
     void delete(Long id);
 

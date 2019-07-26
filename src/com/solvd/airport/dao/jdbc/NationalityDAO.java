@@ -143,7 +143,7 @@ public class NationalityDAO implements INationality {
     }
 
     @Override
-    public void save(Nationality nationalities) {
+    public Nationality save(Nationality nationalities) {
 
         logDAO.trace("Update Data in nationalities");
         Connection connection = null;
@@ -178,6 +178,7 @@ public class NationalityDAO implements INationality {
             }
         }
 
+        return nationalities;
     }
 
     @Override

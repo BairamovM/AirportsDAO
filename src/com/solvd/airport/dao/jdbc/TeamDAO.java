@@ -148,7 +148,7 @@ public class TeamDAO implements ITeam {
     }
 
     @Override
-    public void save(Team teams) {
+    public Team save(Team teams) {
 
         logDAO.trace("Update Data in teams");
         Connection connection = null;
@@ -185,6 +185,7 @@ public class TeamDAO implements ITeam {
             }
         }
 
+        return teams;
     }
 
     @Override

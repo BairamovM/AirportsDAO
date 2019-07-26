@@ -9,7 +9,7 @@ public interface ILuggage extends DAO <Luggage> {
 
     List<Luggage> getAll();
 
-    void save(Luggage value);
+    Luggage save(Luggage value);
 
     void delete(Long id);
 

@@ -9,7 +9,7 @@ public interface IDeparture extends DAO <Departure> {
 
     List<Departure> getAll();
 
-    void save(Departure value);
+    Departure save(Departure value);
 
     void delete(Long id);
 

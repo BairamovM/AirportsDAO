@@ -143,7 +143,7 @@ public class ClassSeetDAO implements IClassSeet {
     }
 
     @Override
-    public void save(ClassSeet classSeets) {
+    public ClassSeet save(ClassSeet classSeets) {
 
         logDAO.trace("Update Data in classSeets");
         Connection connection = null;
@@ -178,6 +178,7 @@ public class ClassSeetDAO implements IClassSeet {
             }
         }
 
+        return classSeets;
     }
 
     @Override

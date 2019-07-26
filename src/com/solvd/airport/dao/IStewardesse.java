@@ -9,7 +9,7 @@ public interface IStewardesse extends DAO <Stewardesse> {
 
     List<Stewardesse> getAll();
 
-    void save(Stewardesse value);
+    Stewardesse save(Stewardesse value);
 
     void delete(Long id);
 

@@ -152,7 +152,7 @@ public class SecondPilotDAO implements ISecondPilot {
     }
 
     @Override
-    public void save(SecondPilot secondPilots) {
+    public SecondPilot save(SecondPilot secondPilots) {
 
         logDAO.trace("Update Data in secondPilots");
         Connection connection = null;
@@ -191,6 +191,7 @@ public class SecondPilotDAO implements ISecondPilot {
             }
         }
 
+        return secondPilots;
     }
 
     @Override

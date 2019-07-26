@@ -9,7 +9,7 @@ public interface ICity extends DAO <City> {
 
     List<City> getAll();
 
-    void save(City value);
+    City save(City value);
 
     void delete(Long id);
 

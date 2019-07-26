@@ -9,7 +9,7 @@ public interface IEmployeeSalary extends DAO <EmployeeSalary> {
 
     List<EmployeeSalary> getAll();
 
-    void save(EmployeeSalary value);
+    EmployeeSalary save(EmployeeSalary value);
 
     void delete(Long id);
 

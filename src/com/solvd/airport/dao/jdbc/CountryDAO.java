@@ -143,7 +143,7 @@ public class CountryDAO implements ICountry {
     }
 
     @Override
-    public void save(Country countries) {
+    public Country save(Country countries) {
 
         logDAO.trace("Update Data in airplane");
         Connection connection = null;
@@ -178,6 +178,7 @@ public class CountryDAO implements ICountry {
             }
         }
 
+        return countries;
     }
 
     @Override

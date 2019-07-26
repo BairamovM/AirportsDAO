@@ -151,7 +151,7 @@ public class AirplaneDAO implements IAirplane {
     }
 
     @Override
-    public void save(Airplane airplane) {
+    public Airplane save(Airplane airplane) {
 
         logDAO.trace("Update Data in airplane");
         Connection connection = null;
@@ -190,6 +190,7 @@ public class AirplaneDAO implements IAirplane {
             }
         }
 
+        return airplane;
     }
 
     @Override

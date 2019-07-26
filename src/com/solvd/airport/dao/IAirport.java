@@ -9,7 +9,7 @@ public interface IAirport extends DAO <Airport> {
 
     List<Airport> getAll();
 
-    void save(Airport value);
+    Airport save(Airport value);
 
     void delete(Long id);
 

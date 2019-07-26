@@ -9,7 +9,7 @@ public interface ILetter extends DAO <Letter> {
 
     List<Letter> getAll();
 
-    void save(Letter value);
+    Letter save(Letter value);
 
     void delete(Long id);
 

@@ -9,7 +9,7 @@ public interface ISecondPilot extends DAO <SecondPilot> {
 
     List<SecondPilot> getAll();
 
-    void save(SecondPilot value);
+    SecondPilot save(SecondPilot value);
 
     void delete(Long id);
 

@@ -152,7 +152,7 @@ public class StewardesseDAO implements IStewardesse {
     }
 
     @Override
-    public void save(Stewardesse stewardesses) {
+    public Stewardesse save(Stewardesse stewardesses) {
 
         logDAO.trace("Update Data in stewardesses");
         Connection connection = null;
@@ -191,6 +191,7 @@ public class StewardesseDAO implements IStewardesse {
             }
         }
 
+        return stewardesses;
     }
 
     @Override

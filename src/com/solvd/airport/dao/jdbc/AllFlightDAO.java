@@ -150,7 +150,7 @@ public class AllFlightDAO implements IAllFlight {
     }
 
     @Override
-    public void save(AllFlight allFlights) {
+    public AllFlight save(AllFlight allFlights) {
 
         logDAO.trace("Update Data in allFlights");
         Connection connection = null;
@@ -188,6 +188,7 @@ public class AllFlightDAO implements IAllFlight {
             }
         }
 
+        return allFlights;
     }
 
     @Override

@@ -143,7 +143,7 @@ public class EmployeePositionDAO implements IEmployeePosition {
     }
 
     @Override
-    public void save(EmployeePosition employeePositions) {
+    public EmployeePosition save(EmployeePosition employeePositions) {
 
         logDAO.trace("Update Data in employeePositions");
         Connection connection = null;
@@ -178,6 +178,7 @@ public class EmployeePositionDAO implements IEmployeePosition {
             }
         }
 
+        return  employeePositions;
     }
 
     @Override

@@ -145,7 +145,7 @@ public class CityDAO implements ICity {
     }
 
     @Override
-    public void save(City cities) {
+    public City save(City cities) {
 
         logDAO.trace("Update Data in cities");
         Connection connection = null;
@@ -181,6 +181,7 @@ public class CityDAO implements ICity {
             }
         }
 
+        return cities;
     }
 
     @Override

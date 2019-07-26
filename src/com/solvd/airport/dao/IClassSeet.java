@@ -9,7 +9,7 @@ public interface IClassSeet extends DAO <ClassSeet> {
 
     List<ClassSeet> getAll();
 
-    void save(ClassSeet value);
+    ClassSeet save(ClassSeet value);
 
     void delete(Long id);
 

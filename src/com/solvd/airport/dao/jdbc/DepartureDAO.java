@@ -148,7 +148,7 @@ public class DepartureDAO  implements IDeparture {
     }
 
     @Override
-    public void save(Departure departures) {
+    public Departure save(Departure departures) {
 
         logDAO.trace("Update Data in departures");
         Connection connection = null;
@@ -185,6 +185,7 @@ public class DepartureDAO  implements IDeparture {
             }
         }
 
+        return departures;
     }
 
     @Override

@@ -9,7 +9,7 @@ public interface IAllFlight extends DAO <AllFlight> {
 
     List<AllFlight> getAll();
 
-    void save(AllFlight value);
+    AllFlight save(AllFlight value);
 
     void delete(Long id);
 

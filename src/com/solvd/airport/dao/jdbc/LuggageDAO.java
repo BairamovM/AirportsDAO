@@ -147,7 +147,7 @@ public class LuggageDAO implements ILuggage {
     }
 
     @Override
-    public void save(Luggage luggage) {
+    public Luggage save(Luggage luggage) {
 
         logDAO.trace("Update Data in luggage");
         Connection connection = null;
@@ -184,6 +184,7 @@ public class LuggageDAO implements ILuggage {
             }
         }
 
+        return luggage;
     }
 
     @Override

@@ -154,7 +154,7 @@ public class LetterDAO implements ILetter {
     }
 
     @Override
-    public void save(Letter letters) {
+    public Letter save(Letter letters) {
 
         logDAO.trace("Update Data in letters");
         Connection connection = null;
@@ -194,6 +194,7 @@ public class LetterDAO implements ILetter {
             }
         }
 
+        return letters;
     }
 
     @Override

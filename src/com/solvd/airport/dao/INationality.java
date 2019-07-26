@@ -9,7 +9,7 @@ public interface INationality extends DAO <Nationality> {
 
     List<Nationality> getAll();
 
-    void save(Nationality value);
+    Nationality save(Nationality value);
 
     void delete(Long id);
 
