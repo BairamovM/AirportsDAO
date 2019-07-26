@@ -3,7 +3,7 @@ package com.solvd.airport.dao;
 import com.solvd.airport.entity.AirportClass;
 import java.util.List;
 
-public interface IAirportClass {
+public interface IAirportClass extends DAO <AirportClass> {
 
     AirportClass getByID(Long id);
 

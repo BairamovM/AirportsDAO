@@ -3,7 +3,7 @@ package com.solvd.airport.dao;
 import com.solvd.airport.entity.ClassSeet;
 import java.util.List;
 
-public interface IClassSeet {
+public interface IClassSeet extends DAO <ClassSeet> {
 
     ClassSeet getByID(Long id);
 

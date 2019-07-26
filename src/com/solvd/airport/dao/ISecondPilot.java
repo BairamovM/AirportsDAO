@@ -3,7 +3,7 @@ package com.solvd.airport.dao;
 import com.solvd.airport.entity.SecondPilot;
 import java.util.List;
 
-public interface ISecondPilot {
+public interface ISecondPilot extends DAO <SecondPilot> {
 
     SecondPilot getByID(Long id);
 

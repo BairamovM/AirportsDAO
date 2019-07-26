@@ -3,7 +3,7 @@ package com.solvd.airport.dao;
 import com.solvd.airport.entity.Team;
 import java.util.List;
 
-public interface ITeam {
+public interface ITeam extends DAO <Team> {
 
     Team getByID(Long id);
 

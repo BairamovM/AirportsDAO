@@ -3,7 +3,7 @@ package com.solvd.airport.dao;
 import com.solvd.airport.entity.SeatFlight;
 import java.util.List;
 
-public interface ISeatFlight {
+public interface ISeatFlight extends DAO <SeatFlight> {
 
     SeatFlight getByID(Long id);
 

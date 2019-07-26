@@ -3,7 +3,7 @@ package com.solvd.airport.dao;
 import com.solvd.airport.entity.Letter;
 import java.util.List;
 
-public interface ILetter {
+public interface ILetter extends DAO <Letter> {
 
     Letter getByID(Long id);
 
