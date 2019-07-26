@@ -2,35 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirplaneDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirplaneDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportDepartmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportDepartmentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportEmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportEmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AllFlightDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AllFlightDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/ChiefPilotDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/ChiefPilotDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/CityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/DepartureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/DepartureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/LetterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/LetterDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/LuggageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/LuggageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/PassengerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/PassengerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/SeatFlightDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/SeatFlightDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/SecondPilotDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/SecondPilotDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/StewardesseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/StewardesseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/Airplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/Airport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/AirportDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/AirportDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/AirportEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/AirportEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/AllFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/AllFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/ChiefPilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/ChiefPilot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Departure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/Departure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Letter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/Letter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Luggage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/Luggage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/SeatFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/SeatFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/SecondPilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/SecondPilot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Stewardesse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/Stewardesse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/entity/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirportsDAO/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirportsDAO/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAllFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAllFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IChiefPilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IChiefPilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ICity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/ICity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IClassSeet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IClassSeet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ICountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/ICountry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IDeparture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IDeparture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IEmployeePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IEmployeePosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IEmployeeSalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IEmployeeSalary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ILetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/ILetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ILuggage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/ILuggage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/INationality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/INationality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IPassenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IPassenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ISeatFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/ISeatFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ISecondPilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/ISecondPilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IStewardesse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/IStewardesse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ITeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solvd/airport/dao/ITeam.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,13 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Added ClassSeets, logic to setFunctions with log">
-      <created>1563776781721</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1563776781721</updated>
     </task>
     <task id="LOCAL-00015" summary="Added Countries, logic to setFunctions with log">
       <created>1563777092958</created>
@@ -486,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564057911777</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="change type variables_id">
+      <created>1564071655828</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1564071655828</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView">
@@ -527,7 +520,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Added AirportDepartmentsDAO" />
     <MESSAGE value="Added AirportEmployeesDAO" />
     <MESSAGE value="Added AirportsDAO" />
     <MESSAGE value="Added AllFlightsDAO" />
@@ -552,7 +544,8 @@
     <MESSAGE value="Added Interfaces to DAOclasses" />
     <MESSAGE value="Added transaction" />
     <MESSAGE value="change name package" />
-    <option name="LAST_COMMIT_MESSAGE" value="change name package" />
+    <MESSAGE value="change type variables_id" />
+    <option name="LAST_COMMIT_MESSAGE" value="change type variables_id" />
   </component>
   <component name="masterDetails">
     <states>

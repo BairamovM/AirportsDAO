@@ -9,7 +9,7 @@ public interface IPassenger extends DAO <Passenger> {
 
     List<Passenger> getAll();
 
-    void save(Passenger value);
+    Passenger save(Passenger value);
 
     void delete(Long id);
 

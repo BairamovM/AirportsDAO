@@ -160,7 +160,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
     }
 
     @Override
-    public void save(Passenger passengers) {
+    public Passenger save(Passenger passengers) {
 
         logDAO.trace("Update Data in passengers");
         Connection connection = null;
@@ -200,6 +200,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
             }
         }
 
+        return passengers;
     }
 
     @Override
