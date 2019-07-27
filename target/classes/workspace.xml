@@ -2,81 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/DAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirplane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportDepartment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAirportEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IAllFlight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IChiefPilot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ICity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IClassSeet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ICountry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IDeparture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IEmployeePosition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IEmployeeSalary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ILetter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ILuggage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/INationality.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IPassenger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ISeatFlight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ISecondPilot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/IStewardesse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/ITeam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/connectionPool/ConnectionPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirplaneDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportClassDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportDepartmentDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AirportEmployeeDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/AllFlightDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/ChiefPilotDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/CityDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/ClassSeetDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/ConnectionFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/CountryDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/DAOException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/DepartureDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/EmployeePositionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/EmployeeSalaryDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/LetterDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/LuggageDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/NationalityDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/PassengerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/SeatFlightDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/SecondPilotDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/StewardesseDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/dao/jdbc/TeamDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Airplane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Airport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/AirportClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/AirportDepartment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/AirportEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/AllFlight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/ChiefPilot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/City.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/ClassSeet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Country.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Departure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/EmployeePosition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/EmployeeSalary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/EntityException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Letter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Luggage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Nationality.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Passenger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/SeatFlight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/SecondPilot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Stewardesse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/entity/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/service/ChiefPilotService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/service/IPassengerTransaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/service/PassengerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/service/SeatsFlightServise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solvd/airport/xml/Airplane.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/connectionPool/newfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/AirportsDAO.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -123,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/logFiles/logg_File.log" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/log4j-1.2.17.jar!/" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
@@ -198,13 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Added SecondPilots, logic to setFunctions with log">
-      <created>1563782385903</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1563782385903</updated>
     </task>
     <task id="LOCAL-00025" summary="Added Stewardesses, logic to setFunctions with log">
       <created>1563782534976</created>
@@ -542,17 +470,15 @@
       <option name="project" value="LOCAL" />
       <updated>1564125462038</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Maven added settings">
+      <created>1564214042192</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1564214042193</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -583,7 +509,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Added CountriesDAO" />
     <MESSAGE value="Added DepartureDAO" />
     <MESSAGE value="Added EmployeePositionsDAO" />
     <MESSAGE value="Added EmployeeSalariesDAO" />
@@ -608,78 +533,7 @@
     <MESSAGE value="SeatsFlight Servise" />
     <MESSAGE value="change type Function save" />
     <MESSAGE value="XML added" />
-    <option name="LAST_COMMIT_MESSAGE" value="XML added" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>AirportsDAO</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <MESSAGE value="Maven added settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maven added settings" />
   </component>
 </project>
