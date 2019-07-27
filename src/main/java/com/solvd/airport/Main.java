@@ -70,7 +70,7 @@ public class Main {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = factory.newDocumentBuilder();
-        Document document = documentBuilder.parse(new File("src/com/solvd/airport/xml/Airplane.xml"));
+        Document document = documentBuilder.parse(new File("C:src/main/java/com/solvd/airport/xml/Airplane.xml"));
 
         Element element = document.getDocumentElement();
         log.info(element.getTagName());
