@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/connectionPool/newfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/AirportsDAO.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/libraries/Maven__mysql_mysql_connector_java_8_0_17.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +65,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="instant.run" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -133,20 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Added Stewardesses, logic to setFunctions with log">
-      <created>1563782534976</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1563782534977</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Added Teams, logic to setFunctions with log">
-      <created>1563782923059</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1563782923059</updated>
     </task>
     <task id="LOCAL-00027" summary="Added DAOException">
       <created>1563787458201</created>
@@ -477,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564214042193</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Maven added settings">
+      <created>1564250252741</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1564250252741</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Maven added settings">
+      <created>1564250377715</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1564250377722</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -48,7 +48,6 @@ com\solvd\airport\dao\IEmployeePosition.class
 com\solvd\airport\dao\jdbc\NationalityDAO.class
 com\solvd\airport\entity\ClassSeet.class
 com\solvd\airport\Main.class
-com\solvd\airport\dao\connectionPool\newfile.class
 com\solvd\airport\dao\jdbc\AirplaneDAO.class
 com\solvd\airport\entity\Team.class
 com\solvd\airport\dao\jdbc\AirportDepartmentDAO.class

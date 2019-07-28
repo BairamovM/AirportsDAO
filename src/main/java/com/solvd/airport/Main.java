@@ -27,6 +27,7 @@ public class Main {
 
     private static final Logger log = Logger.getLogger(Main.class);
 
+
     public static void main (String[] args) throws SQLException, ExecutionException, InterruptedException, ParserConfigurationException, SAXException, IOException {
 
     log.info("First log message");
