@@ -2,6 +2,8 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class AirportEmployee {
 
     private static final Logger logEntity = Logger.getLogger(AirportEmployee.class);
@@ -12,10 +14,10 @@ public class AirportEmployee {
     private String gender;
     private Double passportSerialNumber;
     private Double phoneNumber;
-    private EmployeeSalary employeeSalary;
-    private EmployeePosition employeePosition;
-    private AirportDepartment airportDepartment;
-    private Nationality nationality;
+    private List <EmployeeSalary> employeeSalary;
+    private List <EmployeePosition> employeePosition;
+    private List <AirportDepartment> airportDepartment;
+    private List <Nationality> nationality;
 
     public Long getId() {
         return id;
@@ -125,35 +127,35 @@ public class AirportEmployee {
         }
     }
 
-    public EmployeeSalary getEmployeeSalary() {
+    public List <EmployeeSalary> getEmployeeSalary() {
         return employeeSalary;
     }
 
-    public void setEmployeeSalary(EmployeeSalary employeeSalary) {
+    public void setEmployeeSalary(List <EmployeeSalary> employeeSalary) {
         this.employeeSalary = employeeSalary;
     }
 
-    public EmployeePosition getEmployeePosition() {
+    public List <EmployeePosition> getEmployeePosition() {
         return employeePosition;
     }
 
-    public void setEmployeePosition(EmployeePosition employeePosition) {
+    public void setEmployeePosition(List <EmployeePosition> employeePosition) {
         this.employeePosition = employeePosition;
     }
 
-    public AirportDepartment getAirportDepartment() {
+    public List <AirportDepartment> getAirportDepartment() {
         return airportDepartment;
     }
 
-    public void setAirportDepartment(AirportDepartment airportDepartment) {
+    public void setAirportDepartment(List <AirportDepartment> airportDepartment) {
         this.airportDepartment = airportDepartment;
     }
 
-    public Nationality getNationality() {
+    public List <Nationality> getNationality() {
         return nationality;
     }
 
-    public void setNationality(Nationality nationality) {
+    public void setNationality(List <Nationality> nationality) {
         this.nationality = nationality;
     }
 }

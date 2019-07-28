@@ -2,6 +2,8 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class SeatFlight {
 
     private static final Logger logEntity = Logger.getLogger(SeatFlight.class);
@@ -9,9 +11,9 @@ public class SeatFlight {
     private Long id;
     private Long numberSeet;
     private Long ticketPrice;
-    private Airplane airplane;
+    private List <Airplane> airplane;
     private Passenger passenger;
-    private ClassSeet classSeet;
+    private List <ClassSeet> classSeet;
 
     public Long getId() {
         return id;
@@ -67,11 +69,11 @@ public class SeatFlight {
         }
     }
 
-    public Airplane getAirplane() {
+    public List <Airplane> getAirplane() {
         return airplane;
     }
 
-    public void setAirplane(Airplane airplane) {
+    public void setAirplane(List <Airplane> airplane) {
         this.airplane = airplane;
     }
 
@@ -83,11 +85,11 @@ public class SeatFlight {
         this.passenger = passenger;
     }
 
-    public ClassSeet getClassSeet() {
+    public List <ClassSeet> getClassSeet() {
         return classSeet;
     }
 
-    public void setClassSeet(ClassSeet classSeet) {
+    public void setClassSeet(List <ClassSeet> classSeet) {
         this.classSeet = classSeet;
     }
 }

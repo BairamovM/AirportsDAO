@@ -2,14 +2,16 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class Team {
 
     private static final Logger logEntity = Logger.getLogger(Team.class);
 
     private Long id;
-    private ChiefPilot chiefPilot;
-    private SecondPilot secondPilot;
-    private Stewardesse stewardesse;
+    private List <ChiefPilot> chiefPilot;
+    private List <SecondPilot> secondPilot;
+    private List <Stewardesse> stewardesse;
 
     public Long getId() {
         return id;
@@ -29,27 +31,27 @@ public class Team {
         }
     }
 
-    public ChiefPilot getChiefPilot() {
+    public List <ChiefPilot> getChiefPilot() {
         return chiefPilot;
     }
 
-    public void setChiefPilot(ChiefPilot chiefPilot) {
+    public void setChiefPilot(List <ChiefPilot> chiefPilot) {
                 this.chiefPilot = chiefPilot;
     }
 
-    public SecondPilot getSecondPilot() {
+    public List <SecondPilot> getSecondPilot() {
         return secondPilot;
     }
 
-    public void setSecondPilot(SecondPilot secondPilot) {
+    public void setSecondPilot(List <SecondPilot> secondPilot) {
                 this.secondPilot = secondPilot;
     }
 
-    public Stewardesse getStewardesse() {
+    public List <Stewardesse> getStewardesse() {
         return stewardesse;
     }
 
-    public void setStewardesse(Stewardesse stewardesse) {
+    public void setStewardesse(List <Stewardesse> stewardesse) {
                 this.stewardesse = stewardesse;
     }
 }

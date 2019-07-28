@@ -2,6 +2,8 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class Letter {
 
     private static final Logger logEntity = Logger.getLogger(Letter.class);
@@ -12,7 +14,7 @@ public class Letter {
     private String senderAddress;
     private String receiverAddress;
     private Long weight;
-    private Departure departure;
+    private List <Departure> departure;
 
     public Long getId() {
         return id;
@@ -122,11 +124,11 @@ public class Letter {
         }
     }
 
-    public Departure getDeparture() {
+    public List <Departure> getDeparture() {
         return departure;
     }
 
-    public void setDeparture(Departure departure) {
+    public void setDeparture(List <Departure> departure) {
         this.departure = departure;
     }
 }

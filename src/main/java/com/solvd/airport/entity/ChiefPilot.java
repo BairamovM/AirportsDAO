@@ -2,6 +2,8 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class ChiefPilot {
 
     private static final Logger logEntity = Logger.getLogger(ChiefPilot.class);
@@ -11,7 +13,7 @@ public class ChiefPilot {
     private String lastName;
     private Long experience;
     private Double passportSerialNumber;
-    private Nationality nationality;
+    private List <Nationality> nationality;
 
     public Long getId() {
         return id;
@@ -103,11 +105,11 @@ public class ChiefPilot {
         }
     }
 
-    public Nationality getNationality() {
+    public List <Nationality> getNationality() {
         return nationality;
     }
 
-    public void setNationality(Nationality nationality) {
+    public void setNationality(List <Nationality> nationality) {
         this.nationality = nationality;
     }
 }

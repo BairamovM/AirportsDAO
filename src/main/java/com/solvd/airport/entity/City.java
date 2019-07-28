@@ -2,13 +2,15 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class City {
 
     private static final Logger logEntity = Logger.getLogger(City.class);
 
     private Long id;
     private String nameCity;
-    private Country country;
+    private List <Country> country;
 
     public Long getId() {
         return id;
@@ -46,11 +48,11 @@ public class City {
         }
     }
 
-    public Country getCountry() {
+    public List <Country> getCountry() {
         return country;
     }
 
-    public void setCountry(Country country) {
+    public void setCountry(List <Country> country) {
         this.country = country;
     }
 }

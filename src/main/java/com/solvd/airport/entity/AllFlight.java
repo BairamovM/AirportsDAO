@@ -2,14 +2,16 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class AllFlight {
 
     private static final Logger logEntity = Logger.getLogger(AllFlight.class);
 
     private Long id;
     private Double numberFlight;
-    private Airport idDepartureAirport;
-    private Airport idAirportArrival;
+    private List <Airport> idDepartureAirport;
+    private List <Airport> idAirportArrival;
     private Long flightTime;
 
     public Long getId() {
@@ -48,19 +50,19 @@ public class AllFlight {
         }
     }
 
-    public Airport getIdDepartureAirport() {
+    public List <Airport> getIdDepartureAirport() {
         return idDepartureAirport;
     }
 
-    public void setIdDepartureAirport(Airport idDepartureAirport) {
+    public void setIdDepartureAirport(List <Airport> idDepartureAirport) {
         this.idDepartureAirport = idDepartureAirport;
     }
 
-    public Airport getIdAirportArrival() {
+    public List <Airport> getIdAirportArrival() {
         return idAirportArrival;
     }
 
-    public void setIdAirportArrival(Airport idAirportArrival) {
+    public void setIdAirportArrival(List <Airport> idAirportArrival) {
         this.idAirportArrival = idAirportArrival;
     }
 
