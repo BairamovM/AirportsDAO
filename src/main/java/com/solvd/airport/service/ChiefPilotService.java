@@ -7,27 +7,32 @@ import com.solvd.airport.dao.jdbc.ChiefPilotDAO;
 import com.solvd.airport.dao.jdbc.NationalityDAO;
 import com.solvd.airport.entity.ChiefPilot;
 
+import java.util.List;
+
 public class ChiefPilotService {
 
-    private INationality nationalityDAO = new NationalityDAO();
-    private IChiefPilot chiefPilotDAO = new ChiefPilotDAO();
+  //  private INationality nationalityDAO = new NationalityDAO();
+  //  private List <IChiefPilot> chiefPilotDAO =  new List<IChiefPilot>;
 
-    public ChiefPilot seeChiefPilot (Long id) {
 
-        ChiefPilot chiefPilot = new ChiefPilot();
-        chiefPilot = chiefPilotDAO.getByID(id);
-        chiefPilot.setNationality(nationalityDAO.getByID(chiefPilot.getId()));
+  //  public List <ChiefPilot> seeChiefPilot (Long id) {
 
-        return chiefPilot;
-    }
+    //    List <ChiefPilot> chiefPilot = new List <ChiefPilot>;
+        //chiefPilot = chiefPilotDAO.getByID(id);
+        //chiefPilot.setNationality(nationalityDAO.getByID(chiefPilot.getId()));
+        //chiefPilot.setNationality(nationalityDAO.getByID(chiefPilot.getId()));
 
-    public ChiefPilot saveNewChiefpilot (ChiefPilot chiefPilot) {
-        return chiefPilotDAO.save(chiefPilot);
-    }
 
-    public void deleteChiefpilotFromList (Long id) {
+      //  return chiefPilot;
+   // }
 
-        chiefPilotDAO.delete(id);
-    }
+   // public List <ChiefPilot> saveNewChiefpilot (List <ChiefPilot> chiefPilot) {
+        //return chiefPilotDAO.save(chiefPilot);
+   // }
+
+   // public void deleteChiefpilotFromList (Long id) {
+
+        //chiefPilotDAO.delete(id);
+   // }
 
 }

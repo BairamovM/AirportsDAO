@@ -45,6 +45,7 @@ C:\Users\Neuromancer\IdeaProjects\AirportsDAO\src\main\java\com\solvd\airport\da
 C:\Users\Neuromancer\IdeaProjects\AirportsDAO\src\main\java\com\solvd\airport\dao\jdbc\AirportDAO.java
 C:\Users\Neuromancer\IdeaProjects\AirportsDAO\src\main\java\com\solvd\airport\dao\jdbc\SeatFlightDAO.java
 C:\Users\Neuromancer\IdeaProjects\AirportsDAO\src\main\java\com\solvd\airport\dao\IAirplane.java
+C:\Users\Neuromancer\IdeaProjects\AirportsDAO\src\main\java\com\solvd\airport\dao\AbstractDAO.java
 C:\Users\Neuromancer\IdeaProjects\AirportsDAO\src\main\java\com\solvd\airport\dao\DAO.java
 C:\Users\Neuromancer\IdeaProjects\AirportsDAO\src\main\java\com\solvd\airport\dao\jdbc\NationalityDAO.java
 C:\Users\Neuromancer\IdeaProjects\AirportsDAO\src\main\java\com\solvd\airport\entity\AllFlight.java

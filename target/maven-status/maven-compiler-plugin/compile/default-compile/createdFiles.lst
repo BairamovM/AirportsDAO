@@ -4,6 +4,7 @@ com\solvd\airport\entity\Country.class
 com\solvd\airport\entity\EmployeeSalary.class
 com\solvd\airport\entity\Letter.class
 com\solvd\airport\entity\SeatFlight.class
+com\solvd\airport\dao\AbstractDAO.class
 com\solvd\airport\dao\jdbc\LuggageDAO.class
 com\solvd\airport\entity\AirportEmployee.class
 com\solvd\airport\dao\jdbc\EmployeePositionDAO.class
