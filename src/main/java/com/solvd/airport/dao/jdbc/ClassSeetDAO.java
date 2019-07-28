@@ -16,11 +16,11 @@ public class ClassSeetDAO implements IClassSeet {
 
     private static final Logger logDAO = Logger.getLogger(ClassSeetDAO.class);
 
-    public static final String getId = "SELECT * FROM ClassSeets WHERE id = ?";
-    public static final String getAll = "SELECT * FROM ClassSeets";
-    public static final String save = "INSERT INTO ClassSeets VALUES (?,?,?,?)";
-    public static final String delete = "DELETE FROM ClassSeets WHERE id =?";
-    public static final String update = "UPDATE ClassSeets SET classseets = ?, WHERE id =?";
+    public static final String GET_ID = "SELECT * FROM ClassSeets WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM ClassSeets";
+    public static final String SAVE = "INSERT INTO ClassSeets VALUES (?,?,?,?)";
+    public static final String DELETE = "DELETE FROM ClassSeets WHERE id =?";
+    public static final String UPDATE = "UPDATE ClassSeets SET classseets = ?, WHERE id =?";
 
     @Override
     public ClassSeet getByID(Long id) {
@@ -37,7 +37,7 @@ public class ClassSeetDAO implements IClassSeet {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -99,7 +99,7 @@ public class ClassSeetDAO implements IClassSeet {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -154,7 +154,7 @@ public class ClassSeetDAO implements IClassSeet {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, classSeets.getClassseets());
 
@@ -193,9 +193,9 @@ public class ClassSeetDAO implements IClassSeet {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -229,7 +229,7 @@ public class ClassSeetDAO implements IClassSeet {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, classSeets.getClassseets());
 
                 prStatement.executeUpdate();

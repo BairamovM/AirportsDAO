@@ -16,11 +16,11 @@ public class AirportDAO implements IAirport {
 
     private static final Logger logDAO = Logger.getLogger(AirportDAO.class);
 
-    public static final String getId = "SELECT * FROM Airports WHERE id = ?";
-    public static final String getAll = "SELECT * FROM Airports";
-    public static final String save = "INSERT INTO Airports VALUES (?,?,?,?)";
-    public static final String delete = "DELETE FROM Airports WHERE id =?";
-    public static final String update = "UPDATE Airports SET nameAirport = ?, AirportClasses_id = ?,Countries_id = ? " +
+    public static final String GET_ID = "SELECT * FROM Airports WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM Airports";
+    public static final String SAVE = "INSERT INTO Airports VALUES (?,?,?,?)";
+    public static final String DELETE = "DELETE FROM Airports WHERE id =?";
+    public static final String UPDATE = "UPDATE Airports SET nameAirport = ?, AirportClasses_id = ?,Countries_id = ? " +
             "WHERE id =?";
 
     @Override
@@ -38,7 +38,7 @@ public class AirportDAO implements IAirport {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -102,7 +102,7 @@ public class AirportDAO implements IAirport {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -159,7 +159,7 @@ public class AirportDAO implements IAirport {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, airports.getNameAirport());
                 //prStatement.setLong(2, airports.getAirportClass());
@@ -200,9 +200,9 @@ public class AirportDAO implements IAirport {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -236,7 +236,7 @@ public class AirportDAO implements IAirport {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, airports.getNameAirport());
                 //prStatement.setTeam(2, airports.getAirportClass());
                 //prStatement.setTeam(3, airports.getCountry());

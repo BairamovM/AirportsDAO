@@ -16,11 +16,11 @@ public class AirplaneDAO implements IAirplane {
 
     private static final Logger logDAO = Logger.getLogger(AirplaneDAO.class);
 
-    public static final String getId = "SELECT * FROM Airplanes WHERE id = ?";
-    public static final String getAll = "SELECT * FROM Airplanes";
-    public static final String save = "INSERT INTO Airplanes VALUES (?,?,?,?)";
-    public static final String delete = "DELETE FROM Airplanes WHERE id =?";
-    public static final String update = "UPDATE Airplanes SET type = ?, numberSeets = ?,rangeFlight = ?, carryingCapacity = ?, Teams_id = ? WHERE id =?";
+    public static final String GET_ID = "SELECT * FROM Airplanes WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM Airplanes";
+    public static final String SAVE = "INSERT INTO Airplanes VALUES (?,?,?,?)";
+    public static final String DELETE = "DELETE FROM Airplanes WHERE id =?";
+    public static final String UPDATE = "UPDATE Airplanes SET type = ?, numberSeets = ?,rangeFlight = ?, carryingCapacity = ?, Teams_id = ? WHERE id =?";
 
     @Override
     public Airplane getByID(Long id) {
@@ -37,7 +37,7 @@ public class AirplaneDAO implements IAirplane {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -103,7 +103,7 @@ public class AirplaneDAO implements IAirplane {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -162,7 +162,7 @@ public class AirplaneDAO implements IAirplane {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, airplane.getType());
                 prStatement.setLong(2, airplane.getNumberSeets());
@@ -205,9 +205,9 @@ public class AirplaneDAO implements IAirplane {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -241,7 +241,7 @@ public class AirplaneDAO implements IAirplane {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, airplane.getType());
                 prStatement.setLong(2, airplane.getNumberSeets());
                 prStatement.setLong(3, airplane.getRangeFlight());

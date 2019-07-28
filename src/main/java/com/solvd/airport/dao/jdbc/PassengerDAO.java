@@ -18,15 +18,15 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
 
     private static final Logger logDAO = Logger.getLogger(PassengerDAO.class);
 
-    public static final String getId = "SELECT * FROM Passengers WHERE id = ?";
-    public static final String getAll = "SELECT * FROM Passengers";
-    public static final String save = "INSERT INTO Passengers VALUES (?,?,?,?)";
+    public static final String GET_ID = "SELECT * FROM Passengers WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM Passengers";
+    public static final String SAVE = "INSERT INTO Passengers VALUES (?,?,?,?)";
 
     public static final String INSERT_Passengers = "INSERT INTO Passengers VALUES (?,?,?,?)";
     public static final String INSERT_SeatsFlight = "INSERT INTO SeatsFlight VALUES (?,?,?,?)";
 
-    public static final String delete = "DELETE FROM Passengers WHERE id =?";
-    public static final String update = "UPDATE Passengers SET firstName = ?, lastName = ?,dateBirth = ?, " +
+    public static final String DELETE = "DELETE FROM Passengers WHERE id =?";
+    public static final String UPDATE = "UPDATE Passengers SET firstName = ?, lastName = ?,dateBirth = ?, " +
             "gender = ?, passportSerialNumber = ?, Nationalities_id = ? WHERE id =?";
 
     @Override
@@ -44,7 +44,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -111,7 +111,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -171,7 +171,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, passengers.getFirstName());
                 prStatement.setString(2, passengers.getLastName());
@@ -215,9 +215,9 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -251,7 +251,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, passengers.getFirstName());
                 prStatement.setString(2, passengers.getLastName());
                 prStatement.setString(3, passengers.getDateBirth());
@@ -295,7 +295,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                 connectionpass = ConnectionFactory.getConnection();
                 try {
                     logDAO.trace("Create PreparedStatement");
-                    prStatementpass = connectionpass.prepareStatement(save);
+                    prStatementpass = connectionpass.prepareStatement(SAVE);
 
                     prStatementpass.setString(1, passengers.getFirstName());
                     prStatementpass.setString(2, passengers.getLastName());
@@ -336,7 +336,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                 connectionseats = ConnectionFactory.getConnection();
                 try {
                     logDAO.trace("Create PreparedStatement");
-                    prStatementseats = connectionseats.prepareStatement(save);
+                    prStatementseats = connectionseats.prepareStatement(SAVE);
 
                     prStatementseats.setLong(1, seatsFlight.getNumberSeet());
                     prStatementseats.setLong(2, seatsFlight.getTicketPrice());

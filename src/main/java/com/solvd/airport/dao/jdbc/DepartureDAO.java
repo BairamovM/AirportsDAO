@@ -16,11 +16,11 @@ public class DepartureDAO  implements IDeparture {
 
     private static final Logger logDAO = Logger.getLogger(DepartureDAO.class);
 
-    public static final String getId = "SELECT * FROM Departures WHERE id = ?";
-    public static final String getAll = "SELECT * FROM Departures";
-    public static final String save = "INSERT INTO Departures VALUES (?,?,?,?)";
-    public static final String delete = "DELETE FROM Departures WHERE id =?";
-    public static final String update = "UPDATE Departures SET departureDate = ?, Airplanes_id = ?,AllFlights_id = ? " +
+    public static final String GET_ID = "SELECT * FROM Departures WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM Departures";
+    public static final String SAVE = "INSERT INTO Departures VALUES (?,?,?,?)";
+    public static final String DELETE = "DELETE FROM Departures WHERE id =?";
+    public static final String UPDATE = "UPDATE Departures SET departureDate = ?, Airplanes_id = ?,AllFlights_id = ? " +
             "WHERE id =?";
 
     @Override
@@ -38,7 +38,7 @@ public class DepartureDAO  implements IDeparture {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -102,7 +102,7 @@ public class DepartureDAO  implements IDeparture {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -159,7 +159,7 @@ public class DepartureDAO  implements IDeparture {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, departures.getDepartureDate());
                 //prStatement.setLong(2, departures.getAirplane());
@@ -200,9 +200,9 @@ public class DepartureDAO  implements IDeparture {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -236,7 +236,7 @@ public class DepartureDAO  implements IDeparture {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, departures.getDepartureDate());
                 //prStatement.setLong(2, departures.getAirplane());
                 //prStatement.setLong(3, departures.getAllFlight());

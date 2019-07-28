@@ -16,11 +16,11 @@ public class SeatFlightDAO implements ISeatFlight {
 
     private static final Logger logDAO = Logger.getLogger(SeatFlightDAO.class);
 
-    public static final String getId = "SELECT * FROM SeatsFlight WHERE id = ?";
-    public static final String getAll = "SELECT * FROM SeatsFlight";
-    public static final String save = "INSERT INTO SeatsFlight VALUES (?,?,?,?)";
-    public static final String delete = "DELETE FROM SeatsFlight WHERE id =?";
-    public static final String update = "UPDATE SeatsFlight SET numberSeet = ?, " +
+    public static final String GET_ID = "SELECT * FROM SeatsFlight WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM SeatsFlight";
+    public static final String SAVE = "INSERT INTO SeatsFlight VALUES (?,?,?,?)";
+    public static final String DELETE = "DELETE FROM SeatsFlight WHERE id =?";
+    public static final String UPDATE = "UPDATE SeatsFlight SET numberSeet = ?, " +
             "ticketPrice = ?, Airplanes_id = ?, Passengers_id = ?, ClassSeets_id = ? WHERE id =?";
 
     @Override
@@ -38,7 +38,7 @@ public class SeatFlightDAO implements ISeatFlight {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -104,7 +104,7 @@ public class SeatFlightDAO implements ISeatFlight {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -163,7 +163,7 @@ public class SeatFlightDAO implements ISeatFlight {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setLong(1, seatsFlight.getNumberSeet());
                 prStatement.setLong(2, seatsFlight.getTicketPrice());
@@ -206,9 +206,9 @@ public class SeatFlightDAO implements ISeatFlight {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -242,7 +242,7 @@ public class SeatFlightDAO implements ISeatFlight {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setLong(1, seatsFlight.getNumberSeet());
                 prStatement.setLong(2, seatsFlight.getTicketPrice());
                 //prStatement.setLong(3, seatsFlight.getAirplane());

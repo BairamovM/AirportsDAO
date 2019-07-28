@@ -16,11 +16,11 @@ public class CityDAO implements ICity {
 
     private static final Logger logDAO = Logger.getLogger(CityDAO.class);
 
-    public static final String getId = "SELECT * FROM Cities WHERE id = ?";
-    public static final String getAll = "SELECT * FROM Cities";
-    public static final String save = "INSERT INTO Cities VALUES (?,?,?,?)";
-    public static final String delete = "DELETE FROM Cities WHERE id =?";
-    public static final String update = "UPDATE Cities SET nameCity = ?, Countries_id = ? WHERE id =?";
+    public static final String GET_ID = "SELECT * FROM Cities WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM Cities";
+    public static final String SAVE = "INSERT INTO Cities VALUES (?,?,?,?)";
+    public static final String DELETE = "DELETE FROM Cities WHERE id =?";
+    public static final String UPDATE = "UPDATE Cities SET nameCity = ?, Countries_id = ? WHERE id =?";
 
     @Override
     public City getByID(Long id) {
@@ -37,7 +37,7 @@ public class CityDAO implements ICity {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -100,7 +100,7 @@ public class CityDAO implements ICity {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -156,7 +156,7 @@ public class CityDAO implements ICity {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, cities.getNameCity());
                 //prStatement.setLong(2, cities.getCountry());
@@ -196,9 +196,9 @@ public class CityDAO implements ICity {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -232,7 +232,7 @@ public class CityDAO implements ICity {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, cities.getNameCity());
                 //prStatement.setLong(2, cities.getCountry());
 

@@ -1,5 +1,6 @@
 package com.solvd.airport.dao.jdbc;
 
+import com.solvd.airport.dao.DAO;
 import com.solvd.airport.entity.Luggage;
 import com.solvd.airport.dao.ILuggage;
 
@@ -16,11 +17,11 @@ public class LuggageDAO implements ILuggage {
 
     private static final Logger logDAO = Logger.getLogger(LuggageDAO.class);
 
-    public static final String getId = "SELECT * FROM Luggage WHERE id = ?";
-    public static final String getAll = "SELECT * FROM Luggage";
-    public static final String save = "INSERT INTO Luggage VALUES (?,?,?,?)";
-    public static final String delete = "DELETE FROM Luggage WHERE id =?";
-    public static final String update = "UPDATE Luggage SET barcode = ?, weight = ?,Passengers_id = ? WHERE id =?";
+    public static final String GET_ID = "SELECT * FROM Luggage WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM Luggage";
+    public static final String SAVE = "INSERT INTO Luggage VALUES (?,?,?,?)";
+    public static final String DELETE = "DELETE FROM Luggage WHERE id =?";
+    public static final String UPDATE = "UPDATE Luggage SET barcode = ?, weight = ?,Passengers_id = ? WHERE id =?";
 
     @Override
     public Luggage getByID(Long id) {
@@ -37,7 +38,7 @@ public class LuggageDAO implements ILuggage {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -101,7 +102,7 @@ public class LuggageDAO implements ILuggage {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -158,7 +159,7 @@ public class LuggageDAO implements ILuggage {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setLong(1, luggage.getBarcode());
                 prStatement.setLong(2, luggage.getWeight());
@@ -199,9 +200,9 @@ public class LuggageDAO implements ILuggage {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -235,7 +236,7 @@ public class LuggageDAO implements ILuggage {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setLong(1, luggage.getBarcode());
                 prStatement.setLong(2, luggage.getWeight());
                 //prStatement.setLong(3, luggage.getPassenger());

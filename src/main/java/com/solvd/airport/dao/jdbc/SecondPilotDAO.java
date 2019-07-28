@@ -16,11 +16,11 @@ public class SecondPilotDAO implements ISecondPilot {
 
     private static final Logger logDAO = Logger.getLogger(SecondPilotDAO.class);
 
-    public static final String getId = "SELECT * FROM SecondPilots WHERE id = ?";
-    public static final String getAll = "SELECT * FROM SecondPilots";
-    public static final String save = "INSERT INTO SecondPilots VALUES (?,?,?,?)";
-    public static final String delete = "DELETE FROM SecondPilots WHERE id =?";
-    public static final String update = "UPDATE SecondPilots SET firstName = ?, lastName = ?, " +
+    public static final String GET_ID = "SELECT * FROM SecondPilots WHERE id = ?";
+    public static final String GET_ALL = "SELECT * FROM SecondPilots";
+    public static final String SAVE = "INSERT INTO SecondPilots VALUES (?,?,?,?)";
+    public static final String DELETE = "DELETE FROM SecondPilots WHERE id =?";
+    public static final String UPDATE = "UPDATE SecondPilots SET firstName = ?, lastName = ?, " +
             "experience = ?, passportSerialNumber = ?, Nationalities_id = ? WHERE id =?";
 
     @Override
@@ -38,7 +38,7 @@ public class SecondPilotDAO implements ISecondPilot {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getId);
+                prStatement = connection.prepareStatement(GET_ID);
                 prStatement.setLong(1, id);
                 try {
                     logDAO.trace("Get ResultSet");
@@ -104,7 +104,7 @@ public class SecondPilotDAO implements ISecondPilot {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(getAll);
+                prStatement = connection.prepareStatement(GET_ALL);
                 try {
                     logDAO.trace("Get ResultSet");
                     rSet = prStatement.executeQuery();
@@ -163,7 +163,7 @@ public class SecondPilotDAO implements ISecondPilot {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(save);
+                prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, secondPilots.getFirstName());
                 prStatement.setString(2, secondPilots.getLastName());
@@ -206,9 +206,9 @@ public class SecondPilotDAO implements ISecondPilot {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(delete);
+                prStatement = connection.prepareStatement(DELETE);
                 prStatement.setLong(1, id);
-                prStatement.executeUpdate(delete);
+                prStatement.executeUpdate(DELETE);
             } finally {
                 try {
                     prStatement.close();
@@ -242,7 +242,7 @@ public class SecondPilotDAO implements ISecondPilot {
             connection = ConnectionFactory.getConnection();
             try {
                 logDAO.trace("Create PreparedStatement");
-                prStatement = connection.prepareStatement(update);
+                prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, secondPilots.getFirstName());
                 prStatement.setString(2, secondPilots.getLastName());
                 prStatement.setLong(3, secondPilots.getExperience());
