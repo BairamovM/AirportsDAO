@@ -12,14 +12,8 @@ import java.util.concurrent.ExecutionException;
 import com.solvd.airport.dao.connectionPool.ConnectionPool;
 
 import com.solvd.airport.entity.Airplane;
-import org.w3c.dom.*;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.File;
-import java.io.IOException;
+import com.solvd.airport.xml.Parser;
 
 import java.util.ArrayList;
 
@@ -28,7 +22,7 @@ public class Main {
     private static final Logger log = Logger.getLogger(Main.class);
 
 
-    public static void main (String[] args) throws SQLException, ExecutionException, InterruptedException, ParserConfigurationException, SAXException, IOException {
+    public static void main (String[] args) throws SQLException, ExecutionException, InterruptedException {
 
     log.info("First log message");
 
@@ -69,36 +63,12 @@ public class Main {
         log.info(future.toString());
 
 
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder documentBuilder = factory.newDocumentBuilder();
-        Document document = documentBuilder.parse(new File("C:src/main/java/com/solvd/airport/xml/Airplane.xml"));
-
-        Element element = document.getDocumentElement();
-        log.info(element.getTagName());
-
-        NodeList nodeList = element.getChildNodes();
-
-        LogXML(element.getChildNodes());
+        Parser parser = new Parser();
+        parser.ParserDoc();
 
 
     }
 
-    static void  LogXML (NodeList nodeList) {
 
-        for (int i = 0; i < nodeList.getLength(); i++) {
-            if (nodeList.item(i) instanceof Element) {
-
-                log.info(((Element) nodeList.item(i)).getTagName());
-
-                if (((Element) nodeList.item(i)).hasAttribute("firstname"))
-                log.info(((Element) nodeList.item(i)).getAttribute("firstname"));
-
-                if (nodeList.item(i).hasChildNodes()) {
-                    log.info(nodeList.item(i).getChildNodes());
-                }
-            }
-        }
-
-    }
 
 }
