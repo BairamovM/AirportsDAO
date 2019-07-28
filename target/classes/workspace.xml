@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/AirportsDAO.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/libraries/Maven__mysql_mysql_connector_java_8_0_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/AbstractDAO.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,20 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Added DAOException">
-      <created>1563787458201</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1563787458201</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Added package transaction, change daoClass name">
-      <created>1563790275018</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1563790275018</updated>
     </task>
     <task id="LOCAL-00029" summary="Added package transaction, change daoClass name">
       <created>1563790423818</created>
@@ -481,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564250377722</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Maven added settings">
+      <created>1564300743858</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1564300743859</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Maven added settings">
+      <created>1564300772339</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1564300772339</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
