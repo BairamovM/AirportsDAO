@@ -2,67 +2,57 @@
 
 <airplaneTeams>
     <airplane>
-    <name> Airplane Type
-    <privateVariables>
-        <id id="1" />
-        <type type="An-148" />
-        <numberSeets numberSeets="80" />
-        <rangeFlight rangeFlight="2100" />
-        <carryingCapacity carryingCapacity="38550" />
-        <team team="1" />
-    </privateVariables>
-    </name>
+        <id> "1" </id>
+        <type> "An-148" </type>
+        <numberSeets> "80" </numberSeets>
+        <rangeFlight> "2100" </rangeFlight>
+        <carryingCapacity> "38550" </carryingCapacity>
+        <Teams>
+            <id> "1" </id>
+
+                <ChiefPilots_id>
+                    <id> "1" </id>
+                    <firstName> "Jake" </firstName>
+                    <lastName> "Gilmore" </lastName>
+                    <experience> "15" </experience>
+                    <passportSerialNumber> "3565743" </passportSerialNumber>
+
+                    <Nationalities_id>
+                        <id> 1 </id>>
+                        <citizenship> "USA" </citizenship>>
+                    </Nationalities_id>
+
+                </ChiefPilots_id>>
+
+                <SecondPilots_id>
+                    <id> "1" </id>
+                    <firstName> "Charlie" </firstName>
+                    <lastName> "Black" </lastName>
+                    <experience> "5" </experience>
+                    <passportSerialNumber> "4685" </passportSerialNumber>
+
+                    <Nationalities_id>
+                        <id> 1 </id>>
+                        <citizenship> "USA" </citizenship>>
+                    </Nationalities_id>
+
+                </SecondPilots_id>>
+
+                <Stewardesses_id>
+                    <id> "1" </id>
+                    <firstName> "Amber" </firstName>
+                    <lastName> "Austin" </lastName>
+                    <experience> "6" </experience>
+                    <passportSerialNumber> "3255985" </passportSerialNumber>
+
+                    <Nationalities_id>
+                        <id> 1 </id>>
+                        <citizenship> "CANADA" </citizenship>>
+                    </Nationalities_id>
+
+                </Stewardesses_id>
+
+        </Teams>
     </airplane>
-
-    <team>
-        <name> Team
-        <privateVariables>
-            <id id="1" />
-            <ChiefPilots_id ChiefPilots_id = "8" />
-            <SecondPilots_id SecondPilots_id = "7" />
-            <Stewardesses_id Stewardesses_id = "9" />
-        </privateVariables>
-        </name>
-    </team>
-
-    <ChiefPilots>
-        <name> ChiefPilots
-        <privateVariables>
-            <id id = "1" />
-            <firstName firstName = "Jake" />
-            <lastName lastName = "Gilmore" />
-            <experience experience = "15" />
-            <passportSerialNumber passportSerialNumber = "3565743" />
-            <Nationalities_id Nationalities_id = "3" />
-        </privateVariables>
-        </name>
-    </ChiefPilots>
-
-    <SecondPilots>
-        <name> SecondPilots
-        <privateVariables>
-            <id id = "1" />
-            <firstName firstName = "Charlie" />
-            <lastName lastName = "Black" />
-            <experience experience = "5" />
-            <passportSerialNumber passportSerialNumber = "4685" />
-            <Nationalities_id Nationalities_id = "7" />
-        </privateVariables>
-        </name>
-    </SecondPilots>
-
-    <Stewardesses>
-        <name> Stewardesses
-        <privateVariables>
-            <id id = "1" />
-            <firstName firstName = "Amber" />
-            <lastName lastName = "Austin" />
-            <experience experience = "6" />
-            <passportSerialNumber passportSerialNumber = "3255985" />
-            <Nationalities_id Nationalities_id = "3" />
-        </privateVariables>
-        </name>
-    </Stewardesses>
-
 </airplaneTeams>
 

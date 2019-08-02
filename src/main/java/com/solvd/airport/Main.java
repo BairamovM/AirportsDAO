@@ -24,6 +24,8 @@ public class Main {
 
     public static void main (String[] args) throws SQLException, ExecutionException, InterruptedException {
 
+
+
     log.info("First log message");
 
         //create pool connection  ?useSSL=false
@@ -64,7 +66,7 @@ public class Main {
 
 
         Parser parser = new Parser();
-        parser.ParserDoc();
+        parser.buildSetAirplane();
 
 
     }
