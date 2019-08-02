@@ -8,7 +8,7 @@ public interface DAO <T> {
 
     List<T> getAll();
 
-    T save(T t);
+    List <T> save(List <T> t);
 
     void delete(Long id);
 
