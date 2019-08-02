@@ -1,21 +1,52 @@
 package com.solvd.airport.dao.connectionPool;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.sql.DriverManager;
-
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class ConnectionPool {
 
-    private String  driver;
-    private String  url;
-    private String  username;
-    private String  password;
+    private static String  driver;
+    private static String  url;
+    private static String  username;
+    private static String  password;
 
     private volatile int busyConnectionAmount;
-    private int  connectionsSize;
+    private static int  connectionsSize;
     private ArrayBlockingQueue<Connection> connections;
+    private static ConnectionPool Instance;
+
+
+    public static ConnectionPool getInstance() {
+
+        if (Instance == null) {
+
+            try {
+
+                List <String> properties = ConnectionPool.getProperties();
+                if (!(properties.isEmpty())) {
+
+                    driver = properties.get(0);
+                    url    = properties.get(1);
+                    username  = properties.get(2);
+                    password  = properties.get(3);
+                    connectionsSize = Integer.parseInt(properties.get(4));
+                }
+
+                Instance = new ConnectionPool(driver,url,username,password,connectionsSize);
+            } catch (SQLException e) {}
+
+        }
+
+        return Instance;
+    }
+
 
     public ConnectionPool(String driver,
                           String url,
@@ -79,6 +110,37 @@ public class ConnectionPool {
             }
             return true;
         } else  return  false;
+    }
+
+
+    public static List<String> getProperties(){
+
+        //read from file .properties
+        FileInputStream fis;
+        Properties property = new Properties();
+
+        try {
+
+            fis = new FileInputStream("resources/db.properties");
+            property.load(fis);
+
+            List<String> values = new ArrayList<>();
+
+            values.add(property.getProperty("db.driver"));
+            values.add(property.getProperty("db.url"));
+            values.add(property.getProperty("db.login"));
+            values.add(property.getProperty("db.password"));
+            values.add(property.getProperty("db.connectionAmount"));
+
+            return  values;
+
+
+        } catch (IOException e) {
+
+        }
+
+        return null;
+
     }
 
 }
