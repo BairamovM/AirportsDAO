@@ -86,7 +86,7 @@ public class NationalityDAO implements INationality {
     }
 
     @Override
-    public List<Nationality> getAll() {
+    public Nationality getAll() {
 
         logDAO.trace("Try to find all nationalities");
         Nationality nationalities = null;
@@ -111,7 +111,7 @@ public class NationalityDAO implements INationality {
                         nationalite.add(nationalities);
 
                     }
-                    return nationalite;
+
                 } finally {
                     try {
                         rSet.close();

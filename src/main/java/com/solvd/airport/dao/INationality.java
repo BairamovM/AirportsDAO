@@ -7,7 +7,7 @@ public interface INationality extends DAO <Nationality> {
 
     Nationality getByID(Long id);
 
-    List<Nationality> getAll();
+    Nationality getAll();
 
     Nationality save(Nationality value);
 

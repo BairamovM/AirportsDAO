@@ -7,7 +7,7 @@ public interface IAirportEmployee extends DAO <AirportEmployee> {
 
     AirportEmployee getByID(Long id);
 
-    List<AirportEmployee> getAll();
+    AirportEmployee getAll();
 
     AirportEmployee save(AirportEmployee value);
 

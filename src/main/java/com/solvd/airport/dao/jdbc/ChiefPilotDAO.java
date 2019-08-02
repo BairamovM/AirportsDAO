@@ -91,7 +91,7 @@ public class ChiefPilotDAO implements IChiefPilot {
     }
 
     @Override
-    public List<ChiefPilot> getAll() {
+    public ChiefPilot getAll() {
 
         logDAO.trace("Try to find all chiefPilots");
         ChiefPilot chiefPilots = null;
@@ -120,7 +120,7 @@ public class ChiefPilotDAO implements IChiefPilot {
                         chiefPilot.add(chiefPilots);
 
                     }
-                    return chiefPilot;
+
                 } finally {
                     try {
                         rSet.close();

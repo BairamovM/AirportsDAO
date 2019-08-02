@@ -86,7 +86,7 @@ public class EmployeePositionDAO implements IEmployeePosition {
     }
 
     @Override
-    public List<EmployeePosition> getAll() {
+    public EmployeePosition getAll() {
 
         logDAO.trace("Try to find all employeePositions");
         EmployeePosition employeePositions = null;
@@ -111,7 +111,7 @@ public class EmployeePositionDAO implements IEmployeePosition {
                         employeePosition.add(employeePositions);
 
                     }
-                    return employeePosition;
+
                 } finally {
                     try {
                         rSet.close();

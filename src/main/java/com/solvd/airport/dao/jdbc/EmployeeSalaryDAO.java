@@ -86,7 +86,7 @@ public class EmployeeSalaryDAO implements IEmployeeSalary {
     }
 
     @Override
-    public List<EmployeeSalary> getAll() {
+    public EmployeeSalary getAll() {
 
         logDAO.trace("Try to find all employeeSalaries");
         EmployeeSalary employeeSalaries = null;
@@ -111,7 +111,7 @@ public class EmployeeSalaryDAO implements IEmployeeSalary {
                         employeeSalarie.add(employeeSalaries);
 
                     }
-                    return employeeSalarie;
+
                 } finally {
                     try {
                         rSet.close();

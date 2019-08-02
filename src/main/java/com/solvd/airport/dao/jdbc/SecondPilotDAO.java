@@ -91,7 +91,7 @@ public class SecondPilotDAO implements ISecondPilot {
     }
 
     @Override
-    public List<SecondPilot> getAll() {
+    public SecondPilot getAll() {
 
         logDAO.trace("Try to find all secondPilots");
         SecondPilot secondPilots = null;
@@ -120,7 +120,7 @@ public class SecondPilotDAO implements ISecondPilot {
                         secondPilot.add(secondPilots);
 
                     }
-                    return secondPilot;
+
                 } finally {
                     try {
                         rSet.close();

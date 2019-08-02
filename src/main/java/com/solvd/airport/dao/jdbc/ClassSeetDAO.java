@@ -86,7 +86,7 @@ public class ClassSeetDAO implements IClassSeet {
     }
 
     @Override
-    public List<ClassSeet> getAll() {
+    public ClassSeet getAll() {
 
         logDAO.trace("Try to find all classSeets");
         ClassSeet classSeets = null;
@@ -111,7 +111,7 @@ public class ClassSeetDAO implements IClassSeet {
                         classSeet.add(classSeets);
 
                     }
-                    return classSeet;
+
                 } finally {
                     try {
                         rSet.close();

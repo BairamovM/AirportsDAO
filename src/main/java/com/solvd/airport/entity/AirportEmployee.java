@@ -14,10 +14,10 @@ public class AirportEmployee {
     private String gender;
     private Double passportSerialNumber;
     private Double phoneNumber;
-    private List <EmployeeSalary> employeeSalary;
-    private List <EmployeePosition> employeePosition;
-    private List <AirportDepartment> airportDepartment;
-    private List <Nationality> nationality;
+    private EmployeeSalary employeeSalary;
+    private EmployeePosition employeePosition;
+    private AirportDepartment airportDepartment;
+    private Nationality nationality;
 
     public Long getId() {
         return id;
@@ -127,35 +127,35 @@ public class AirportEmployee {
         }
     }
 
-    public List <EmployeeSalary> getEmployeeSalary() {
+    public EmployeeSalary getEmployeeSalary() {
         return employeeSalary;
     }
 
-    public void setEmployeeSalary(List <EmployeeSalary> employeeSalary) {
+    public void setEmployeeSalary(EmployeeSalary employeeSalary) {
         this.employeeSalary = employeeSalary;
     }
 
-    public List <EmployeePosition> getEmployeePosition() {
+    public EmployeePosition getEmployeePosition() {
         return employeePosition;
     }
 
-    public void setEmployeePosition(List <EmployeePosition> employeePosition) {
+    public void setEmployeePosition(EmployeePosition employeePosition) {
         this.employeePosition = employeePosition;
     }
 
-    public List <AirportDepartment> getAirportDepartment() {
+    public AirportDepartment getAirportDepartment() {
         return airportDepartment;
     }
 
-    public void setAirportDepartment(List <AirportDepartment> airportDepartment) {
+    public void setAirportDepartment(AirportDepartment airportDepartment) {
         this.airportDepartment = airportDepartment;
     }
 
-    public List <Nationality> getNationality() {
+    public Nationality getNationality() {
         return nationality;
     }
 
-    public void setNationality(List <Nationality> nationality) {
+    public void setNationality(Nationality nationality) {
         this.nationality = nationality;
     }
 }

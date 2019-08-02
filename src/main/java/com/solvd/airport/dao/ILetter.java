@@ -7,7 +7,7 @@ public interface ILetter extends DAO <Letter> {
 
     Letter getByID(Long id);
 
-    List<Letter> getAll();
+    Letter getAll();
 
     Letter save(Letter value);
 

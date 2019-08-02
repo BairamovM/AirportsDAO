@@ -91,7 +91,7 @@ public class StewardesseDAO implements IStewardesse {
     }
 
     @Override
-    public List<Stewardesse> getAll() {
+    public Stewardesse getAll() {
 
         logDAO.trace("Try to find all stewardesses");
         Stewardesse stewardesses = null;
@@ -120,7 +120,7 @@ public class StewardesseDAO implements IStewardesse {
                         stewardess.add(stewardesses);
 
                     }
-                    return stewardess;
+
                 } finally {
                     try {
                         rSet.close();

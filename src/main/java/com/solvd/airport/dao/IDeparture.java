@@ -7,7 +7,7 @@ public interface IDeparture extends DAO <Departure> {
 
     Departure getByID(Long id);
 
-    List<Departure> getAll();
+    Departure getAll();
 
     Departure save(Departure value);
 

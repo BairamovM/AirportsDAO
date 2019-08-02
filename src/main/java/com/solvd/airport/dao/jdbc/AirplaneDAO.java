@@ -90,7 +90,7 @@ public class AirplaneDAO implements IAirplane {
     }
 
     @Override
-    public List<Airplane> getAll() {
+    public Airplane getAll() {
 
         logDAO.trace("Try to find all Airplanes");
         Airplane airplane = null;
@@ -119,7 +119,7 @@ public class AirplaneDAO implements IAirplane {
                         airplanes.add(airplane);
 
                     }
-                    return airplanes;
+
                 } finally {
                     try {
                         rSet.close();

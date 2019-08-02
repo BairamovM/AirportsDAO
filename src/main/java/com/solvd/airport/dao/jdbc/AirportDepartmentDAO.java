@@ -87,7 +87,7 @@ public class AirportDepartmentDAO implements IAirportDepartment {
     }
 
     @Override
-    public List<AirportDepartment> getAll() {
+    public AirportDepartment getAll() {
 
         logDAO.trace("Try to find all Airplanes");
         AirportDepartment airportDepartments = null;
@@ -113,7 +113,7 @@ public class AirportDepartmentDAO implements IAirportDepartment {
                         airportDepartment.add(airportDepartments);
 
                     }
-                    return airportDepartment;
+                    //return airportDepartment;
                 } finally {
                     try {
                         rSet.close();

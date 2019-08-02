@@ -11,9 +11,9 @@ public class SeatFlight {
     private Long id;
     private Long numberSeet;
     private Long ticketPrice;
-    private List <Airplane> airplane;
+    private Airplane airplane;
     private Passenger passenger;
-    private List <ClassSeet> classSeet;
+    private ClassSeet classSeet;
 
     public Long getId() {
         return id;
@@ -69,11 +69,11 @@ public class SeatFlight {
         }
     }
 
-    public List <Airplane> getAirplane() {
+    public Airplane getAirplane() {
         return airplane;
     }
 
-    public void setAirplane(List <Airplane> airplane) {
+    public void setAirplane(Airplane airplane) {
         this.airplane = airplane;
     }
 
@@ -85,11 +85,11 @@ public class SeatFlight {
         this.passenger = passenger;
     }
 
-    public List <ClassSeet> getClassSeet() {
+    public ClassSeet getClassSeet() {
         return classSeet;
     }
 
-    public void setClassSeet(List <ClassSeet> classSeet) {
+    public void setClassSeet(ClassSeet classSeet) {
         this.classSeet = classSeet;
     }
 }

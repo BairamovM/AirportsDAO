@@ -91,7 +91,7 @@ public class AllFlightDAO implements IAllFlight {
     }
 
     @Override
-    public List<AllFlight> getAll() {
+    public AllFlight getAll() {
 
         logDAO.trace("Try to find all Airplanes");
         AllFlight allFlights = null;
@@ -119,7 +119,7 @@ public class AllFlightDAO implements IAllFlight {
                         allFlight.add(allFlights);
 
                     }
-                    return allFlight;
+
                 } finally {
                     try {
                         rSet.close();

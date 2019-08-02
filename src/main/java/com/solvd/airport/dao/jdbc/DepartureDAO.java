@@ -89,7 +89,7 @@ public class DepartureDAO  implements IDeparture {
     }
 
     @Override
-    public List<Departure> getAll() {
+    public Departure getAll() {
 
         logDAO.trace("Try to find all departures");
         Departure departures = null;
@@ -116,7 +116,7 @@ public class DepartureDAO  implements IDeparture {
                         departure.add(departures);
 
                     }
-                    return departure;
+
                 } finally {
                     try {
                         rSet.close();

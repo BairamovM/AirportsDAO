@@ -86,7 +86,7 @@ public class AirportClassDAO implements IAirportClass {
     }
 
     @Override
-    public List<AirportClass> getAll() {
+    public AirportClass getAll() {
 
         logDAO.trace("Try to find all Airplanes");
         AirportClass airportClasses = null;
@@ -111,7 +111,7 @@ public class AirportClassDAO implements IAirportClass {
                         airportClass.add(airportClasses);
 
                     }
-                    return airportClass;
+
                 } finally {
                     try {
                         rSet.close();

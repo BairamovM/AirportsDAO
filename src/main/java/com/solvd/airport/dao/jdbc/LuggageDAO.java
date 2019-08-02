@@ -89,7 +89,7 @@ public class LuggageDAO implements ILuggage {
     }
 
     @Override
-    public List<Luggage> getAll() {
+    public Luggage getAll() {
 
         logDAO.trace("Try to find all luggage");
         Luggage luggage = null;
@@ -116,7 +116,7 @@ public class LuggageDAO implements ILuggage {
                         luggag.add(luggage);
 
                     }
-                    return luggag;
+
                 } finally {
                     try {
                         rSet.close();

@@ -7,7 +7,7 @@ public interface ICountry extends DAO <Country> {
 
     Country getByID(Long id);
 
-    List<Country> getAll();
+    Country getAll();
 
     Country save(Country value);
 

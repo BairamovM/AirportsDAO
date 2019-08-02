@@ -6,9 +6,9 @@ public interface DAO <T> {
 
     T getByID(Long id);
 
-    List<T> getAll();
+    T getAll();
 
-    List <T> save(List <T> t);
+     T save(T t);
 
     void delete(Long id);
 

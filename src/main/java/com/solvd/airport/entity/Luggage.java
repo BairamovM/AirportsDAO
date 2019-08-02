@@ -11,7 +11,7 @@ public class Luggage {
     private Long id;
     private Long barcode;
     private Long weight;
-    private List <Passenger> passenger;
+    private Passenger passenger;
 
     public Long getId() {
         return id;
@@ -67,11 +67,11 @@ public class Luggage {
         }
     }
 
-    public List <Passenger> getPassenger() {
+    public Passenger getPassenger() {
         return passenger;
     }
 
-    public void setPassenger(List <Passenger> passenger) {
+    public void setPassenger(Passenger passenger) {
         this.passenger = passenger;
     }
 }

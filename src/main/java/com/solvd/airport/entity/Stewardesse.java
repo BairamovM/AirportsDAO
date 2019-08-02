@@ -13,7 +13,7 @@ public class Stewardesse {
     private String lastName;
     private Long experience;
     private Double passportSerialNumber;
-    private List <Nationality> nationality;
+    private Nationality nationality;
 
     public Long getId() {
         return id;
@@ -105,11 +105,11 @@ public class Stewardesse {
         }
     }
 
-    public List <Nationality> getNationality() {
+    public Nationality getNationality() {
         return nationality;
     }
 
-    public void setNationality(List <Nationality> nationality) {
+    public void setNationality(Nationality nationality) {
         this.nationality = nationality;
     }
 

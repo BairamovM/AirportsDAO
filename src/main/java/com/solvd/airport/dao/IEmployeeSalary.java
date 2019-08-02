@@ -7,7 +7,7 @@ public interface IEmployeeSalary extends DAO <EmployeeSalary> {
 
     EmployeeSalary getByID(Long id);
 
-    List<EmployeeSalary> getAll();
+    EmployeeSalary getAll();
 
     EmployeeSalary save(EmployeeSalary value);
 

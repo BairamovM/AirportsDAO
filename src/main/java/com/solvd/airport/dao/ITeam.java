@@ -7,7 +7,7 @@ public interface ITeam extends DAO <Team> {
 
     Team getByID(Long id);
 
-    List<Team> getAll();
+    Team getAll();
 
     Team save(Team value);
 

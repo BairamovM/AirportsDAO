@@ -7,7 +7,7 @@ public interface IAllFlight extends DAO <AllFlight> {
 
     AllFlight getByID(Long id);
 
-    List<AllFlight> getAll();
+    AllFlight getAll();
 
     AllFlight save(AllFlight value);
 

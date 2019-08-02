@@ -86,7 +86,7 @@ public class CountryDAO implements ICountry {
     }
 
     @Override
-    public List<Country> getAll() {
+    public Country getAll() {
 
         logDAO.trace("Try to find all Airplanes");
         Country countries = null;
@@ -111,7 +111,7 @@ public class CountryDAO implements ICountry {
                         country.add(countries);
 
                     }
-                    return country;
+
                 } finally {
                     try {
                         rSet.close();

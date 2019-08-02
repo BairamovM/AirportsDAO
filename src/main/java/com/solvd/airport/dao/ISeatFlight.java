@@ -7,7 +7,7 @@ public interface ISeatFlight extends DAO <SeatFlight> {
 
     SeatFlight getByID(Long id);
 
-    List<SeatFlight> getAll();
+    SeatFlight getAll();
 
     SeatFlight save(SeatFlight value);
 

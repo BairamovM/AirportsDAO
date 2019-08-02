@@ -98,7 +98,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
     }
 
     @Override
-    public List<Passenger> getAll() {
+    public Passenger getAll() {
 
         logDAO.trace("Try to find all passengers");
         Passenger passengers = null;
@@ -128,7 +128,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                         passenger.add(passengers);
 
                     }
-                    return passenger;
+
                 } finally {
                     try {
                         rSet.close();

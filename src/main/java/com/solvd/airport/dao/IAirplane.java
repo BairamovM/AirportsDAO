@@ -7,7 +7,7 @@ public interface IAirplane extends DAO <Airplane>{
 
     Airplane getByID(Long id);
 
-    List<Airplane> getAll();
+    Airplane getAll();
 
     Airplane save(Airplane value);
 

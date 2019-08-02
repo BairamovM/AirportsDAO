@@ -7,7 +7,7 @@ public interface IClassSeet extends DAO <ClassSeet> {
 
     ClassSeet getByID(Long id);
 
-    List<ClassSeet> getAll();
+    ClassSeet getAll();
 
     ClassSeet save(ClassSeet value);
 

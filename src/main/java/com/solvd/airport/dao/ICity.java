@@ -7,7 +7,7 @@ public interface ICity extends DAO <City> {
 
     City getByID(Long id);
 
-    List<City> getAll();
+    City getAll();
 
     City save(City value);
 

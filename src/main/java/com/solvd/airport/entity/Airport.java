@@ -10,8 +10,8 @@ public class Airport {
 
     private Long id;
     private String nameAirport;
-    private List <AirportClass> airportClass;
-    private List <Country> country;
+    private AirportClass airportClass;
+    private Country country;
 
     public Long getId() {
         return id;
@@ -49,19 +49,19 @@ public class Airport {
         }
     }
 
-    public List <AirportClass> getAirportClass() {
+    public AirportClass getAirportClass() {
         return airportClass;
     }
 
-    public void setAirportClass(List <AirportClass> airportClass) {
+    public void setAirportClass(AirportClass airportClass) {
         this.airportClass = airportClass;
     }
 
-    public List <Country> getCountry() {
+    public Country getCountry() {
         return country;
     }
 
-    public void setCountry(List <Country> country) {
+    public void setCountry(Country country) {
         this.country = country;
     }
 }

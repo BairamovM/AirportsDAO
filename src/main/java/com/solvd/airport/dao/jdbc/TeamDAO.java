@@ -89,7 +89,7 @@ public class TeamDAO implements ITeam {
     }
 
     @Override
-    public List<Team> getAll() {
+    public Team getAll() {
 
         logDAO.trace("Try to find all teams");
         Team teams = null;
@@ -116,7 +116,7 @@ public class TeamDAO implements ITeam {
                         team.add(teams);
 
                     }
-                    return team;
+
                 } finally {
                     try {
                         rSet.close();

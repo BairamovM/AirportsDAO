@@ -92,7 +92,7 @@ public class LetterDAO implements ILetter {
     }
 
     @Override
-    public List<Letter> getAll() {
+    public Letter getAll() {
 
         logDAO.trace("Try to find all letters");
         Letter letters = null;
@@ -122,7 +122,7 @@ public class LetterDAO implements ILetter {
                         letter.add(letters);
 
                     }
-                    return letter;
+
                 } finally {
                     try {
                         rSet.close();

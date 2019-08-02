@@ -91,7 +91,7 @@ public class SeatFlightDAO implements ISeatFlight {
     }
 
     @Override
-    public List<SeatFlight> getAll() {
+    public SeatFlight getAll() {
 
         logDAO.trace("Try to find all seatsFlight");
         SeatFlight seatsFlight = null;
@@ -120,7 +120,7 @@ public class SeatFlightDAO implements ISeatFlight {
                         seatFlight.add(seatsFlight);
 
                     }
-                    return seatFlight;
+
                 } finally {
                     try {
                         rSet.close();

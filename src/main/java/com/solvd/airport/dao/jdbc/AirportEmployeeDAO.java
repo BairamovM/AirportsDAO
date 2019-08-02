@@ -96,7 +96,7 @@ public class AirportEmployeeDAO implements IAirportEmployee {
     }
 
     @Override
-    public List<AirportEmployee> getAll() {
+    public AirportEmployee getAll() {
 
         logDAO.trace("Try to find all airportEmployees");
         AirportEmployee airportEmployees = null;
@@ -129,7 +129,7 @@ public class AirportEmployeeDAO implements IAirportEmployee {
                         airportEmployee.add(airportEmployees);
 
                     }
-                    return airportEmployee;
+
                 } finally {
                     try {
                         rSet.close();

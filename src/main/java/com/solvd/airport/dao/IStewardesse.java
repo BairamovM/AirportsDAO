@@ -7,7 +7,7 @@ public interface IStewardesse extends DAO <Stewardesse> {
 
     Stewardesse getByID(Long id);
 
-    List<Stewardesse> getAll();
+    Stewardesse getAll();
 
     Stewardesse save(Stewardesse value);
 

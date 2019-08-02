@@ -87,7 +87,7 @@ public class CityDAO implements ICity {
     }
 
     @Override
-    public List<City> getAll() {
+    public City getAll() {
 
         logDAO.trace("Try to find all cities");
         City cities = null;
@@ -113,7 +113,7 @@ public class CityDAO implements ICity {
                         city.add(cities);
 
                     }
-                    return city;
+
                 } finally {
                     try {
                         rSet.close();

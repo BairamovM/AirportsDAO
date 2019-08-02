@@ -7,12 +7,12 @@ public interface IChiefPilot extends DAO <ChiefPilot> {
 
     ChiefPilot getByID(Long id);
 
-    List<ChiefPilot> getAll();
+    ChiefPilot getAll();
 
-    List<ChiefPilot> save(List<ChiefPilot> value);
+    ChiefPilot save(ChiefPilot value);
 
     void delete(Long id);
 
-    void update(List <ChiefPilot> value);
+    void update(ChiefPilot value);
 
 }
