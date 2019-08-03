@@ -17,7 +17,7 @@ public class PassengerService {
     private String dateBirth;
     private String gender;
     private Double passportSerialNumber;
-    private Nationality nationality;
+    private NationalityService nationalityService;
 
     private List <LuggageService> luggageServiceList;
     private SeatFlightService seatFlightService;
@@ -70,12 +70,12 @@ public class PassengerService {
         this.passportSerialNumber = passportSerialNumber;
     }
 
-    public Nationality getNationality() {
-        return nationality;
+    public NationalityService getNationalityService() {
+        return nationalityService;
     }
 
-    public void setNationality(Nationality nationality) {
-        this.nationality = nationality;
+    public void setNationalityService(NationalityService nationalityService) {
+        this.nationalityService = nationalityService;
     }
 
     public List<LuggageService> getLuggageServiceList() {
