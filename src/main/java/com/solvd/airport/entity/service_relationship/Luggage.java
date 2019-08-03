@@ -1,11 +1,10 @@
 package com.solvd.airport.entity.service_relationship;
 
-import com.solvd.airport.entity.Passenger;
 import org.apache.log4j.Logger;
 
-public class LuggageService {
+public class Luggage {
 
-    private static final Logger logEntity = Logger.getLogger(LuggageService.class);
+    private static final Logger logEntity = Logger.getLogger(Luggage.class);
 
     private Long id;
     private Long barcode;

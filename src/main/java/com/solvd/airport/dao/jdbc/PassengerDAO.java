@@ -1,6 +1,6 @@
 package com.solvd.airport.dao.jdbc;
 
-import com.solvd.airport.entity.Passenger;
+import com.solvd.airport.entity.service_relationship.Passenger;
 import com.solvd.airport.entity.SeatFlight;
 import com.solvd.airport.dao.IPassenger;
 import com.solvd.airport.service.IPassengerTransaction;
@@ -14,16 +14,13 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class PassengerDAO implements IPassenger, IPassengerTransaction {
+public class PassengerDAO implements IPassenger {
 
     private static final Logger logDAO = Logger.getLogger(PassengerDAO.class);
 
     public static final String GET_ID = "SELECT * FROM Passengers WHERE id = ?";
     public static final String GET_ALL = "SELECT * FROM Passengers";
     public static final String SAVE = "INSERT INTO Passengers VALUES (?,?,?,?)";
-
-    public static final String INSERT_Passengers = "INSERT INTO Passengers VALUES (?,?,?,?)";
-    public static final String INSERT_SeatsFlight = "INSERT INTO SeatsFlight VALUES (?,?,?,?)";
 
     public static final String DELETE = "DELETE FROM Passengers WHERE id =?";
     public static final String UPDATE = "UPDATE Passengers SET firstName = ?, lastName = ?,dateBirth = ?, " +
@@ -57,7 +54,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                         passengers.setDateBirth(rSet.getString("dateBirth"));
                         passengers.setGender(rSet.getString("gender"));
                         passengers.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        passengers.setNationality(rSet.getLong("Nationalities_id"));
+                        passengers.setId(rSet.getLong("Nationalities_id"));
                         return passengers;
                     }
                 } finally {
@@ -124,7 +121,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                         passengers.setDateBirth(rSet.getString("dateBirth"));
                         passengers.setGender(rSet.getString("gender"));
                         passengers.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        passengers.setNationality(rSet.getLong("Nationalities_id"));
+                        passengers.setId(rSet.getLong("Nationalities_id"));
                         passenger.add(passengers);
 
                     }
@@ -178,7 +175,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                 prStatement.setString(3, passengers.getDateBirth());
                 prStatement.setString(4, passengers.getGender());
                 prStatement.setDouble(5, passengers.getPassportSerialNumber());
-                prStatement.setLong(6, passengers.getNationality());
+                prStatement.setLong(6, passengers.getId());
 
                 prStatement.executeUpdate();
             } finally {
@@ -257,7 +254,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                 prStatement.setString(3, passengers.getDateBirth());
                 prStatement.setString(4, passengers.getGender());
                 prStatement.setDouble(5, passengers.getPassportSerialNumber());
-                prStatement.setLong(6, passengers.getNationality());
+                prStatement.setLong(6, passengers.getId());
 
                 prStatement.executeUpdate();
             } finally {

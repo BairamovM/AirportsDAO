@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/PassengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/PassengerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/ChiefPilotService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/SeatsFlightServise.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Luggage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/SeatFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/ILuggage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/ILuggage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/ISeatFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/ISeatFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/LuggageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/LuggageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/PassengerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/PassengerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/SeatFlightDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/SeatFlightDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/AirplaneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/AirplaneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/LuggageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/SeatFlightService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,12 +55,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1OUrisX7EVxtYYICu4yrh6ZqYCU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/logFiles/logg_File.log" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../some/jdbc/Bank-JDBC-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -134,13 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Added PassengersDAO">
-      <created>1563825240484</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1563825240484</updated>
     </task>
     <task id="LOCAL-00050" summary="Added SeatsFlightDAO">
       <created>1563826101386</created>
@@ -478,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564832533522</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="added entities for Service">
+      <created>1564839140842</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1564839140842</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -510,6 +520,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added SeatsFlightDAO" />
     <MESSAGE value="Added SecondPilotsDAO" />
     <MESSAGE value="Added StewardessesDAO" />

@@ -19,8 +19,8 @@ public class Passenger {
     private Double passportSerialNumber;
     private Nationality nationalityService;
 
-    private List <LuggageService> luggageServiceList;
-    private SeatFlightService seatFlightService;
+    private List <Luggage> luggageServiceList;
+    private SeatFlight seatFlightService;
 
     public Long getId() {
         return id;
@@ -78,19 +78,19 @@ public class Passenger {
         this.nationalityService = nationalityService;
     }
 
-    public List<LuggageService> getLuggageServiceList() {
+    public List<Luggage> getLuggageServiceList() {
         return luggageServiceList;
     }
 
-    public void setLuggageServiceList(List<LuggageService> luggageServiceList) {
+    public void setLuggageServiceList(List<Luggage> luggageServiceList) {
         this.luggageServiceList = luggageServiceList;
     }
 
-    public SeatFlightService getSeatFlightService() {
+    public SeatFlight getSeatFlightService() {
         return seatFlightService;
     }
 
-    public void setSeatFlightService(SeatFlightService seatFlightService) {
+    public void setSeatFlightService(SeatFlight seatFlightService) {
         this.seatFlightService = seatFlightService;
     }
 }

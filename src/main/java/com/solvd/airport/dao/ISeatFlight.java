@@ -1,6 +1,6 @@
 package com.solvd.airport.dao;
 
-import com.solvd.airport.entity.SeatFlight;
+import com.solvd.airport.entity.service_relationship.SeatFlight;
 import java.util.List;
 
 public interface ISeatFlight extends DAO <SeatFlight> {

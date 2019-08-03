@@ -1,6 +1,6 @@
 package com.solvd.airport.dao.jdbc;
 
-import com.solvd.airport.entity.SeatFlight;
+import com.solvd.airport.entity.service_relationship.SeatFlight;
 import com.solvd.airport.dao.ISeatFlight;
 
 import java.sql.Connection;
@@ -48,9 +48,9 @@ public class SeatFlightDAO implements ISeatFlight {
                         seatsFlight.setId(rSet.getLong("id"));
                         seatsFlight.setNumberSeet(rSet.getLong("numberSeet"));
                         seatsFlight.setTicketPrice(rSet.getLong("ticketPrice"));
-                        seatsFlight.setAirplane(rSet.getLong("Airplanes_id"));
-                        seatsFlight.setPassenger(rSet.getLong("Passengers_id"));
-                        seatsFlight.setClassSeet(rSet.getLong("ClassSeets_id"));
+                        seatsFlight.setId(rSet.getLong("Airplanes_id"));
+                        seatsFlight.setId(rSet.getLong("Passengers_id"));
+                        seatsFlight.setId(rSet.getLong("ClassSeets_id"));
                         return seatsFlight;
                     }
                 } finally {
@@ -114,9 +114,9 @@ public class SeatFlightDAO implements ISeatFlight {
                         seatsFlight.setId(rSet.getLong("id"));
                         seatsFlight.setNumberSeet(rSet.getLong("numberSeet"));
                         seatsFlight.setTicketPrice(rSet.getLong("ticketPrice"));
-                        seatsFlight.setAirplane(rSet.getLong("Airplanes_id"));
-                        seatsFlight.setPassenger(rSet.getLong("Passengers_id"));
-                        seatsFlight.setClassSeet(rSet.getLong("ClassSeets_id"));
+                        seatsFlight.setId(rSet.getLong("Airplanes_id"));
+                        seatsFlight.setId(rSet.getLong("Passengers_id"));
+                        seatsFlight.setId(rSet.getLong("ClassSeets_id"));
                         seatFlight.add(seatsFlight);
 
                     }
@@ -167,9 +167,9 @@ public class SeatFlightDAO implements ISeatFlight {
 
                 prStatement.setLong(1, seatsFlight.getNumberSeet());
                 prStatement.setLong(2, seatsFlight.getTicketPrice());
-                prStatement.setLong(3, seatsFlight.getAirplane());
-                prStatement.setLong(4, seatsFlight.getPassenger());
-                prStatement.setLong(5, seatsFlight.getClassSeet());
+                prStatement.setLong(3, seatsFlight.getId());
+                prStatement.setLong(4, seatsFlight.getId());
+                prStatement.setLong(5, seatsFlight.getId());
 
                 prStatement.executeUpdate();
             } finally {
@@ -245,9 +245,9 @@ public class SeatFlightDAO implements ISeatFlight {
                 prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setLong(1, seatsFlight.getNumberSeet());
                 prStatement.setLong(2, seatsFlight.getTicketPrice());
-                prStatement.setLong(3, seatsFlight.getAirplane());
-                prStatement.setLong(4, seatsFlight.getPassenger());
-                prStatement.setLong(5, seatsFlight.getClassSeet());
+                prStatement.setLong(3, seatsFlight.getId());
+                prStatement.setLong(4, seatsFlight.getId());
+                prStatement.setLong(5, seatsFlight.getId());
 
                 prStatement.executeUpdate();
             } finally {

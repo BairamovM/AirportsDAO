@@ -16,7 +16,7 @@ public class AirplaneService {
     private Long carryingCapacity;
     private TeamService teamService;
 
-    private List <SeatFlightService> seatFlightServiceList;
+    private List <SeatFlight> seatFlightServiceList;
     private DepartureService departureService;
 
     public Long getId() {
@@ -67,11 +67,11 @@ public class AirplaneService {
         this.teamService = teamService;
     }
 
-    public List<SeatFlightService> getSeatFlightServiceList() {
+    public List<SeatFlight> getSeatFlightServiceList() {
         return seatFlightServiceList;
     }
 
-    public void setSeatFlightServiceList(List<SeatFlightService> seatFlightServiceList) {
+    public void setSeatFlightServiceList(List<SeatFlight> seatFlightServiceList) {
         this.seatFlightServiceList = seatFlightServiceList;
     }
 

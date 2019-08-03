@@ -5,9 +5,9 @@ import com.solvd.airport.entity.ClassSeet;
 import com.solvd.airport.entity.Passenger;
 import org.apache.log4j.Logger;
 
-public class SeatFlightService {
+public class SeatFlight {
 
-    private static final Logger logEntity = Logger.getLogger(SeatFlightService.class);
+    private static final Logger logEntity = Logger.getLogger(SeatFlight.class);
 
     private Long id;
     private Long numberSeet;
