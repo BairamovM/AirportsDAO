@@ -14,7 +14,7 @@ public class Letter {
     private String senderAddress;
     private String receiverAddress;
     private Long weight;
-    private Departure departure;
+    private Long departure;
 
     public Long getId() {
         return id;
@@ -124,11 +124,11 @@ public class Letter {
         }
     }
 
-    public Departure getDeparture() {
+    public Long getDeparture() {
         return departure;
     }
 
-    public void setDeparture(Departure departure) {
+    public void setDeparture(Long departure) {
         this.departure = departure;
     }
 }

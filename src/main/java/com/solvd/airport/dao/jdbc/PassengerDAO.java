@@ -57,7 +57,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                         passengers.setDateBirth(rSet.getString("dateBirth"));
                         passengers.setGender(rSet.getString("gender"));
                         passengers.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        //passengers.setNationality(rSet.getLong("Nationalities_id"));
+                        passengers.setNationality(rSet.getLong("Nationalities_id"));
                         return passengers;
                     }
                 } finally {
@@ -124,7 +124,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                         passengers.setDateBirth(rSet.getString("dateBirth"));
                         passengers.setGender(rSet.getString("gender"));
                         passengers.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        //passengers.setNationality(rSet.getLong("Nationalities_id"));
+                        passengers.setNationality(rSet.getLong("Nationalities_id"));
                         passenger.add(passengers);
 
                     }
@@ -178,7 +178,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                 prStatement.setString(3, passengers.getDateBirth());
                 prStatement.setString(4, passengers.getGender());
                 prStatement.setDouble(5, passengers.getPassportSerialNumber());
-                //prStatement.setLong(6, passengers.getNationality());
+                prStatement.setLong(6, passengers.getNationality());
 
                 prStatement.executeUpdate();
             } finally {
@@ -257,7 +257,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                 prStatement.setString(3, passengers.getDateBirth());
                 prStatement.setString(4, passengers.getGender());
                 prStatement.setDouble(5, passengers.getPassportSerialNumber());
-                //prStatement.setLong(6, passengers.getNationality());
+                prStatement.setLong(6, passengers.getNationality());
 
                 prStatement.executeUpdate();
             } finally {
@@ -302,7 +302,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                     prStatementpass.setString(3, passengers.getDateBirth());
                     prStatementpass.setString(4, passengers.getGender());
                     prStatementpass.setDouble(5, passengers.getPassportSerialNumber());
-                    //prStatementpass.setLong(6, passengers.getNationality());
+                    prStatementpass.setLong(6, passengers.getNationality());
 
                     prStatementpass.executeUpdate();
                 } finally {
@@ -340,9 +340,9 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
 
                     prStatementseats.setLong(1, seatsFlight.getNumberSeet());
                     prStatementseats.setLong(2, seatsFlight.getTicketPrice());
-                    //prStatementseats.setLong(3, seatsFlight.getAirplane());
-                    //prStatementseats.setLong(4, seatsFlight.getPassenger());
-                    //prStatementseats.setLong(5, seatsFlight.getClassSeet());
+                    prStatementseats.setLong(3, seatsFlight.getAirplane());
+                    prStatementseats.setLong(4, seatsFlight.getPassenger());
+                    prStatementseats.setLong(5, seatsFlight.getClassSeet());
 
                     prStatementseats.executeUpdate();
                 } finally {

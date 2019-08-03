@@ -48,7 +48,7 @@ public class LuggageDAO implements ILuggage {
                         luggage.setId(rSet.getLong("id"));
                         luggage.setBarcode(rSet.getLong("barcode"));
                         luggage.setWeight(rSet.getLong("weight"));
-                        //luggage.setPassenger(rSet.getLong("Passengers_id"));
+                        luggage.setPassenger(rSet.getLong("Passengers_id"));
                         return luggage;
                     }
                 } finally {
@@ -112,7 +112,7 @@ public class LuggageDAO implements ILuggage {
                         luggage.setId(rSet.getLong("id"));
                         luggage.setBarcode(rSet.getLong("barcode"));
                         luggage.setWeight(rSet.getLong("weight"));
-                        //luggage.setPassenger(rSet.getLong("Passengers_id"));
+                        luggage.setPassenger(rSet.getLong("Passengers_id"));
                         luggag.add(luggage);
 
                     }
@@ -163,7 +163,7 @@ public class LuggageDAO implements ILuggage {
 
                 prStatement.setLong(1, luggage.getBarcode());
                 prStatement.setLong(2, luggage.getWeight());
-                //prStatement.setLong(3, luggage.getPassenger());
+                prStatement.setLong(3, luggage.getPassenger());
 
                 prStatement.executeUpdate();
             } finally {
@@ -239,7 +239,7 @@ public class LuggageDAO implements ILuggage {
                 prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setLong(1, luggage.getBarcode());
                 prStatement.setLong(2, luggage.getWeight());
-                //prStatement.setLong(3, luggage.getPassenger());
+                prStatement.setLong(3, luggage.getPassenger());
 
 
                 prStatement.executeUpdate();

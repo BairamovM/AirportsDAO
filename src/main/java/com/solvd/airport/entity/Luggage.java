@@ -2,6 +2,7 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import java.nio.file.LinkOption;
 import java.util.List;
 
 public class Luggage {
@@ -11,7 +12,7 @@ public class Luggage {
     private Long id;
     private Long barcode;
     private Long weight;
-    private Passenger passenger;
+    private Long passenger;
 
     public Long getId() {
         return id;
@@ -67,11 +68,11 @@ public class Luggage {
         }
     }
 
-    public Passenger getPassenger() {
+    public Long getPassenger() {
         return passenger;
     }
 
-    public void setPassenger(Passenger passenger) {
+    public void setPassenger(Long passenger) {
         this.passenger = passenger;
     }
 }

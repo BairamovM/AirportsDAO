@@ -14,7 +14,7 @@ public class Passenger {
     private String dateBirth;
     private String gender;
     private Double passportSerialNumber;
-    private Nationality nationality;
+    private Long nationality;
 
     public Long getId() {
         return id;
@@ -124,11 +124,11 @@ public class Passenger {
         }
     }
 
-    public Nationality getNationality() {
+    public Long getNationality() {
         return nationality;
     }
 
-    public void setNationality(Nationality nationality) {
+    public void setNationality(Long nationality) {
         this.nationality = nationality;
     }
 }

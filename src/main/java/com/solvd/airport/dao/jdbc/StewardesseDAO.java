@@ -50,7 +50,7 @@ public class StewardesseDAO implements IStewardesse {
                         stewardesses.setLastName(rSet.getString("lastName"));
                         stewardesses.setExperience(rSet.getLong("experience"));
                         stewardesses.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        //stewardesses.setNationality(rSet.getLong("Nationalities_id"));
+                        stewardesses.setNationality(rSet.getLong("Nationalities_id"));
                         return stewardesses;
                     }
                 } finally {
@@ -116,7 +116,7 @@ public class StewardesseDAO implements IStewardesse {
                         stewardesses.setLastName(rSet.getString("lastName"));
                         stewardesses.setExperience(rSet.getLong("experience"));
                         stewardesses.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        //stewardesses.setNationality(rSet.getLong("Nationalities_id"));
+                        stewardesses.setNationality(rSet.getLong("Nationalities_id"));
                         stewardess.add(stewardesses);
 
                     }
@@ -169,7 +169,7 @@ public class StewardesseDAO implements IStewardesse {
                 prStatement.setString(2, stewardesses.getLastName());
                 prStatement.setLong(3, stewardesses.getExperience());
                 prStatement.setDouble(4, stewardesses.getPassportSerialNumber());
-                //prStatement.setLong(5, stewardesses.getNationality());
+                prStatement.setLong(5, stewardesses.getNationality());
 
                 prStatement.executeUpdate();
             } finally {
@@ -247,7 +247,7 @@ public class StewardesseDAO implements IStewardesse {
                 prStatement.setString(2, stewardesses.getLastName());
                 prStatement.setLong(3, stewardesses.getExperience());
                 prStatement.setDouble(4, stewardesses.getPassportSerialNumber());
-                //prStatement.setLong(5, stewardesses.getNationality());
+                prStatement.setLong(5, stewardesses.getNationality());
 
                 prStatement.executeUpdate();
             } finally {

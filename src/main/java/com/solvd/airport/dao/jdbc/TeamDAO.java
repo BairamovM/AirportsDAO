@@ -46,9 +46,9 @@ public class TeamDAO implements ITeam {
                     if (rSet.next()) {
                         teams = new Team();
                         teams.setId(rSet.getLong("id"));
-                        //teams.setChiefPilot(rSet.getLong("ChiefPilots_id"));
-                        //teams.setSecondPilot(rSet.getLong("SecondPilots_id"));
-                        //teams.setStewardesse(rSet.getLong("Stewardesses_id"));
+                        teams.setChiefPilot(rSet.getLong("ChiefPilots_id"));
+                        teams.setSecondPilot(rSet.getLong("SecondPilots_id"));
+                        teams.setStewardesse(rSet.getLong("Stewardesses_id"));
                         return teams;
                     }
                 } finally {
@@ -110,9 +110,9 @@ public class TeamDAO implements ITeam {
                     while (rSet.next()) {
                         teams = new Team();
                         teams.setId(rSet.getLong("id"));
-                        //teams.setChiefPilot(rSet.getLong("ChiefPilots_id"));
-                        //teams.setSecondPilot(rSet.getLong("SecondPilots_id"));
-                        //teams.setStewardesse(rSet.getLong("Stewardesses_id"));
+                        teams.setChiefPilot(rSet.getLong("ChiefPilots_id"));
+                        teams.setSecondPilot(rSet.getLong("SecondPilots_id"));
+                        teams.setStewardesse(rSet.getLong("Stewardesses_id"));
                         team.add(teams);
 
                     }
@@ -161,9 +161,9 @@ public class TeamDAO implements ITeam {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(SAVE);
 
-                //prStatement.setLong(1, teams.getChiefPilot());
-                //prStatement.setLong(2, teams.getSecondPilot());
-                //prStatement.setLong(3, teams.getStewardesse());
+                prStatement.setLong(1, teams.getChiefPilot());
+                prStatement.setLong(2, teams.getSecondPilot());
+                prStatement.setLong(3, teams.getStewardesse());
 
                 prStatement.executeUpdate();
             } finally {
@@ -237,9 +237,9 @@ public class TeamDAO implements ITeam {
             try {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(UPDATE);
-                //prStatement.setLong(1, teams.getChiefPilot());
-                //prStatement.setLong(2, teams.getSecondPilot());
-                //prStatement.setLong(3, teams.getStewardesse());
+                prStatement.setLong(1, teams.getChiefPilot());
+                prStatement.setLong(2, teams.getSecondPilot());
+                prStatement.setLong(3, teams.getStewardesse());
 
                 prStatement.executeUpdate();
             } finally {

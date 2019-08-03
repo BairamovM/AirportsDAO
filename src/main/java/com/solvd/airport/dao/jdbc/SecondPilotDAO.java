@@ -50,7 +50,7 @@ public class SecondPilotDAO implements ISecondPilot {
                         secondPilots.setLastName(rSet.getString("lastName"));
                         secondPilots.setExperience(rSet.getLong("experience"));
                         secondPilots.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        //secondPilots.setNationality(rSet.getLong("Nationalities_id"));
+                        secondPilots.setNationality(rSet.getLong("Nationalities_id"));
                         return secondPilots;
                     }
                 } finally {
@@ -116,7 +116,7 @@ public class SecondPilotDAO implements ISecondPilot {
                         secondPilots.setLastName(rSet.getString("lastName"));
                         secondPilots.setExperience(rSet.getLong("experience"));
                         secondPilots.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        //secondPilots.setNationality(rSet.getLong("Nationalities_id"));
+                        secondPilots.setNationality(rSet.getLong("Nationalities_id"));
                         secondPilot.add(secondPilots);
 
                     }
@@ -169,7 +169,7 @@ public class SecondPilotDAO implements ISecondPilot {
                 prStatement.setString(2, secondPilots.getLastName());
                 prStatement.setLong(3, secondPilots.getExperience());
                 prStatement.setDouble(4, secondPilots.getPassportSerialNumber());
-                //prStatement.setLong(5, secondPilots.getNationality());
+                prStatement.setLong(5, secondPilots.getNationality());
 
                 prStatement.executeUpdate();
             } finally {
@@ -247,7 +247,7 @@ public class SecondPilotDAO implements ISecondPilot {
                 prStatement.setString(2, secondPilots.getLastName());
                 prStatement.setLong(3, secondPilots.getExperience());
                 prStatement.setDouble(4, secondPilots.getPassportSerialNumber());
-                //prStatement.setLong(5, secondPilots.getNationality());
+                prStatement.setLong(5, secondPilots.getNationality());
 
                 prStatement.executeUpdate();
             } finally {

@@ -14,10 +14,10 @@ public class AirportEmployee {
     private String gender;
     private Double passportSerialNumber;
     private Double phoneNumber;
-    private EmployeeSalary employeeSalary;
-    private EmployeePosition employeePosition;
-    private AirportDepartment airportDepartment;
-    private Nationality nationality;
+    private Long employeeSalary;
+    private Long employeePosition;
+    private Long airportDepartment;
+    private Long nationality;
 
     public Long getId() {
         return id;
@@ -127,35 +127,35 @@ public class AirportEmployee {
         }
     }
 
-    public EmployeeSalary getEmployeeSalary() {
+    public Long getEmployeeSalary() {
         return employeeSalary;
     }
 
-    public void setEmployeeSalary(EmployeeSalary employeeSalary) {
+    public void setEmployeeSalary(Long employeeSalary) {
         this.employeeSalary = employeeSalary;
     }
 
-    public EmployeePosition getEmployeePosition() {
+    public Long getEmployeePosition() {
         return employeePosition;
     }
 
-    public void setEmployeePosition(EmployeePosition employeePosition) {
+    public void setEmployeePosition(Long employeePosition) {
         this.employeePosition = employeePosition;
     }
 
-    public AirportDepartment getAirportDepartment() {
+    public Long getAirportDepartment() {
         return airportDepartment;
     }
 
-    public void setAirportDepartment(AirportDepartment airportDepartment) {
+    public void setAirportDepartment(Long airportDepartment) {
         this.airportDepartment = airportDepartment;
     }
 
-    public Nationality getNationality() {
+    public Long getNationality() {
         return nationality;
     }
 
-    public void setNationality(Nationality nationality) {
+    public void setNationality(Long nationality) {
         this.nationality = nationality;
     }
 }
