@@ -20,8 +20,8 @@ public class AirportDAO implements IAirport {
     public static final String GET_ALL = "SELECT * FROM Airports";
     public static final String SAVE = "INSERT INTO Airports VALUES (?,?,?,?)";
     public static final String DELETE = "DELETE FROM Airports WHERE id =?";
-    public static final String UPDATE = "UPDATE Airports SET nameAirport = ?, AirportClasses_id = ?,Countries_id = ? " +
-            "WHERE id =?";
+    public static final String UPDATE = "UPDATE Airports SET nameAirport = ?, AirportClasses_id = ?, " +
+            "Countries_id = ? WHERE id =?";
 
     @Override
     public Airport getByID(Long id) {
@@ -47,8 +47,8 @@ public class AirportDAO implements IAirport {
                         airports = new Airport();
                         airports.setId(rSet.getLong("id"));
                         airports.setNameAirport(rSet.getString("nameAirport"));
-                        //airports.setAirportClass(rSet.getLong("AirportClasses_id"));
-                        //airports.setCountry(rSet.getLong("Countries_id"));
+                        airports.setAirportClass(rSet.getLong("AirportClasses_id"));
+                        airports.setCountry(rSet.getLong("Countries_id"));
                         return airports;
                     }
                 } finally {
@@ -111,8 +111,8 @@ public class AirportDAO implements IAirport {
                         airports = new Airport();
                         airports.setId(rSet.getLong("id"));
                         airports.setNameAirport(rSet.getString("nameAirport"));
-                        //airports.setAirportClass(rSet.getLong("AirportClasses_id"));
-                        //airports.setCountry(rSet.getLong("Countries_id"));
+                        airports.setAirportClass(rSet.getLong("AirportClasses_id"));
+                        airports.setCountry(rSet.getLong("Countries_id"));
                         airport.add(airports);
 
                     }
@@ -162,8 +162,8 @@ public class AirportDAO implements IAirport {
                 prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, airports.getNameAirport());
-                //prStatement.setLong(2, airports.getAirportClass());
-                //prStatement.setLong(3, airports.getCountry());
+                prStatement.setLong(2, airports.getAirportClass());
+                prStatement.setLong(3, airports.getCountry());
 
                 prStatement.executeUpdate();
             } finally {
@@ -238,8 +238,8 @@ public class AirportDAO implements IAirport {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, airports.getNameAirport());
-                //prStatement.setTeam(2, airports.getAirportClass());
-                //prStatement.setTeam(3, airports.getCountry());
+                prStatement.setLong(2, airports.getAirportClass());
+                prStatement.setLong(3, airports.getCountry());
 
                 prStatement.executeUpdate();
             } finally {

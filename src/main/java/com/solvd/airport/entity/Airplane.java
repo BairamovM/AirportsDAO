@@ -11,7 +11,7 @@ public class Airplane {
     private Long numberSeets;
     private Long rangeFlight;
     private Long carryingCapacity;
-    private Team team;
+    private Long team;
 
     public void setId(long id) {
 
@@ -103,12 +103,12 @@ public class Airplane {
         return carryingCapacity;
     }
 
-    public void setTeam(Team team) {
+    public void setTeam(Long team) {
 
         this.team = team;
     }
 
-    public Team getTeam() {
+    public Long getTeam() {
         return team;
     }
 
