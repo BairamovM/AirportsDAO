@@ -1,6 +1,5 @@
 package com.solvd.airport.entity.service_relationship;
 
-import com.solvd.airport.entity.Airport;
 import org.apache.log4j.Logger;
 
 public class AirportDepartmentService {
@@ -9,7 +8,7 @@ public class AirportDepartmentService {
 
     private Long id;
     private String nameDepartment;
-    private Airport airport;
+    private AirportService airportService;
 
     public Long getId() {
         return id;
@@ -27,11 +26,11 @@ public class AirportDepartmentService {
         this.nameDepartment = nameDepartment;
     }
 
-    public Airport getAirport() {
-        return airport;
+    public AirportService getAirportService() {
+        return airportService;
     }
 
-    public void setAirport(Airport airport) {
-        this.airport = airport;
+    public void setAirportService(AirportService airportService) {
+        this.airportService = airportService;
     }
 }

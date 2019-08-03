@@ -1,8 +1,6 @@
 package com.solvd.airport.entity.service_relationship;
 
 import com.solvd.airport.entity.AirportClass;
-import com.solvd.airport.entity.AirportDepartment;
-import com.solvd.airport.entity.AllFlight;
 import com.solvd.airport.entity.Country;
 import org.apache.log4j.Logger;
 
@@ -14,11 +12,11 @@ public class AirportService {
 
     private Long id;
     private String nameAirport;
-    private AirportClass airportClass;
-    private Country country;
+    private AirportClassService airportClassService;
+    private CountryService countryService;
 
-    private List <AirportDepartment> airportDepartmentList;
-    private List <AllFlight> allFlightList;
+    private List <AirportDepartmentService> airportDepartmentServiceList;
+    private List <AllFlightService> allFlightServiceList;
 
     public Long getId() {
         return id;
@@ -36,35 +34,35 @@ public class AirportService {
         this.nameAirport = nameAirport;
     }
 
-    public AirportClass getAirportClass() {
-        return airportClass;
+    public AirportClassService getAirportClassService() {
+        return airportClassService;
     }
 
-    public void setAirportClass(AirportClass airportClass) {
-        this.airportClass = airportClass;
+    public void setAirportClassService(AirportClassService airportClassService) {
+        this.airportClassService = airportClassService;
     }
 
-    public Country getCountry() {
-        return country;
+    public CountryService getCountryService() {
+        return countryService;
     }
 
-    public void setCountry(Country country) {
-        this.country = country;
+    public void setCountryService(CountryService countryService) {
+        this.countryService = countryService;
     }
 
-    public List<AirportDepartment> getAirportDepartmentList() {
-        return airportDepartmentList;
+    public List<AirportDepartmentService> getAirportDepartmentServiceList() {
+        return airportDepartmentServiceList;
     }
 
-    public void setAirportDepartmentList(List<AirportDepartment> airportDepartmentList) {
-        this.airportDepartmentList = airportDepartmentList;
+    public void setAirportDepartmentServiceList(List<AirportDepartmentService> airportDepartmentServiceList) {
+        this.airportDepartmentServiceList = airportDepartmentServiceList;
     }
 
-    public List<AllFlight> getAllFlightList() {
-        return allFlightList;
+    public List<AllFlightService> getAllFlightServiceList() {
+        return allFlightServiceList;
     }
 
-    public void setAllFlightList(List<AllFlight> allFlightList) {
-        this.allFlightList = allFlightList;
+    public void setAllFlightServiceList(List<AllFlightService> allFlightServiceList) {
+        this.allFlightServiceList = allFlightServiceList;
     }
 }

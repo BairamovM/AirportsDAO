@@ -9,8 +9,8 @@ public class AllFlightService {
 
     private Long id;
     private Double numberFlight;
-    private Airport idDepartureAirport;
-    private Airport idAirportArrival;
+    private AirportService idDepartureAirport;
+    private AirportService idAirportArrival;
     private Long flightTime;
 
     public Long getId() {
@@ -29,19 +29,19 @@ public class AllFlightService {
         this.numberFlight = numberFlight;
     }
 
-    public Airport getIdDepartureAirport() {
+    public AirportService getIdDepartureAirport() {
         return idDepartureAirport;
     }
 
-    public void setIdDepartureAirport(Airport idDepartureAirport) {
+    public void setIdDepartureAirport(AirportService idDepartureAirport) {
         this.idDepartureAirport = idDepartureAirport;
     }
 
-    public Airport getIdAirportArrival() {
+    public AirportService getIdAirportArrival() {
         return idAirportArrival;
     }
 
-    public void setIdAirportArrival(Airport idAirportArrival) {
+    public void setIdAirportArrival(AirportService idAirportArrival) {
         this.idAirportArrival = idAirportArrival;
     }
 

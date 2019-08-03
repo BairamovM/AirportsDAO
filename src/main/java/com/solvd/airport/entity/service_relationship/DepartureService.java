@@ -10,8 +10,8 @@ public class DepartureService {
 
     private Long id;
     private String departureDate;
-    private Airplane airplane;
-    private AllFlight allFlight;
+    private AirplaneService airplaneService;
+    private AllFlightService allFlightService;
 
     public Long getId() {
         return id;
@@ -29,19 +29,19 @@ public class DepartureService {
         this.departureDate = departureDate;
     }
 
-    public Airplane getAirplane() {
-        return airplane;
+    public AirplaneService getAirplaneService() {
+        return airplaneService;
     }
 
-    public void setAirplane(Airplane airplane) {
-        this.airplane = airplane;
+    public void setAirplaneService(AirplaneService airplaneService) {
+        this.airplaneService = airplaneService;
     }
 
-    public AllFlight getAllFlight() {
-        return allFlight;
+    public AllFlightService getAllFlightService() {
+        return allFlightService;
     }
 
-    public void setAllFlight(AllFlight allFlight) {
-        this.allFlight = allFlight;
+    public void setAllFlightService(AllFlightService allFlightService) {
+        this.allFlightService = allFlightService;
     }
 }

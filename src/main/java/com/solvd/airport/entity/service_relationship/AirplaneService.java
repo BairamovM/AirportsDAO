@@ -1,7 +1,5 @@
 package com.solvd.airport.entity.service_relationship;
 
-import com.solvd.airport.entity.Departure;
-import com.solvd.airport.entity.SeatFlight;
 import com.solvd.airport.entity.Team;
 import org.apache.log4j.Logger;
 
@@ -16,10 +14,10 @@ public class AirplaneService {
     private Long numberSeets;
     private Long rangeFlight;
     private Long carryingCapacity;
-    private Team team;
+    private TeamService teamService;
 
-    private List <SeatFlight> seatFlightList;
-    private Departure departure;
+    private List <SeatFlightService> seatFlightServiceList;
+    private DepartureService departureService;
 
     public Long getId() {
         return id;
@@ -61,27 +59,27 @@ public class AirplaneService {
         this.carryingCapacity = carryingCapacity;
     }
 
-    public Team getTeam() {
-        return team;
+    public TeamService getTeamService() {
+        return teamService;
     }
 
-    public void setTeam(Team team) {
-        this.team = team;
+    public void setTeamService(TeamService teamService) {
+        this.teamService = teamService;
     }
 
-    public List<SeatFlight> getSeatFlightList() {
-        return seatFlightList;
+    public List<SeatFlightService> getSeatFlightServiceList() {
+        return seatFlightServiceList;
     }
 
-    public void setSeatFlightList(List<SeatFlight> seatFlightList) {
-        this.seatFlightList = seatFlightList;
+    public void setSeatFlightServiceList(List<SeatFlightService> seatFlightServiceList) {
+        this.seatFlightServiceList = seatFlightServiceList;
     }
 
-    public Departure getDeparture() {
-        return departure;
+    public DepartureService getDepartureService() {
+        return departureService;
     }
 
-    public void setDeparture(Departure departure) {
-        this.departure = departure;
+    public void setDepartureService(DepartureService departureService) {
+        this.departureService = departureService;
     }
 }

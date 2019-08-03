@@ -13,10 +13,10 @@ public class DeparturesService {
 
     private Long id;
     private String departureDate;
-    private Airplane airplane;
-    private AllFlight allFlight;
+    private AirplaneService airplaneService;
+    private AllFlightService allFlightService;
 
-    private List <Letter> letterList;
+    private List <LetterService> letterServiceList;
 
     public Long getId() {
         return id;
@@ -34,27 +34,27 @@ public class DeparturesService {
         this.departureDate = departureDate;
     }
 
-    public Airplane getAirplane() {
-        return airplane;
+    public AirplaneService getAirplaneService() {
+        return airplaneService;
     }
 
-    public void setAirplane(Airplane airplane) {
-        this.airplane = airplane;
+    public void setAirplaneService(AirplaneService airplaneService) {
+        this.airplaneService = airplaneService;
     }
 
-    public AllFlight getAllFlight() {
-        return allFlight;
+    public AllFlightService getAllFlightService() {
+        return allFlightService;
     }
 
-    public void setAllFlight(AllFlight allFlight) {
-        this.allFlight = allFlight;
+    public void setAllFlightService(AllFlightService allFlightService) {
+        this.allFlightService = allFlightService;
     }
 
-    public List<Letter> getLetterList() {
-        return letterList;
+    public List<LetterService> getLetterServiceList() {
+        return letterServiceList;
     }
 
-    public void setLetterList(List<Letter> letterList) {
-        this.letterList = letterList;
+    public void setLetterServiceList(List<LetterService> letterServiceList) {
+        this.letterServiceList = letterServiceList;
     }
 }
