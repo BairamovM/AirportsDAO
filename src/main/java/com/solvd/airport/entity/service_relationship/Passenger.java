@@ -7,9 +7,9 @@ import org.apache.log4j.Logger;
 
 import java.util.List;
 
-public class PassengerService {
+public class Passenger {
 
-    private static final Logger logEntity = Logger.getLogger(PassengerService.class);
+    private static final Logger logEntity = Logger.getLogger(Passenger.class);
 
     private Long id;
     private String firstName;
@@ -17,7 +17,7 @@ public class PassengerService {
     private String dateBirth;
     private String gender;
     private Double passportSerialNumber;
-    private NationalityService nationalityService;
+    private Nationality nationalityService;
 
     private List <LuggageService> luggageServiceList;
     private SeatFlightService seatFlightService;
@@ -70,11 +70,11 @@ public class PassengerService {
         this.passportSerialNumber = passportSerialNumber;
     }
 
-    public NationalityService getNationalityService() {
+    public Nationality getNationalityService() {
         return nationalityService;
     }
 
-    public void setNationalityService(NationalityService nationalityService) {
+    public void setNationalityService(Nationality nationalityService) {
         this.nationalityService = nationalityService;
     }
 

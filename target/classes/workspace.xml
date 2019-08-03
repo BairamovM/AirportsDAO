@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/AirplaneDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/AirplaneDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/AirportDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/AirportDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Airplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Airport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/PassengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/PassengerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/ChiefPilotService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/SeatsFlightServise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,41 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Added EmployeePositionsDAO">
-      <created>1563816878697</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1563816878697</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Added EmployeeSalariesDAO">
-      <created>1563817377491</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1563817377491</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Added LettersDAO">
-      <created>1563819177430</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1563819177430</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Added LuggageDAO">
-      <created>1563819805372</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1563819805372</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Added NationalitiesDAO">
-      <created>1563820326292</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1563820326292</updated>
     </task>
     <task id="LOCAL-00049" summary="Added PassengersDAO">
       <created>1563825240484</created>
@@ -476,7 +443,42 @@
       <option name="project" value="LOCAL" />
       <updated>1564757838196</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="added db.properties">
+      <created>1564818233452</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1564818233453</updated>
+    </task>
+    <task id="LOCAL-00094" summary="added db.properties">
+      <created>1564820785445</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1564820785445</updated>
+    </task>
+    <task id="LOCAL-00095" summary="added entities for Service">
+      <created>1564830511443</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1564830511443</updated>
+    </task>
+    <task id="LOCAL-00096" summary="added entities for Service">
+      <created>1564832259343</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1564832259343</updated>
+    </task>
+    <task id="LOCAL-00097" summary="added entities for Service">
+      <created>1564832533522</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1564832533522</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -508,7 +510,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Added PassengersDAO" />
     <MESSAGE value="Added SeatsFlightDAO" />
     <MESSAGE value="Added SecondPilotsDAO" />
     <MESSAGE value="Added StewardessesDAO" />
@@ -533,6 +534,7 @@
     <MESSAGE value="comments service all" />
     <MESSAGE value="added Parser" />
     <MESSAGE value="added db.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="added db.properties" />
+    <MESSAGE value="added entities for Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="added entities for Service" />
   </component>
 </project>

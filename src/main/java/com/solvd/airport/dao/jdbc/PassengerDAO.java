@@ -94,7 +94,7 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
         }
 
         logDAO.trace("Return passengers");
-        return passengers;
+        return null;
     }
 
     @Override
@@ -278,95 +278,6 @@ public class PassengerDAO implements IPassenger, IPassengerTransaction {
                 logDAO.warn("Can't close Connection", e);
             }
         }
-
-    }
-
-    @Override
-    public void bookPlace(Passenger passengers, SeatFlight seatsFlight) {
-
-
-
-            logDAO.trace("Update Data in passengers and seatsFlight");
-            Connection connectionpass = null;
-            PreparedStatement prStatementpass = null;
-
-            try {
-                logDAO.trace("Open Connection");
-                connectionpass = ConnectionFactory.getConnection();
-                try {
-                    logDAO.trace("Create PreparedStatement");
-                    prStatementpass = connectionpass.prepareStatement(SAVE);
-
-                    prStatementpass.setString(1, passengers.getFirstName());
-                    prStatementpass.setString(2, passengers.getLastName());
-                    prStatementpass.setString(3, passengers.getDateBirth());
-                    prStatementpass.setString(4, passengers.getGender());
-                    prStatementpass.setDouble(5, passengers.getPassportSerialNumber());
-                    prStatementpass.setLong(6, passengers.getNationality());
-
-                    prStatementpass.executeUpdate();
-                } finally {
-                    try {
-                        prStatementpass.close();
-                        logDAO.trace("PreparedStatement closed");
-                    } catch (SQLException e) {
-                        logDAO.warn("Can't close PreparedStatement", e);
-                    }
-                }
-            } catch (SQLException e) {
-                logDAO.trace("Can't Updata Data in passengers", e);
-            } finally {
-                try {
-                    connectionpass.close();
-                    logDAO.trace("Connection closed");
-                } catch (SQLException e) {
-                    logDAO.warn("Can't close Connection", e);
-                }
-            }
-
-
-
-
-            logDAO.trace("Update Data in seatsFlight");
-            Connection connectionseats = null;
-            PreparedStatement prStatementseats = null;
-
-            try {
-                logDAO.trace("Open Connection");
-                connectionseats = ConnectionFactory.getConnection();
-                try {
-                    logDAO.trace("Create PreparedStatement");
-                    prStatementseats = connectionseats.prepareStatement(SAVE);
-
-                    prStatementseats.setLong(1, seatsFlight.getNumberSeet());
-                    prStatementseats.setLong(2, seatsFlight.getTicketPrice());
-                    prStatementseats.setLong(3, seatsFlight.getAirplane());
-                    prStatementseats.setLong(4, seatsFlight.getPassenger());
-                    prStatementseats.setLong(5, seatsFlight.getClassSeet());
-
-                    prStatementseats.executeUpdate();
-                } finally {
-                    try {
-                        prStatementseats.close();
-                        logDAO.trace("PreparedStatement closed");
-                    } catch (SQLException e) {
-                        logDAO.warn("Can't close PreparedStatement", e);
-                    }
-                }
-            } catch (SQLException e) {
-                logDAO.trace("Can't Updata Data in seatsFlight", e);
-            } finally {
-                try {
-                    connectionseats.close();
-                    logDAO.trace("Connection closed");
-                } catch (SQLException e) {
-                    logDAO.warn("Can't close Connection", e);
-                }
-            }
-
-
-
-
 
     }
 
