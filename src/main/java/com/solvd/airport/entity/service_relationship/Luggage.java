@@ -1,5 +1,7 @@
 package com.solvd.airport.entity.service_relationship;
 
+import com.solvd.airport.entity.service_relationship.Passenger;
+
 import org.apache.log4j.Logger;
 
 public class Luggage {

@@ -28,7 +28,7 @@ public class PassengerInfo {
     public Passenger getPassenger (Long id) {
 
         Passenger passenger = passengerDAO.getByID(id);
-        passenger.setLuggageServiceList(luggageDAO.getAllId(id));
+        //passenger.setLuggageServiceList(luggageDAO.getAllId(id));
         //passenger.setSeatFlightService(seatFlightDAO.getByID(id));
 
         return passenger;

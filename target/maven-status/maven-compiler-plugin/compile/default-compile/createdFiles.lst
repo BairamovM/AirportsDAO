@@ -5,7 +5,6 @@ com\solvd\airport\entity\Letter.class
 com\solvd\airport\dao\jdbc\LuggageDAO.class
 com\solvd\airport\entity\AirportEmployee.class
 com\solvd\airport\dao\jdbc\EmployeePositionDAO.class
-com\solvd\airport\service\SeatsFlightServise.class
 com\solvd\airport\dao\ILuggage.class
 com\solvd\airport\dao\jdbc\TeamDAO.class
 com\solvd\airport\entity\EmployeePosition.class
@@ -30,7 +29,6 @@ com\solvd\airport\dao\jdbc\AirportDepartmentDAO.class
 com\solvd\airport\entity\AllFlight.class
 com\solvd\airport\dao\IAirportEmployee.class
 com\solvd\airport\entity\Airplane.class
-com\solvd\airport\service\ChiefPilotService.class
 com\solvd\airport\dao\DAO.class
 com\solvd\airport\entity\Nationality.class
 com\solvd\airport\dao\ITeam.class
@@ -66,7 +64,6 @@ com\solvd\airport\dao\jdbc\AirplaneDAO.class
 com\solvd\airport\entity\Team.class
 com\solvd\airport\dao\jdbc\SecondPilotDAO.class
 com\solvd\airport\entity\SecondPilot.class
-com\solvd\airport\service\PassengerService.class
 com\solvd\airport\entity\EntityException.class
 com\solvd\airport\dao\connectionPool\ConnectionPool.class
 com\solvd\airport\dao\ICountry.class

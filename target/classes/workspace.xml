@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Luggage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/SeatFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/ILuggage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/ILuggage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/ISeatFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/ISeatFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/LuggageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/LuggageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/PassengerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/PassengerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/SeatFlightDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/SeatFlightDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/AirplaneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/AirplaneService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/LuggageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/SeatFlightService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Luggage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Luggage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Luggage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Luggage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
     </list>
@@ -144,20 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Added SeatsFlightDAO">
-      <created>1563826101386</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1563826101387</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Added SecondPilotsDAO">
-      <created>1563827324639</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1563827324639</updated>
     </task>
     <task id="LOCAL-00052" summary="Added StewardessesDAO">
       <created>1563827711077</created>
@@ -488,7 +465,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564839140842</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Passenger Info Service">
+      <created>1564847051199</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1564847051199</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Passenger Info Service">
+      <created>1564849079482</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1564849079482</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,7 +512,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added SeatsFlightDAO" />
     <MESSAGE value="Added SecondPilotsDAO" />
     <MESSAGE value="Added StewardessesDAO" />
     <MESSAGE value="Added TeamsDAO" />
@@ -546,6 +536,7 @@
     <MESSAGE value="added Parser" />
     <MESSAGE value="added db.properties" />
     <MESSAGE value="added entities for Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="added entities for Service" />
+    <MESSAGE value="Passenger Info Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passenger Info Service" />
   </component>
 </project>
