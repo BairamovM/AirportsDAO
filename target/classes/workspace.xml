@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/xml/AirplaneDOM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Luggage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Luggage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Luggage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/service_relationship/Luggage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/service/PassengerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,20 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Added StewardessesDAO">
-      <created>1563827711077</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1563827711078</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Added TeamsDAO">
-      <created>1563828523111</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1563828523111</updated>
     </task>
     <task id="LOCAL-00054" summary="Added PassengerTransaction">
       <created>1563828888143</created>
@@ -483,7 +460,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564849079482</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Added AirplaneDOM">
+      <created>1564943110757</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1564943110758</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Added AirplaneDOM">
+      <created>1564943192227</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1564943192228</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,7 +507,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added SecondPilotsDAO" />
     <MESSAGE value="Added StewardessesDAO" />
     <MESSAGE value="Added TeamsDAO" />
     <MESSAGE value="Added PassengerTransaction" />
@@ -541,6 +531,7 @@
     <MESSAGE value="added db.properties" />
     <MESSAGE value="added entities for Service" />
     <MESSAGE value="Passenger Info Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passenger Info Service" />
+    <MESSAGE value="Added AirplaneDOM" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AirplaneDOM" />
   </component>
 </project>

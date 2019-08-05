@@ -1,7 +1,9 @@
 package com.solvd.airport;
 
+import com.solvd.airport.dao.connectionPool.CompletableFutureStart;
 import org.apache.log4j.Logger;
 
+import java.io.IOException;
 import java.sql.*;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -11,63 +13,24 @@ import java.util.concurrent.ExecutionException;
 
 import com.solvd.airport.dao.connectionPool.ConnectionPool;
 
-import com.solvd.airport.entity.Airplane;
-
 import com.solvd.airport.xml.Parser;
+import org.xml.sax.SAXException;
 
-import java.util.ArrayList;
+import javax.xml.parsers.ParserConfigurationException;
 
 public class Main {
 
     private static final Logger log = Logger.getLogger(Main.class);
 
 
-    public static void main (String[] args) throws SQLException, ExecutionException, InterruptedException {
+    public static void main (String[] args) throws IOException, SAXException, ParserConfigurationException, InterruptedException, ExecutionException, SQLException {
 
 
-
-    log.info("First log message");
-
-        //create pool connection  ?useSSL=false
-        ConnectionPool connectionPool = new ConnectionPool(
-                "com.mysql.jdbc.Driver",
-                "jdbc:mysql://localhost:3306/?useSSL=false", "Neuromancer", "Neuromancer",9
-        );
-
-        CompletableFuture<Void> future = CompletableFuture.runAsync(() -> {
-
-            List<Connection> connections = new ArrayList<>();
-
-            try {
-
-                for (int i = 0;i < 10;i++){
-                    connections.add(connectionPool.getConnection());
-                    log.info("Connection added to DB = " + i);
-                }
-
-            } catch (SQLException e) {
-                e.printStackTrace();
-                log.info("SQLException message");
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-                log.info("InterruptedException");
-            }
-
-
-
-        });
-
-        future.get();
-
-        log.info(future.isDone());
-        log.info(future.isCancelled());
-        log.info(future.toCompletableFuture());
-        log.info(future.toString());
+        CompletableFutureStart completableFutureStart = new CompletableFutureStart();
 
 
         Parser parser = new Parser();
-        parser.buildSetAirplane();
-
+        parser.toString();
 
     }
 

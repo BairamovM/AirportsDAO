@@ -1,58 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<airplaneTeams>
+
     <airplane>
-        <id> "1" </id>
-        <type> "An-148" </type>
-        <numberSeets> "80" </numberSeets>
-        <rangeFlight> "2100" </rangeFlight>
-        <carryingCapacity> "38550" </carryingCapacity>
-        <Teams>
-            <id> "1" </id>
+        <id> 1 </id>
+        <type> An-148 </type>
+        <numberSeets> 80 </numberSeets>
+        <rangeFlight> 2100 </rangeFlight>
+        <carryingCapacity> 38550 </carryingCapacity>
+        <Teams id = "1">
 
-                <ChiefPilots_id>
-                    <id> "1" </id>
-                    <firstName> "Jake" </firstName>
-                    <lastName> "Gilmore" </lastName>
-                    <experience> "15" </experience>
-                    <passportSerialNumber> "3565743" </passportSerialNumber>
+                <Team_member ChiefPilots = "1">
+                    <id> 1 </id>
+                    <firstName> Jake </firstName>
+                    <lastName> Gilmore </lastName>
+                    <experience> 15 </experience>
+                    <passportSerialNumber> 3565743 </passportSerialNumber>
+                    <Nationalities_id> 1 </Nationalities_id>
+                    <citizenship> USA </citizenship>
+                </Team_member>>
 
-                    <Nationalities_id>
-                        <id> 1 </id>>
-                        <citizenship> "USA" </citizenship>>
-                    </Nationalities_id>
+                <Team_member SecondPilots = "2">
+                    <id> 1 </id>
+                    <firstName> Charlie </firstName>
+                    <lastName> Black </lastName>
+                    <experience> 5 </experience>
+                    <passportSerialNumber> 4685 </passportSerialNumber>
+                    <Nationalities_id> 1 </Nationalities_id>
+                    <citizenship> USA </citizenship>
+                </Team_member>>
 
-                </ChiefPilots_id>>
-
-                <SecondPilots_id>
-                    <id> "1" </id>
-                    <firstName> "Charlie" </firstName>
-                    <lastName> "Black" </lastName>
-                    <experience> "5" </experience>
-                    <passportSerialNumber> "4685" </passportSerialNumber>
-
-                    <Nationalities_id>
-                        <id> 1 </id>>
-                        <citizenship> "USA" </citizenship>>
-                    </Nationalities_id>
-
-                </SecondPilots_id>>
-
-                <Stewardesses_id>
-                    <id> "1" </id>
-                    <firstName> "Amber" </firstName>
-                    <lastName> "Austin" </lastName>
-                    <experience> "6" </experience>
-                    <passportSerialNumber> "3255985" </passportSerialNumber>
-
-                    <Nationalities_id>
-                        <id> 1 </id>>
-                        <citizenship> "CANADA" </citizenship>>
-                    </Nationalities_id>
-
-                </Stewardesses_id>
+                <Team_member Stewardesses = "3">
+                    <id> 1 </id>
+                    <firstName> Amber </firstName>
+                    <lastName> Austin </lastName>
+                    <experience> 6 </experience>
+                    <passportSerialNumber> 3255985 </passportSerialNumber>
+                    <Nationalities_id> 1 </Nationalities_id>
+                    <citizenship> CANADA </citizenship>>
+                </Team_member>
 
         </Teams>
     </airplane>
-</airplaneTeams>
+
 
