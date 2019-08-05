@@ -1,4 +1,4 @@
-2019-08-05 15:59:53 INFO  Parser:191 - [AirplaneDOM { 
+2019-08-05 16:03:32 INFO  Parser:193 - [AirplaneDOM { 
 airplaneID =  1 
 airplaneType =  An-148 
 numberSeets =  80 
@@ -8,7 +8,7 @@ teamID =  1
 }
 
 ]
-2019-08-05 15:59:53 INFO  Parser:192 - [ChiefPilotsDOM { 
+2019-08-05 16:03:32 INFO  Parser:194 - [ChiefPilotsDOM { 
 id =  1 
 firstName =  Jake 
 lastName =  Gilmore 
@@ -17,7 +17,7 @@ passportSerialNumber =  3565743
 Nationalities_id =  1 
 citizenship =  USA 
 }]
-2019-08-05 15:59:53 INFO  Parser:193 - [SecondPilotsDOM { 
+2019-08-05 16:03:33 INFO  Parser:195 - [SecondPilotsDOM { 
 id =  1 
 firstName =  Charlie 
 lastName =  Black 
@@ -27,7 +27,7 @@ Nationalities_id =  1
 citizenship =  USA 
 }
 ]
-2019-08-05 15:59:53 INFO  Parser:194 - [StewardessesDOM { 
+2019-08-05 16:03:33 INFO  Parser:196 - [StewardessesDOM { 
 id =  1 
 firstName =  Amber 
 lastName =  Austin 
