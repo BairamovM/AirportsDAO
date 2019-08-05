@@ -46,10 +46,10 @@ public class AirplaneDAO implements IAirplane {
                         airplane = new Airplane();
                         airplane.setId(rSet.getLong("id"));
                         airplane.setType(rSet.getString("type"));
-                        airplane.setNumberSeets(rSet.getLong("numberSeets"));
-                        airplane.setRangeFlight(rSet.getLong("rangeFlight"));
-                        airplane.setCarryingCapacity(rSet.getLong("carryingCapacity"));
-                        airplane.setTeam(rSet.getLong("Team"));
+                        airplane.setNumberSeets(rSet.getInt("numberSeets"));
+                        airplane.setRangeFlight(rSet.getInt("rangeFlight"));
+                        airplane.setCarryingCapacity(rSet.getInt("carryingCapacity"));
+                        airplane.setTeam(rSet.getInt("Team"));
                         return airplane;
                     }
                 } finally {
@@ -112,10 +112,10 @@ public class AirplaneDAO implements IAirplane {
                         airplane = new Airplane();
                         airplane.setId(rSet.getLong("id"));
                         airplane.setType(rSet.getString("type"));
-                        airplane.setNumberSeets(rSet.getLong("numberSeets"));
-                        airplane.setRangeFlight(rSet.getLong("rangeFlight"));
-                        airplane.setCarryingCapacity(rSet.getLong("carryingCapacity"));
-                        airplane.setTeam(rSet.getLong("Team"));
+                        airplane.setNumberSeets(rSet.getInt("numberSeets"));
+                        airplane.setRangeFlight(rSet.getInt("rangeFlight"));
+                        airplane.setCarryingCapacity(rSet.getInt("carryingCapacity"));
+                        airplane.setTeam(rSet.getInt("Team"));
                         airplanes.add(airplane);
 
                     }

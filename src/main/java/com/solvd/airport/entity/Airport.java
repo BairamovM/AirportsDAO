@@ -2,8 +2,12 @@ package com.solvd.airport.entity;
 
 import org.apache.log4j.Logger;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
+@XmlRootElement
 public class Airport {
 
     private static final Logger logEntity = Logger.getLogger(Airport.class);
@@ -17,6 +21,7 @@ public class Airport {
         return id;
     }
 
+    @XmlElement
     public void setId(Long id) {
 
         try {
@@ -35,6 +40,7 @@ public class Airport {
         return nameAirport;
     }
 
+    @XmlElement
     public void setNameAirport(String nameAirport) {
 
         try {
@@ -53,6 +59,7 @@ public class Airport {
         return airportClass;
     }
 
+    @XmlElement
     public void setAirportClass(Long airportClass) {
         this.airportClass = airportClass;
     }
@@ -61,6 +68,7 @@ public class Airport {
         return country;
     }
 
+    @XmlElement
     public void setCountry(Long country) {
         this.country = country;
     }

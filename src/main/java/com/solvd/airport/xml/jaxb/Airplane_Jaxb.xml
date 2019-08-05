@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<airplane>
+    <carryingCapacity>38550</carryingCapacity>
+    <numberSeets>80</numberSeets>
+    <rangeFlight>2100</rangeFlight>
+    <team>1</team>
+    <type>An-148</type>
+</airplane>

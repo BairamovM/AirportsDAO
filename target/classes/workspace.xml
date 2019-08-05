@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="" />
+    <list default="true" id="5538c060-620c-4375-9fa6-4bdf74455b14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/xml/jaxb/Airplane_Jaxb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/xml/jaxb/JaxbWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logFiles/logg_File.log" beforeDir="false" afterPath="$PROJECT_DIR$/logFiles/logg_File.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/AirplaneDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/dao/jdbc/AirplaneDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/airport/entity/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logg_File.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logg_File.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +66,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -130,41 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563620984209</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Added PassengerTransaction">
-      <created>1563828888143</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1563828888143</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Added Interfaces">
-      <created>1563856361333</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1563856361333</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Added methods in Interfaces">
-      <created>1563857755089</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1563857755089</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Added Interfaces to DAOclasses">
-      <created>1563858442417</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1563858442417</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Added transaction">
-      <created>1563862986962</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1563862986962</updated>
     </task>
     <task id="LOCAL-00059" summary="Added transaction">
       <created>1563865489951</created>
@@ -474,7 +452,42 @@
       <option name="project" value="LOCAL" />
       <updated>1564943192228</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Write parser. Change CompletableFuture">
+      <created>1565001543316</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1565001543317</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Added DOM class">
+      <created>1565001742937</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1565001742937</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Dom written">
+      <created>1565010085264</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1565010085264</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Dom written">
+      <created>1565010194196</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1565010194196</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Dom written">
+      <created>1565010225163</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1565010225163</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -507,9 +520,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added StewardessesDAO" />
-    <MESSAGE value="Added TeamsDAO" />
-    <MESSAGE value="Added PassengerTransaction" />
     <MESSAGE value="Added Interfaces" />
     <MESSAGE value="Added methods in Interfaces" />
     <MESSAGE value="Added Interfaces to DAOclasses" />
@@ -532,6 +542,9 @@
     <MESSAGE value="added entities for Service" />
     <MESSAGE value="Passenger Info Service" />
     <MESSAGE value="Added AirplaneDOM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added AirplaneDOM" />
+    <MESSAGE value="Write parser. Change CompletableFuture" />
+    <MESSAGE value="Added DOM class" />
+    <MESSAGE value="Dom written" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dom written" />
   </component>
 </project>

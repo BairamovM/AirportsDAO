@@ -1,36 +1,33 @@
 package com.solvd.airport.entity;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import org.apache.log4j.Logger;
 
+@XmlRootElement
 public class Airplane {
 
     private static final Logger logEntity = Logger.getLogger(Airplane.class);
 
     private Long id;
     private String type;
-    private Long numberSeets;
-    private Long rangeFlight;
-    private Long carryingCapacity;
-    private Long team;
+    private Integer numberSeets;
+    private Integer rangeFlight;
+    private Integer carryingCapacity;
+    private Integer team;
 
+    @XmlElement
     public void setId(long id) {
-
-        try {
-            if (id <= 0) {
-                logEntity.error("Value id error = " + id);
-                throw new EntityException("Value id error = " + id);
-            } else if (id >= 1) {
-                this.id = id;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value id error = " + id);
-        }
+       this.id = id;
     }
 
     public Long getId() {
         return id;
     }
 
+
+    @XmlElement
     public void setType(String type) {
 
         try {
@@ -49,25 +46,20 @@ public class Airplane {
         return type;
     }
 
-    public void setNumberSeets(Long numberSeets) {
+    @XmlElement
+    public void setNumberSeets(Integer numberSeets) {
 
-        try {
-            if (numberSeets <= 0) {
-                logEntity.error("Value numberSeets error = " + numberSeets);
-                throw new EntityException("Value numberSeets error = " + numberSeets);
-            } else if (numberSeets >= 1) {
+
                 this.numberSeets = numberSeets;
-            }
-        } catch (EntityException e) {
-            logEntity.error("Value numberSeets error = " + numberSeets);
-        }
+
     }
 
-    public Long getNumberSeets() {
+    public Integer getNumberSeets() {
         return numberSeets;
     }
 
-    public void setRangeFlight(Long rangeFlight) {
+    @XmlElement
+    public void setRangeFlight(Integer rangeFlight) {
 
         try {
             if (rangeFlight <= 0) {
@@ -81,11 +73,12 @@ public class Airplane {
         }
     }
 
-    public Long getRangeFlight() {
+    public Integer getRangeFlight() {
         return rangeFlight;
     }
 
-    public void setCarryingCapacity(Long carryingCapacity) {
+    @XmlElement
+    public void setCarryingCapacity(Integer carryingCapacity) {
 
         try {
             if (carryingCapacity <= 0) {
@@ -99,17 +92,19 @@ public class Airplane {
         }
     }
 
-    public Long getCarryingCapacity() {
+    public Integer getCarryingCapacity() {
         return carryingCapacity;
     }
 
-    public void setTeam(Long team) {
+    @XmlElement
+    public void setTeam(Integer team) {
 
         this.team = team;
     }
 
-    public Long getTeam() {
+    public Integer getTeam() {
         return team;
     }
+
 
 }
