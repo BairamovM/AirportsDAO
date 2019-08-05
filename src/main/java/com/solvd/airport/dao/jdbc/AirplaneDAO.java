@@ -44,7 +44,7 @@ public class AirplaneDAO implements IAirplane {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         airplane = new Airplane();
-                        airplane.setId(rSet.getLong("id"));
+                        airplane.setId(rSet.getInt("id"));
                         airplane.setType(rSet.getString("type"));
                         airplane.setNumberSeets(rSet.getInt("numberSeets"));
                         airplane.setRangeFlight(rSet.getInt("rangeFlight"));
@@ -110,7 +110,7 @@ public class AirplaneDAO implements IAirplane {
                     List<Airplane> airplanes = new ArrayList<>();
                     while (rSet.next()) {
                         airplane = new Airplane();
-                        airplane.setId(rSet.getLong("id"));
+                        airplane.setId(rSet.getInt("id"));
                         airplane.setType(rSet.getString("type"));
                         airplane.setNumberSeets(rSet.getInt("numberSeets"));
                         airplane.setRangeFlight(rSet.getInt("rangeFlight"));

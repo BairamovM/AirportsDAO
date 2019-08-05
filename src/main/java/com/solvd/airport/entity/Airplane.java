@@ -1,28 +1,30 @@
 package com.solvd.airport.entity;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 import org.apache.log4j.Logger;
 
-@XmlRootElement
+@XmlRootElement (name = "Airplane")
 public class Airplane {
 
     private static final Logger logEntity = Logger.getLogger(Airplane.class);
 
-    private Long id;
+    private Integer id;
     private String type;
     private Integer numberSeets;
     private Integer rangeFlight;
     private Integer carryingCapacity;
     private Integer team;
 
-    @XmlElement
-    public void setId(long id) {
+    @XmlAttribute
+    public void setId(Integer id) {
        this.id = id;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 

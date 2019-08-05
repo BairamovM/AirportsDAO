@@ -1,1 +1,6 @@
-
+2019-08-05 20:31:19 INFO  JaxbReader:23 - Id = 1
+2019-08-05 20:31:19 INFO  JaxbReader:24 - Type = An-148
+2019-08-05 20:31:19 INFO  JaxbReader:25 - NumberSeets = 80
+2019-08-05 20:31:19 INFO  JaxbReader:26 - RangeFlight = 2100
+2019-08-05 20:31:19 INFO  JaxbReader:27 - CarryingCapacity = 38550
+2019-08-05 20:31:19 INFO  JaxbReader:28 - Team = 1
