@@ -26,11 +26,10 @@ public class Main {
     public static void main (String[] args) throws IOException, SAXException, ParserConfigurationException, InterruptedException, ExecutionException, SQLException {
 
 
-        CompletableFutureStart completableFutureStart = new CompletableFutureStart();
+        //CompletableFutureStart completableFutureStart = new CompletableFutureStart();
 
 
         Parser parser = new Parser();
-        parser.toString();
 
     }
 
