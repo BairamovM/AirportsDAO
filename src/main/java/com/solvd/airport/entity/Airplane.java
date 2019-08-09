@@ -17,7 +17,7 @@ public class Airplane {
     private Integer numberSeets;
     private Integer rangeFlight;
     private Integer carryingCapacity;
-    private Integer team;
+    private Team team;
 
     @XmlAttribute
     public void setId(Integer id) {
@@ -99,12 +99,12 @@ public class Airplane {
     }
 
     @XmlElement
-    public void setTeam(Integer team) {
+    public void setTeam(Team team) {
 
         this.team = team;
     }
 
-    public Integer getTeam() {
+    public Team getTeam() {
         return team;
     }
 

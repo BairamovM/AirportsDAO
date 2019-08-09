@@ -47,8 +47,8 @@ public class DepartureDAO  implements IDeparture {
                         departures = new Departure();
                         departures.setId(rSet.getLong("id"));
                         departures.setDepartureDate(rSet.getString("departureDate"));
-                        departures.setAirplane(rSet.getLong("Airplanes_id"));
-                        departures.setAllFlight(rSet.getLong("AllFlights_id"));
+                        departures.setId(rSet.getLong("Airplanes_id"));
+                        departures.setId(rSet.getLong("AllFlights_id"));
                         return departures;
                     }
                 } finally {
@@ -111,8 +111,8 @@ public class DepartureDAO  implements IDeparture {
                         departures = new Departure();
                         departures.setId(rSet.getLong("id"));
                         departures.setDepartureDate(rSet.getString("departureDate"));
-                        departures.setAirplane(rSet.getLong("Airplanes_id"));
-                        departures.setAllFlight(rSet.getLong("AllFlights_id"));
+                        departures.setId(rSet.getLong("Airplanes_id"));
+                        departures.setId(rSet.getLong("AllFlights_id"));
                         departure.add(departures);
 
                     }
@@ -162,8 +162,8 @@ public class DepartureDAO  implements IDeparture {
                 prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, departures.getDepartureDate());
-                prStatement.setLong(2, departures.getAirplane());
-                prStatement.setLong(3, departures.getAllFlight());
+                prStatement.setLong(2, departures.getId());
+                prStatement.setLong(3, departures.getId());
 
                 prStatement.executeUpdate();
             } finally {
@@ -238,8 +238,8 @@ public class DepartureDAO  implements IDeparture {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, departures.getDepartureDate());
-                prStatement.setLong(2, departures.getAirplane());
-                prStatement.setLong(3, departures.getAllFlight());
+                prStatement.setLong(2, departures.getId());
+                prStatement.setLong(3, departures.getId());
 
                 prStatement.executeUpdate();
             } finally {

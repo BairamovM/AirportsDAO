@@ -20,7 +20,7 @@ public class JaxbWriter {
         airplane.setNumberSeets(80);
         airplane.setRangeFlight(2100);
         airplane.setCarryingCapacity(38550);
-        airplane.setTeam(1);
+        airplane.setId(1);
 
         File file = new File("C:src/main/java/com/solvd/airport/xml/jaxb/Airplane_Jaxb.xml");
         JAXBContext context = JAXBContext.newInstance(Airplane.class);

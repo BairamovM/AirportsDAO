@@ -46,7 +46,7 @@ public class CityDAO implements ICity {
                         cities = new City();
                         cities.setId(rSet.getLong("id"));
                         cities.setNameCity(rSet.getString("nameCity"));
-                        cities.setCountry(rSet.getLong("Countries_id"));
+                        cities.setId(rSet.getLong("Countries_id"));
                         return cities;
                     }
                 } finally {
@@ -109,7 +109,7 @@ public class CityDAO implements ICity {
                         cities = new City();
                         cities.setId(rSet.getLong("id"));
                         cities.setNameCity(rSet.getString("nameCity"));
-                        cities.setCountry(rSet.getLong("Countries_id"));
+                        cities.setId(rSet.getLong("Countries_id"));
                         city.add(cities);
 
                     }
@@ -159,7 +159,7 @@ public class CityDAO implements ICity {
                 prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setString(1, cities.getNameCity());
-                prStatement.setLong(2, cities.getCountry());
+                prStatement.setLong(2, cities.getId());
 
                 prStatement.executeUpdate();
             } finally {
@@ -234,7 +234,7 @@ public class CityDAO implements ICity {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setString(1, cities.getNameCity());
-                prStatement.setLong(2, cities.getCountry());
+                prStatement.setLong(2, cities.getId());
 
                 prStatement.executeUpdate();
             } finally {

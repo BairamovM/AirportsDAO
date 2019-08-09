@@ -49,7 +49,7 @@ public class AirplaneDAO implements IAirplane {
                         airplane.setNumberSeets(rSet.getInt("numberSeets"));
                         airplane.setRangeFlight(rSet.getInt("rangeFlight"));
                         airplane.setCarryingCapacity(rSet.getInt("carryingCapacity"));
-                        airplane.setTeam(rSet.getInt("Team"));
+                        airplane.setId(rSet.getInt("Team"));
                         return airplane;
                     }
                 } finally {
@@ -115,7 +115,7 @@ public class AirplaneDAO implements IAirplane {
                         airplane.setNumberSeets(rSet.getInt("numberSeets"));
                         airplane.setRangeFlight(rSet.getInt("rangeFlight"));
                         airplane.setCarryingCapacity(rSet.getInt("carryingCapacity"));
-                        airplane.setTeam(rSet.getInt("Team"));
+                        airplane.setId(rSet.getInt("Team"));
                         airplanes.add(airplane);
 
                     }
@@ -168,7 +168,7 @@ public class AirplaneDAO implements IAirplane {
                 prStatement.setLong(2, airplane.getNumberSeets());
                 prStatement.setLong(3, airplane.getRangeFlight());
                 prStatement.setLong(4, airplane.getCarryingCapacity());
-                prStatement.setLong(5, airplane.getTeam());
+                prStatement.setLong(5, airplane.getId());
 
                 prStatement.executeUpdate();
             } finally {
@@ -246,7 +246,7 @@ public class AirplaneDAO implements IAirplane {
                 prStatement.setLong(2, airplane.getNumberSeets());
                 prStatement.setLong(3, airplane.getRangeFlight());
                 prStatement.setLong(4, airplane.getCarryingCapacity());
-                prStatement.setLong(5, airplane.getTeam());
+                prStatement.setLong(5, airplane.getId());
 
                 prStatement.executeUpdate();
             } finally {

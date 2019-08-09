@@ -48,8 +48,8 @@ public class AllFlightDAO implements IAllFlight {
                         allFlights = new AllFlight();
                         allFlights.setId(rSet.getLong("id"));
                         allFlights.setNumberFlight(rSet.getDouble("numberFlight"));
-                        allFlights.setIdDepartureAirport(rSet.getLong("idDepartureAirport"));
-                        allFlights.setIdAirportArrival(rSet.getLong("idAirportArrival"));
+                        allFlights.setId(rSet.getLong("idDepartureAirport"));
+                        allFlights.setId(rSet.getLong("idAirportArrival"));
                         allFlights.setFlightTime(rSet.getLong("flightTime"));
                         return allFlights;
                     }
@@ -113,8 +113,8 @@ public class AllFlightDAO implements IAllFlight {
                         allFlights = new AllFlight();
                         allFlights.setId(rSet.getLong("id"));
                         allFlights.setNumberFlight(rSet.getDouble("numberFlight"));
-                        allFlights.setIdDepartureAirport(rSet.getLong("idDepartureAirport"));
-                        allFlights.setIdAirportArrival(rSet.getLong("idAirportArrival"));
+                        allFlights.setId(rSet.getLong("idDepartureAirport"));
+                        allFlights.setId(rSet.getLong("idAirportArrival"));
                         allFlights.setFlightTime(rSet.getLong("flightTime"));
                         allFlight.add(allFlights);
 
@@ -165,8 +165,8 @@ public class AllFlightDAO implements IAllFlight {
                 prStatement = connection.prepareStatement(SAVE);
 
                 prStatement.setDouble(1, allFlights.getNumberFlight());
-                prStatement.setLong(2, allFlights.getIdDepartureAirport());
-                prStatement.setLong(3, allFlights.getIdAirportArrival());
+                prStatement.setLong(2, allFlights.getId());
+                prStatement.setLong(3, allFlights.getId());
                 prStatement.setLong(4, allFlights.getFlightTime());
 
                 prStatement.executeUpdate();
@@ -242,8 +242,8 @@ public class AllFlightDAO implements IAllFlight {
                 logDAO.trace("Create PreparedStatement");
                 prStatement = connection.prepareStatement(UPDATE);
                 prStatement.setDouble(1, allFlights.getNumberFlight());
-                prStatement.setLong(2, allFlights.getIdDepartureAirport());
-                prStatement.setLong(3, allFlights.getIdAirportArrival());
+                prStatement.setLong(2, allFlights.getId());
+                prStatement.setLong(3, allFlights.getId());
                 prStatement.setLong(4, allFlights.getFlightTime());
 
                 prStatement.executeUpdate();
