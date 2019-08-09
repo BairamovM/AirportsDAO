@@ -1,8 +1,7 @@
 package com.solvd.airport;
 
-import com.solvd.airport.dao.connectionPool.CompletableFutureStart;
-import com.solvd.airport.xml.jaxb.JaxbReader;
-import com.solvd.airport.xml.jaxb.JaxbWriter;
+import com.solvd.airport.xml.jaxb.JaxbMarshaller;
+import com.solvd.airport.xml.jaxb.JaxbUnmarshaller;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -10,7 +9,6 @@ import java.sql.SQLException;
 
 import java.util.concurrent.ExecutionException;
 
-import com.solvd.airport.xml.Parser;
 import org.xml.sax.SAXException;
 
 import javax.xml.bind.JAXBException;
@@ -29,8 +27,9 @@ public class Main {
 
         //Parser parser = new Parser();
 
-        //JaxbWriter jaxbWriter = new JaxbWriter();
-        JaxbReader jaxbReader = new JaxbReader();
+        //JaxbMarshaller jaxbMarshaller = new JaxbMarshaller();
+
+        JaxbUnmarshaller jaxbUnmarshaller = new JaxbUnmarshaller();
     }
 
 

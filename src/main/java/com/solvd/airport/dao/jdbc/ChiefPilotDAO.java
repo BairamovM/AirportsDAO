@@ -45,12 +45,12 @@ public class ChiefPilotDAO implements IChiefPilot {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         chiefPilots = new ChiefPilot();
-                        chiefPilots.setId(rSet.getLong("id"));
+                        chiefPilots.setId(rSet.getInt("id"));
                         chiefPilots.setFirstName(rSet.getString("firstName"));
                         chiefPilots.setLastName(rSet.getString("lastName"));
-                        chiefPilots.setExperience(rSet.getLong("experience"));
-                        chiefPilots.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        chiefPilots.setId(rSet.getLong("Nationalities_id"));
+                        chiefPilots.setExperience(rSet.getInt("experience"));
+                        chiefPilots.setPassportSerialNumber(rSet.getInt("passportSerialNumber"));
+                        chiefPilots.setId(rSet.getInt("Nationalities_id"));
                         return chiefPilots;
                     }
                 } finally {
@@ -111,12 +111,12 @@ public class ChiefPilotDAO implements IChiefPilot {
                     List<ChiefPilot> chiefPilot = new ArrayList<>();
                     while (rSet.next()) {
                         chiefPilots = new ChiefPilot();
-                        chiefPilots.setId(rSet.getLong("id"));
+                        chiefPilots.setId(rSet.getInt("id"));
                         chiefPilots.setFirstName(rSet.getString("firstName"));
                         chiefPilots.setLastName(rSet.getString("lastName"));
-                        chiefPilots.setExperience(rSet.getLong("experience"));
-                        chiefPilots.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        chiefPilots.setId(rSet.getLong("Nationalities_id"));
+                        chiefPilots.setExperience(rSet.getInt("experience"));
+                        chiefPilots.setPassportSerialNumber(rSet.getInt("passportSerialNumber"));
+                        chiefPilots.setId(rSet.getInt("Nationalities_id"));
                         chiefPilot.add(chiefPilots);
 
                     }

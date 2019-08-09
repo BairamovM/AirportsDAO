@@ -1,19 +1,25 @@
 package com.solvd.airport.entity;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import org.apache.log4j.Logger;
 
+@XmlRootElement (name = "Nationality")
 public class Nationality {
 
     private static final Logger logEntity = Logger.getLogger(Nationality.class);
 
-    private Long id;
+    private Integer id;
     private String citizenship;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    @XmlAttribute
+    public void setId(Integer id) {
 
         try {
             if (id <= 0) {
@@ -31,6 +37,7 @@ public class Nationality {
         return citizenship;
     }
 
+    @XmlElement
     public void setCitizenship(String citizenship) {
 
         try {
@@ -43,5 +50,15 @@ public class Nationality {
         } catch (EntityException e) {
             logEntity.error("Value citizenship NULL error = " + citizenship);
         }
+    }
+
+
+    @Override
+    public String toString() {
+        return "Nationality { " + "\n" +
+                "id = " + id + "\n" +
+                "citizenship = " + citizenship + "\n" +
+                '}' +
+                "\n";
     }
 }

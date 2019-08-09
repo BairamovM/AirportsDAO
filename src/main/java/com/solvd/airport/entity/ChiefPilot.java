@@ -1,25 +1,31 @@
 package com.solvd.airport.entity;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import org.apache.log4j.Logger;
 
 import java.util.List;
 
+@XmlRootElement (name = "ChiefPilot")
 public class ChiefPilot {
 
     private static final Logger logEntity = Logger.getLogger(ChiefPilot.class);
 
-    private Long id;
+    private Integer id;
     private String firstName;
     private String lastName;
-    private Long experience;
-    private Double passportSerialNumber;
+    private Integer experience;
+    private Integer passportSerialNumber;
     private Nationality nationality;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    @XmlAttribute
+    public void setId(Integer id) {
 
         try {
             if (id <= 0) {
@@ -37,6 +43,7 @@ public class ChiefPilot {
         return firstName;
     }
 
+    @XmlElement
     public void setFirstName(String firstName) {
 
         try {
@@ -55,6 +62,7 @@ public class ChiefPilot {
         return lastName;
     }
 
+    @XmlElement
     public void setLastName(String lastName) {
 
         try {
@@ -69,11 +77,12 @@ public class ChiefPilot {
         }
     }
 
-    public Long getExperience() {
+    public Integer getExperience() {
         return experience;
     }
 
-    public void setExperience(Long experience) {
+    @XmlElement
+    public void setExperience(Integer experience) {
 
         try {
             if (experience <= 0) {
@@ -87,11 +96,12 @@ public class ChiefPilot {
         }
     }
 
-    public Double getPassportSerialNumber() {
+    public Integer getPassportSerialNumber() {
         return passportSerialNumber;
     }
 
-    public void setPassportSerialNumber(Double passportSerialNumber) {
+    @XmlElement
+    public void setPassportSerialNumber(Integer passportSerialNumber) {
 
         try {
             if (passportSerialNumber <= 0) {
@@ -109,7 +119,21 @@ public class ChiefPilot {
         return nationality;
     }
 
+    @XmlElement
     public void setNationality(Nationality nationality) {
         this.nationality = nationality;
+    }
+
+    @Override
+    public String toString() {
+        return "ChiefPilot { " + "\n" +
+                "id = " + id + "\n" +
+                "firstName = " + firstName + "\n" +
+                "lastName = " + lastName + "\n" +
+                "experience = " + experience + "\n" +
+                "passportSerialNumber = " + passportSerialNumber + "\n" +
+                "nationality = " + nationality + "\n" +
+                '}' +
+                "\n";
     }
 }

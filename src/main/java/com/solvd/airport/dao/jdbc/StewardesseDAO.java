@@ -45,12 +45,12 @@ public class StewardesseDAO implements IStewardesse {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         stewardesses = new Stewardesse();
-                        stewardesses.setId(rSet.getLong("id"));
+                        stewardesses.setId(rSet.getInt("id"));
                         stewardesses.setFirstName(rSet.getString("firstName"));
                         stewardesses.setLastName(rSet.getString("lastName"));
-                        stewardesses.setExperience(rSet.getLong("experience"));
-                        stewardesses.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        stewardesses.setId(rSet.getLong("Nationalities_id"));
+                        stewardesses.setExperience(rSet.getInt("experience"));
+                        stewardesses.setPassportSerialNumber(rSet.getInt("passportSerialNumber"));
+                        stewardesses.setId(rSet.getInt("Nationalities_id"));
                         return stewardesses;
                     }
                 } finally {
@@ -111,12 +111,12 @@ public class StewardesseDAO implements IStewardesse {
                     List<Stewardesse> stewardess = new ArrayList<>();
                     while (rSet.next()) {
                         stewardesses = new Stewardesse();
-                        stewardesses.setId(rSet.getLong("id"));
+                        stewardesses.setId(rSet.getInt("id"));
                         stewardesses.setFirstName(rSet.getString("firstName"));
                         stewardesses.setLastName(rSet.getString("lastName"));
-                        stewardesses.setExperience(rSet.getLong("experience"));
-                        stewardesses.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        stewardesses.setId(rSet.getLong("Nationalities_id"));
+                        stewardesses.setExperience(rSet.getInt("experience"));
+                        stewardesses.setPassportSerialNumber(rSet.getInt("passportSerialNumber"));
+                        stewardesses.setId(rSet.getInt("Nationalities_id"));
                         stewardess.add(stewardesses);
 
                     }

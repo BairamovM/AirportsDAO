@@ -44,7 +44,7 @@ public class NationalityDAO implements INationality {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         nationalities = new Nationality();
-                        nationalities.setId(rSet.getLong("id"));
+                        nationalities.setId(rSet.getInt("id"));
                         nationalities.setCitizenship(rSet.getString("citizenship"));
                         return nationalities;
                     }
@@ -106,7 +106,7 @@ public class NationalityDAO implements INationality {
                     List<Nationality> nationalite = new ArrayList<>();
                     while (rSet.next()) {
                         nationalities = new Nationality();
-                        nationalities.setId(rSet.getLong("id"));
+                        nationalities.setId(rSet.getInt("id"));
                         nationalities.setCitizenship(rSet.getString("citizenship"));
                         nationalite.add(nationalities);
 

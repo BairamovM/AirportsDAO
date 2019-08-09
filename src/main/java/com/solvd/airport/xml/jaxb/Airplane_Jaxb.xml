@@ -3,6 +3,34 @@
     <carryingCapacity>38550</carryingCapacity>
     <numberSeets>80</numberSeets>
     <rangeFlight>2100</rangeFlight>
-    <team>1</team>
+    <team id="1">
+        <chiefPilot id="1">
+            <experience>8</experience>
+            <firstName>John</firstName>
+            <lastName>Smith</lastName>
+            <nationality id="1">
+                <citizenship>Ukraine</citizenship>
+            </nationality>
+            <passportSerialNumber>868687788</passportSerialNumber>
+        </chiefPilot>
+        <secondPilot id="1">
+            <experience>3</experience>
+            <firstName>Randall</firstName>
+            <lastName>Perry</lastName>
+            <nationality id="1">
+                <citizenship>Ukraine</citizenship>
+            </nationality>
+            <passportSerialNumber>567898908</passportSerialNumber>
+        </secondPilot>
+        <stewardesse id="1">
+            <experience>5</experience>
+            <firstName>Lilly</firstName>
+            <lastName>Black</lastName>
+            <nationality id="1">
+                <citizenship>Ukraine</citizenship>
+            </nationality>
+            <passportSerialNumber>56578908</passportSerialNumber>
+        </stewardesse>
+    </team>
     <type>An-148</type>
 </Airplane>

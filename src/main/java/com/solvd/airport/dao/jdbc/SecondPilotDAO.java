@@ -45,12 +45,12 @@ public class SecondPilotDAO implements ISecondPilot {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         secondPilots = new SecondPilot();
-                        secondPilots.setId(rSet.getLong("id"));
+                        secondPilots.setId(rSet.getInt("id"));
                         secondPilots.setFirstName(rSet.getString("firstName"));
                         secondPilots.setLastName(rSet.getString("lastName"));
-                        secondPilots.setExperience(rSet.getLong("experience"));
-                        secondPilots.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        secondPilots.setId(rSet.getLong("Nationalities_id"));
+                        secondPilots.setExperience(rSet.getInt("experience"));
+                        secondPilots.setPassportSerialNumber(rSet.getInt("passportSerialNumber"));
+                        secondPilots.setId(rSet.getInt("Nationalities_id"));
                         return secondPilots;
                     }
                 } finally {
@@ -111,12 +111,12 @@ public class SecondPilotDAO implements ISecondPilot {
                     List<SecondPilot> secondPilot = new ArrayList<>();
                     while (rSet.next()) {
                         secondPilots = new SecondPilot();
-                        secondPilots.setId(rSet.getLong("id"));
+                        secondPilots.setId(rSet.getInt("id"));
                         secondPilots.setFirstName(rSet.getString("firstName"));
                         secondPilots.setLastName(rSet.getString("lastName"));
-                        secondPilots.setExperience(rSet.getLong("experience"));
-                        secondPilots.setPassportSerialNumber(rSet.getDouble("passportSerialNumber"));
-                        secondPilots.setId(rSet.getLong("Nationalities_id"));
+                        secondPilots.setExperience(rSet.getInt("experience"));
+                        secondPilots.setPassportSerialNumber(rSet.getInt("passportSerialNumber"));
+                        secondPilots.setId(rSet.getInt("Nationalities_id"));
                         secondPilot.add(secondPilots);
 
                     }

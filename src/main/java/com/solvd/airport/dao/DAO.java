@@ -4,8 +4,6 @@ import java.util.List;
 
 public interface DAO <T> {
 
-    T getByID(Long id);
-
     T getAll();
 
      T save(T t);

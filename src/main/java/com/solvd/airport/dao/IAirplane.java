@@ -1,9 +1,8 @@
 package com.solvd.airport.dao;
 
 import com.solvd.airport.entity.Airplane;
-import java.util.List;
 
-public interface IAirplane extends DAO <Airplane>{
+public interface IAirplane extends DAO <Airplane> {
 
     Airplane getByID(Long id);
 

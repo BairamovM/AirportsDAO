@@ -1,21 +1,9 @@
 package com.solvd.airport.dao;
 
-public abstract class AbstractDAO {
+public abstract class AbstractDAO <T> implements DAO {
 
-    private Long id;
-
-    public AbstractDAO () {
+    T getByID(Long id) {
+        return null;
     }
 
-    public AbstractDAO (Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }

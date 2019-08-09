@@ -45,10 +45,10 @@ public class TeamDAO implements ITeam {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         teams = new Team();
-                        teams.setId(rSet.getLong("id"));
-                        teams.setId(rSet.getLong("ChiefPilots_id"));
-                        teams.setId(rSet.getLong("SecondPilots_id"));
-                        teams.setId(rSet.getLong("Stewardesses_id"));
+                        teams.setId(rSet.getInt("id"));
+                        teams.setId(rSet.getInt("ChiefPilots_id"));
+                        teams.setId(rSet.getInt("SecondPilots_id"));
+                        teams.setId(rSet.getInt("Stewardesses_id"));
                         return teams;
                     }
                 } finally {
@@ -109,10 +109,10 @@ public class TeamDAO implements ITeam {
                     List<Team> team = new ArrayList<>();
                     while (rSet.next()) {
                         teams = new Team();
-                        teams.setId(rSet.getLong("id"));
-                        teams.setId(rSet.getLong("ChiefPilots_id"));
-                        teams.setId(rSet.getLong("SecondPilots_id"));
-                        teams.setId(rSet.getLong("Stewardesses_id"));
+                        teams.setId(rSet.getInt("id"));
+                        teams.setId(rSet.getInt("ChiefPilots_id"));
+                        teams.setId(rSet.getInt("SecondPilots_id"));
+                        teams.setId(rSet.getInt("Stewardesses_id"));
                         team.add(teams);
 
                     }

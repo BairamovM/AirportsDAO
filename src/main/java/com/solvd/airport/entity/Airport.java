@@ -17,6 +17,9 @@ public class Airport {
     private AirportClass airportClass;
     private Country country;
 
+    private List <AirportDepartment> airportDepartmentServiceList;
+    private List <AllFlight> allFlightServiceList;
+
     public Long getId() {
         return id;
     }
@@ -71,5 +74,34 @@ public class Airport {
     @XmlElement
     public void setCountry(Country country) {
         this.country = country;
+    }
+
+    public List<AirportDepartment> getAirportDepartmentServiceList() {
+        return airportDepartmentServiceList;
+    }
+
+    @XmlElement
+    public void setAirportDepartmentServiceList(List<AirportDepartment> airportDepartmentServiceList) {
+        this.airportDepartmentServiceList = airportDepartmentServiceList;
+    }
+
+    public List<AllFlight> getAllFlightServiceList() {
+        return allFlightServiceList;
+    }
+
+    @XmlElement
+    public void setAllFlightServiceList(List<AllFlight> allFlightServiceList) {
+        this.allFlightServiceList = allFlightServiceList;
+    }
+
+    @Override
+    public String toString() {
+        return "Airport { " + "\n" +
+                "id = " + id + "\n" +
+                "nameAirport = " + nameAirport + "\n" +
+                "airportClass = " + airportClass + "\n" +
+                "country = " + country + "\n" +
+                '}' +
+                "\n";
     }
 }

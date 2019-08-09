@@ -3,9 +3,10 @@ package com.solvd.airport.entity;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
 import org.apache.log4j.Logger;
+
+import java.util.List;
 
 @XmlRootElement (name = "Airplane")
 public class Airplane {
@@ -18,6 +19,10 @@ public class Airplane {
     private Integer rangeFlight;
     private Integer carryingCapacity;
     private Team team;
+
+    private List<SeatFlight> seatFlightServiceList;
+    private Departure departureService;
+
 
     @XmlAttribute
     public void setId(Integer id) {
@@ -108,5 +113,35 @@ public class Airplane {
         return team;
     }
 
+    public List<SeatFlight> getSeatFlightServiceList() {
+        return seatFlightServiceList;
+    }
 
+    @XmlElement
+    public void setSeatFlightServiceList(List<SeatFlight> seatFlightServiceList) {
+        this.seatFlightServiceList = seatFlightServiceList;
+    }
+
+    public Departure getDepartureService() {
+        return departureService;
+    }
+
+    @XmlElement
+    public void setDepartureService(Departure departureService) {
+        this.departureService = departureService;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Airplane { " + "\n" +
+                "id = " + id + "\n" +
+                "type = " + type + "\n" +
+                "numberSeets = " + numberSeets + "\n" +
+                "rangeFlight = " + rangeFlight + "\n" +
+                "carryingCapacity = " + carryingCapacity + "\n" +
+                "team = " + team + "\n" +
+                '}' +
+                "\n";
+    }
 }
