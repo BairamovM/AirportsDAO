@@ -10,7 +10,7 @@ public class City {
 
     private Long id;
     private String nameCity;
-    private Long country;
+    private Country country;
 
     public Long getId() {
         return id;
@@ -48,11 +48,11 @@ public class City {
         }
     }
 
-    public Long getCountry() {
+    public Country getCountry() {
         return country;
     }
 
-    public void setCountry(Long country) {
+    public void setCountry(Country country) {
         this.country = country;
     }
 }

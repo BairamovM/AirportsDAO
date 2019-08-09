@@ -13,7 +13,7 @@ public class SecondPilot {
     private String lastName;
     private Long experience;
     private Double passportSerialNumber;
-    private Long nationality;
+    private Nationality nationality;
 
     public Long getId() {
         return id;
@@ -105,11 +105,11 @@ public class SecondPilot {
         }
     }
 
-    public Long getNationality() {
+    public Nationality getNationality() {
         return nationality;
     }
 
-    public void setNationality(Long nationality) {
+    public void setNationality(Nationality nationality) {
         this.nationality = nationality;
     }
 

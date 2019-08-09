@@ -10,7 +10,7 @@ public class AirportDepartment {
 
     private Long id;
     private String nameDepartment;
-    private Long airport;
+    private Airport airport;
 
     public Long getId() {
         return id;
@@ -48,11 +48,11 @@ public class AirportDepartment {
         }
     }
 
-    public Long getAirport() {
+    public Airport getAirport() {
         return airport;
     }
 
-    public void setAirport(Long airport) {
+    public void setAirport(Airport airport) {
         this.airport = airport;
     }
 }

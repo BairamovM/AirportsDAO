@@ -14,8 +14,8 @@ public class Airport {
 
     private Long id;
     private String nameAirport;
-    private Long airportClass;
-    private Long country;
+    private AirportClass airportClass;
+    private Country country;
 
     public Long getId() {
         return id;
@@ -55,21 +55,21 @@ public class Airport {
         }
     }
 
-    public Long getAirportClass() {
+    public AirportClass getAirportClass() {
         return airportClass;
     }
 
     @XmlElement
-    public void setAirportClass(Long airportClass) {
+    public void setAirportClass(AirportClass airportClass) {
         this.airportClass = airportClass;
     }
 
-    public Long getCountry() {
+    public Country getCountry() {
         return country;
     }
 
     @XmlElement
-    public void setCountry(Long country) {
+    public void setCountry(Country country) {
         this.country = country;
     }
 }

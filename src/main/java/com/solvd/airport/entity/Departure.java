@@ -8,8 +8,8 @@ public class Departure {
 
     private Long id;
     private String departureDate;
-    private Long airplane;
-    private Long allFlight;
+    private Airplane airplane;
+    private AllFlight allFlight;
 
     public Long getId() {
         return id;
@@ -47,19 +47,19 @@ public class Departure {
         }
     }
 
-    public Long getAirplane() {
+    public Airplane getAirplane() {
         return airplane;
     }
 
-    public void setAirplane(Long airplane) {
+    public void setAirplane(Airplane airplane) {
         this.airplane = airplane;
     }
 
-    public Long getAllFlight() {
+    public AllFlight getAllFlight() {
         return allFlight;
     }
 
-    public void setAllFlight(Long allFlight) {
+    public void setAllFlight(AllFlight allFlight) {
         this.allFlight = allFlight;
     }
 }

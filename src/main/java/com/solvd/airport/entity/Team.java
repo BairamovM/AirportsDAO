@@ -9,9 +9,9 @@ public class Team {
     private static final Logger logEntity = Logger.getLogger(Team.class);
 
     private Long id;
-    private Long chiefPilot;
-    private Long secondPilot;
-    private Long stewardesse;
+    private ChiefPilot chiefPilot;
+    private SecondPilot secondPilot;
+    private Stewardesse stewardesse;
 
     public Long getId() {
         return id;
@@ -31,27 +31,27 @@ public class Team {
         }
     }
 
-    public Long getChiefPilot() {
+    public ChiefPilot getChiefPilot() {
         return chiefPilot;
     }
 
-    public void setChiefPilot(Long chiefPilot) {
+    public void setChiefPilot(ChiefPilot chiefPilot) {
                 this.chiefPilot = chiefPilot;
     }
 
-    public Long getSecondPilot() {
+    public SecondPilot getSecondPilot() {
         return secondPilot;
     }
 
-    public void setSecondPilot(Long secondPilot) {
+    public void setSecondPilot(SecondPilot secondPilot) {
                 this.secondPilot = secondPilot;
     }
 
-    public Long getStewardesse() {
+    public Stewardesse getStewardesse() {
         return stewardesse;
     }
 
-    public void setStewardesse(Long stewardesse) {
+    public void setStewardesse(Stewardesse stewardesse) {
                 this.stewardesse = stewardesse;
     }
 }
