@@ -16,6 +16,9 @@ public class Passenger {
     private Double passportSerialNumber;
     private Nationality nationality;
 
+    private List <Luggage> luggageServiceList;
+    private SeatFlight seatFlightService;
+
     public Long getId() {
         return id;
     }

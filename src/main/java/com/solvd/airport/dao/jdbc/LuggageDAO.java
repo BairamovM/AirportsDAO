@@ -1,6 +1,6 @@
 package com.solvd.airport.dao.jdbc;
 
-import com.solvd.airport.entity.service_relationship.Luggage;
+import com.solvd.airport.entity.Luggage;
 import com.solvd.airport.dao.ILuggage;
 
 import java.sql.Connection;

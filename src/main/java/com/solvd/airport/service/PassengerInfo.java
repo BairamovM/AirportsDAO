@@ -1,6 +1,6 @@
 package com.solvd.airport.service;
 
-import com.solvd.airport.entity.service_relationship.Passenger;
+import com.solvd.airport.entity.Passenger;
 
 
 import com.solvd.airport.dao.ILuggage;
@@ -21,7 +21,7 @@ public class PassengerInfo {
 
     public Passenger addPassenger (Passenger passengerService, Long passengerId) {
 
-        passengerService.setNationalityService(nationalityDAO.getByID(passengerId));
+        passengerService.setNationality(nationalityDAO.getByID(passengerId));
         return passengerDAO.save(passengerService);
     }
 

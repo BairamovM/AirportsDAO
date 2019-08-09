@@ -1,6 +1,6 @@
 package com.solvd.airport.entity;
 
-import com.solvd.airport.entity.service_relationship.Passenger;
+import com.solvd.airport.entity.Passenger;
 
 import org.apache.log4j.Logger;
 

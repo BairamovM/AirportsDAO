@@ -1,6 +1,6 @@
 package com.solvd.airport.dao.jdbc;
 
-import com.solvd.airport.entity.service_relationship.Passenger;
+import com.solvd.airport.entity.Passenger;
 import com.solvd.airport.entity.SeatFlight;
 import com.solvd.airport.dao.IPassenger;
 import com.solvd.airport.service.IPassengerTransaction;
