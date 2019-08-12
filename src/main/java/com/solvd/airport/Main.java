@@ -3,6 +3,7 @@ package com.solvd.airport;
 import com.solvd.airport.xml.jaxb.JaxbMarshaller;
 import com.solvd.airport.xml.jaxb.JaxbUnmarshaller;
 import com.solvd.airport.xml.json.AirportMarshalling;
+import com.solvd.airport.xml.json.AirportUnmarshalling;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -32,8 +33,10 @@ public class Main {
 
         //JaxbUnmarshaller jaxbUnmarshaller = new JaxbUnmarshaller();
 
-        AirportMarshalling airportMarshalling = new AirportMarshalling();
-        airportMarshalling.Marshall();
+        //AirportMarshalling airportMarshalling = new AirportMarshalling();
+        //airportMarshalling.Marshall();
+
+        AirportUnmarshalling airportUnmarshalling = new AirportUnmarshalling();
     }
 
 
