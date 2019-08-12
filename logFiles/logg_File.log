@@ -1,4 +1,5 @@
-2019-08-12 13:36:42 INFO  AirportMarshalling:33 - Airport { 
+
+2019-08-12 14:03:46 INFO  AirportMarshalling:40 - Airport { 
 id = 1
 nameAirport = Boruspil
 airportClass = AirportClass { 
