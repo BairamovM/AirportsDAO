@@ -7,11 +7,17 @@ import com.solvd.airport.entity.AirportClass;
 import com.solvd.airport.entity.Country;
 import org.apache.log4j.Logger;
 
+import java.io.File;
+import java.io.IOException;
+
 public class AirportMarshalling {
 
     private static final Logger logJSON = Logger.getLogger(AirportMarshalling.class);
 
-    public void Marshall () throws JsonProcessingException {
+
+    public void Marshall () throws IOException {
+
+        ObjectMapper objectMapper = new ObjectMapper();
 
         Airport airport = new Airport();
         AirportClass airportClass = new AirportClass();
@@ -29,6 +35,7 @@ public class AirportMarshalling {
         airport.setCountry(country);
 
         String result = new ObjectMapper().writeValueAsString(airport);
+        objectMapper.writeValue(new File("C:src/main/java/com/solvd/airport/xml/json/Airport_Json.json"), airport);
 
         logJSON.info(airport);
 
