@@ -4,11 +4,13 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 
-@XmlRootElement (name = "Airplane")
+@XmlRootElement(name = "Airplane")
 public class Airplane {
 
     private static final Logger logEntity = Logger.getLogger(Airplane.class);
@@ -24,16 +26,19 @@ public class Airplane {
     private Departure departureService;
 
 
+    @JsonSetter ("id")
     @XmlAttribute
     public void setId(Integer id) {
-       this.id = id;
+        this.id = id;
     }
 
+    @JsonGetter ("id")
     public Integer getId() {
         return id;
     }
 
 
+    @JsonSetter ("type")
     @XmlElement
     public void setType(String type) {
 
@@ -49,22 +54,23 @@ public class Airplane {
         }
     }
 
+    @JsonGetter ("type")
     public String getType() {
         return type;
     }
 
+    @JsonSetter ("numberSeets")
     @XmlElement
     public void setNumberSeets(Integer numberSeets) {
-
-
-                this.numberSeets = numberSeets;
-
+        this.numberSeets = numberSeets;
     }
 
+    @JsonGetter ("numberSeets")
     public Integer getNumberSeets() {
         return numberSeets;
     }
 
+    @JsonSetter ("rangeFlight")
     @XmlElement
     public void setRangeFlight(Integer rangeFlight) {
 
@@ -80,10 +86,12 @@ public class Airplane {
         }
     }
 
+    @JsonGetter ("rangeFlight")
     public Integer getRangeFlight() {
         return rangeFlight;
     }
 
+    @JsonSetter ("carryingCapacity")
     @XmlElement
     public void setCarryingCapacity(Integer carryingCapacity) {
 
@@ -99,37 +107,44 @@ public class Airplane {
         }
     }
 
+    @JsonGetter ("carryingCapacity")
     public Integer getCarryingCapacity() {
         return carryingCapacity;
     }
 
+    @JsonSetter ("team")
     @XmlElement
     public void setTeam(Team team) {
-
         this.team = team;
     }
 
+    @JsonGetter ("team")
     public Team getTeam() {
         return team;
     }
 
+    @JsonGetter ("seatFlightServiceList")
     public List<SeatFlight> getSeatFlightServiceList() {
         return seatFlightServiceList;
     }
 
+    @JsonSetter ("seatFlightServiceList")
     @XmlElement
     public void setSeatFlightServiceList(List<SeatFlight> seatFlightServiceList) {
         this.seatFlightServiceList = seatFlightServiceList;
     }
 
+    @JsonGetter ("departureService")
     public Departure getDepartureService() {
         return departureService;
     }
 
+    @JsonSetter ("departureService")
     @XmlElement
     public void setDepartureService(Departure departureService) {
         this.departureService = departureService;
     }
+
 
 
     @Override

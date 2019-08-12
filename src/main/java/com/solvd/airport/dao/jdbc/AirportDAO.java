@@ -45,10 +45,10 @@ public class AirportDAO implements IAirport {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         airports = new Airport();
-                        airports.setId(rSet.getLong("id"));
+                        airports.setId(rSet.getInt("id"));
                         airports.setNameAirport(rSet.getString("nameAirport"));
-                        airports.setId(rSet.getLong("AirportClasses_id"));
-                        airports.setId(rSet.getLong("Countries_id"));
+                        airports.setId(rSet.getInt("AirportClasses_id"));
+                        airports.setId(rSet.getInt("Countries_id"));
                         return airports;
                     }
                 } finally {
@@ -109,10 +109,10 @@ public class AirportDAO implements IAirport {
                     List<Airport> airport = new ArrayList<>();
                     while (rSet.next()) {
                         airports = new Airport();
-                        airports.setId(rSet.getLong("id"));
+                        airports.setId(rSet.getInt("id"));
                         airports.setNameAirport(rSet.getString("nameAirport"));
-                        airports.setId(rSet.getLong("AirportClasses_id"));
-                        airports.setId(rSet.getLong("Countries_id"));
+                        airports.setId(rSet.getInt("AirportClasses_id"));
+                        airports.setId(rSet.getInt("Countries_id"));
                         airport.add(airports);
 
                     }

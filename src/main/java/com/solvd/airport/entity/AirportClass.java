@@ -1,15 +1,18 @@
 package com.solvd.airport.entity;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import org.apache.log4j.Logger;
 
 public class AirportClass {
 
     private static final Logger logEntity = Logger.getLogger(AirportClass.class);
 
-    private Long id;
-    private Long classType;
+    private Integer id;
+    private Integer classType;
 
-    public void setId (Long id) {
+    @JsonSetter ("id")
+    public void setId (Integer id) {
 
         try {
             if (id <= 0) {
@@ -23,11 +26,13 @@ public class AirportClass {
         }
     }
 
-    public Long getId () {
+    @JsonGetter ("id")
+    public Integer getId () {
         return id;
     }
 
-    public void setClassType (Long classType) {
+    @JsonSetter ("classType")
+    public void setClassType (Integer classType) {
 
         try {
             if (classType <= 0) {
@@ -41,7 +46,18 @@ public class AirportClass {
         }
     }
 
-    public Long getClassType () {
+    @JsonGetter ("classType")
+    public Integer getClassType () {
         return classType;
+    }
+
+
+    @Override
+    public String toString() {
+        return "AirportClass { " + "\n" +
+                "id = " + id + "\n" +
+                "classType = " + classType + "\n" +
+                '}' +
+                "\n";
     }
 }

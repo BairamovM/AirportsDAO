@@ -44,7 +44,7 @@ public class CountryDAO implements ICountry {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         countries = new Country();
-                        countries.setId(rSet.getLong("id"));
+                        countries.setId(rSet.getInt("id"));
                         countries.setNameCountry(rSet.getString("nameCountry"));
                         return countries;
                     }
@@ -106,7 +106,7 @@ public class CountryDAO implements ICountry {
                     List<Country> country = new ArrayList<>();
                     while (rSet.next()) {
                         countries = new Country();
-                        countries.setId(rSet.getLong("id"));
+                        countries.setId(rSet.getInt("id"));
                         countries.setNameCountry(rSet.getString("nameCountry"));
                         country.add(countries);
 

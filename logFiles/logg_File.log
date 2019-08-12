@@ -1,46 +1,14 @@
-2019-08-09 07:17:55 INFO  JaxbUnmarshaller:25 - Id = 1
-2019-08-09 07:17:55 INFO  JaxbUnmarshaller:26 - Type = An-148
-2019-08-09 07:17:55 INFO  JaxbUnmarshaller:27 - NumberSeets = 80
-2019-08-09 07:17:55 INFO  JaxbUnmarshaller:28 - RangeFlight = 2100
-2019-08-09 07:17:55 INFO  JaxbUnmarshaller:29 - CarryingCapacity = 38550
-2019-08-09 07:17:55 INFO  JaxbUnmarshaller:30 - Team = Team { 
+2019-08-12 13:36:42 INFO  AirportMarshalling:33 - Airport { 
 id = 1
-chiefPilot = ChiefPilot { 
+nameAirport = Boruspil
+airportClass = AirportClass { 
 id = 1
-firstName = John
-lastName = Smith
-experience = 8
-passportSerialNumber = 868687788
-nationality = Nationality { 
-id = 1
-citizenship = Ukraine
+classType = 3
 }
 
-}
-
-secondPilot = SecondPilot { 
+country = Country { 
 id = 1
-firstName = Randall
-lastName = Perry
-experience = 3
-passportSerialNumber = 567898908
-nationality = Nationality { 
-id = 1
-citizenship = Ukraine
-}
-
-}
-
-stewardesse = Stewardesse { 
-id = 1
-firstName = Lilly
-lastName = Black
-experience = 5passportSerialNumber = 56578908
-nationality = Nationality { 
-id = 1
-citizenship = Ukraine
-}
-
+nameCountry = Ukraine'
 }
 
 }

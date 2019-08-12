@@ -1,19 +1,23 @@
 package com.solvd.airport.entity;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import org.apache.log4j.Logger;
 
 public class Country {
 
     private static final Logger logEntity = Logger.getLogger(Country.class);
 
-    private Long id;
+    private Integer id;
     private String nameCountry;
 
-    public Long getId() {
+    @JsonGetter ("id")
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    @JsonSetter ("id")
+    public void setId(Integer id) {
 
         try {
             if (id <= 0) {
@@ -27,10 +31,12 @@ public class Country {
         }
     }
 
+    @JsonGetter ("nameCountry")
     public String getNameCountry() {
         return nameCountry;
     }
 
+    @JsonSetter ("nameCountry")
     public void setNameCountry(String nameCountry) {
 
         try {
@@ -43,5 +49,15 @@ public class Country {
         } catch (EntityException e) {
             logEntity.error("Value nameCountry NULL error = " + nameCountry);
         }
+    }
+
+
+    @Override
+    public String toString() {
+        return "Country { " + "\n" +
+                "id = " + id + "\n" +
+                "nameCountry = " + nameCountry + '\'' + "\n" +
+                '}' +
+                "\n";
     }
 }

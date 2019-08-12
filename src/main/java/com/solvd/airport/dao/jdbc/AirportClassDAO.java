@@ -44,8 +44,8 @@ public class AirportClassDAO implements IAirportClass {
                     rSet = prStatement.executeQuery();
                     if (rSet.next()) {
                         airportClasses = new AirportClass();
-                        airportClasses.setId(rSet.getLong("id"));
-                        airportClasses.setClassType(rSet.getLong("classType"));
+                        airportClasses.setId(rSet.getInt("id"));
+                        airportClasses.setClassType(rSet.getInt("classType"));
                         return airportClasses;
                     }
                 } finally {
@@ -106,8 +106,8 @@ public class AirportClassDAO implements IAirportClass {
                     List<AirportClass> airportClass = new ArrayList<>();
                     while (rSet.next()) {
                         airportClasses = new AirportClass();
-                        airportClasses.setId(rSet.getLong("id"));
-                        airportClasses.setClassType(rSet.getLong("classType"));
+                        airportClasses.setId(rSet.getInt("id"));
+                        airportClasses.setClassType(rSet.getInt("classType"));
                         airportClass.add(airportClasses);
 
                     }
